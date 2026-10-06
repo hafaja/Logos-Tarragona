@@ -400,3 +400,15 @@ td { padding: 14px 16px; border-top: 1px solid var(--line); }
 .news .follow:only-child { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr repeat(4, auto); align-items: center; gap: 12px 16px; }
 @media (max-width: 1000px) { .news .follow:only-child { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .news .follow:only-child { grid-template-columns: 1fr; } }
+.actual { border-radius: var(--r-lg); background: var(--ink); color: var(--white); padding: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.actual h2 { font-size: clamp(28px, 3vw, 40px); margin: 12px 0 14px; }
+.actual p { color: var(--on-ink); font-size: 18px; }
+.actual .eyebrow { color: var(--gold); }
+.actual__links { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.actual__links a { min-height: 72px; display: flex; align-items: center; gap: 14px; padding: 0 18px; border-radius: 16px; background: var(--ink-2); color: var(--white); text-decoration: none; }
+.actual__links a:hover { background: #333; color: var(--white); }
+.actual__links svg { color: var(--gold); flex-shrink: 0; }
+.actual__links strong { display: block; }
+.actual__links small { color: #A9A493; font-size: 14px; }
+@media (max-width: 900px) { .actual { grid-template-columns: 1fr; padding: 28px; } }
+@media (max-width: 480px) { .actual__links { grid-template-columns: 1fr; } }

@@ -1,18 +1,18 @@
 /* Associació Logos – Projectes Socials · estils del web */
 :root {
-  --ink: #141414;
-  --ink-2: #232323;
-  --gold: #F0DC72;
-  --gold-ink: #6B5400;
-  --gold-dot: #C9A81E;
-  --tint: #FBF3CF;
+  --ink: #1E3F66;
+  --ink-2: #2A5182;
+  --gold: #F2BC2C;
+  --gold-ink: #6E5000;
+  --gold-dot: #E2A812;
+  --tint: #FDF0C2;
   --paper: #FAF8F2;
   --white: #FFFFFF;
   --line: #E6E0CF;
   --line-2: #D8D1BD;
   --body: #36332C;
   --muted: #55524A;
-  --on-ink: #D9D4C6;
+  --on-ink: #DCE5F0;
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
   --wrap: 1240px;
@@ -42,9 +42,9 @@ button { font-family: inherit; }
 /* Botons */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 24px; border-radius: var(--r-sm); font-weight: 700; font-size: 17px; text-decoration: none; border: 2px solid transparent; cursor: pointer; line-height: 1.2; }
 .btn--dark { background: var(--ink); color: var(--white); }
-.btn--dark:hover { background: #2E2E2E; color: var(--white); }
+.btn--dark:hover { background: #2C5487; color: var(--white); }
 .btn--gold { background: var(--gold); color: var(--ink); }
-.btn--gold:hover { background: #E8CF55; color: var(--ink); }
+.btn--gold:hover { background: #E5AC12; color: var(--ink); }
 .btn--line { border-color: var(--ink); color: var(--ink); background: transparent; }
 .btn--line:hover { background: var(--ink); color: var(--white); }
 .btn--line-gold { border-color: var(--gold); color: var(--gold); background: transparent; }
@@ -267,7 +267,7 @@ button { font-family: inherit; }
 .footer__brand strong { font-family: var(--serif); font-size: 26px; color: var(--gold); display: block; margin-bottom: 8px; }
 .footer__hours { color: #C9C4B6; }
 .footer .socials a { width: 44px; height: 44px; background: var(--ink-2); color: var(--gold); border-radius: 12px; }
-.footer__bottom { border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; color: #A9A493; font-size: 14px; flex-wrap: wrap; }
+.footer__bottom { border-top: 1px solid #2C5487; margin-top: 40px; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; color: #A9A493; font-size: 14px; flex-wrap: wrap; }
 .linkbtn { background: none; border: 0; padding: 0; color: var(--gold); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
 @media (max-width: 1000px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footer__grid { grid-template-columns: 1fr; } }
@@ -406,9 +406,16 @@ td { padding: 14px 16px; border-top: 1px solid var(--line); }
 .actual .eyebrow { color: var(--gold); }
 .actual__links { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .actual__links a { min-height: 72px; display: flex; align-items: center; gap: 14px; padding: 0 18px; border-radius: 16px; background: var(--ink-2); color: var(--white); text-decoration: none; }
-.actual__links a:hover { background: #333; color: var(--white); }
+.actual__links a:hover { background: #2C5487; color: var(--white); }
 .actual__links svg { color: var(--gold); flex-shrink: 0; }
 .actual__links strong { display: block; }
 .actual__links small { color: #A9A493; font-size: 14px; }
 @media (max-width: 900px) { .actual { grid-template-columns: 1fr; padding: 28px; } }
 @media (max-width: 480px) { .actual__links { grid-template-columns: 1fr; } }
+
+/* Banda daurada (Logos Acompanya) */
+.band--gold { background: var(--gold); color: var(--ink); box-shadow: 0 18px 40px rgba(226,168,18,.28); }
+.band--gold p { color: #3B3A33; }
+.band--gold .band__icon { background: var(--ink); color: var(--gold); }
+.band--gold h2 { font-size: clamp(28px, 3vw, 40px); }
+.quality__iso > a { flex-shrink: 0; }

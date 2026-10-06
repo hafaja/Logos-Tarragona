@@ -110,7 +110,7 @@ var LOGOS_INSTAGRAM_FEED = "";
     $$(".amb").forEach(function (btn) {
       btn.addEventListener("click", function () {
         var i = +btn.getAttribute("data-amb"), d = A[i];
-        $$(".amb").forEach(function (b) { var on = b === btn; b.setAttribute("aria-selected", String(on)); b.querySelector("em").textContent = on ? "Detall obert" : "Veure més"; });
+        $$(".amb").forEach(function (b) { var on = b === btn; b.setAttribute("aria-selected", String(on)); });
         ["t", "txt", "who", "how", "proj"].forEach(function (k) { $('[data-f="' + k + '"]', panel).textContent = d[k]; });
         var im = $('[data-f="img"]', panel);
         im.src = "assets/img/fotos/" + d.img + "-1600.webp";

@@ -70,8 +70,8 @@ window.LOGOS_PROJECTES = [
   "title": "Centre col·laborador ACTIC",
   "sub": "Acreditació de competències digitals",
   "summary": "Fem proves oficials de certificació ACTIC, donant prioritat a les persones en risc d'exclusió.",
-  "img": "aula-digital",
-  "alt": "Persones fent formació digital a l'aula de Logos",
+  "img": "aula-ordinadors",
+  "alt": "Persones fent proves i exercicis a l'aula d'informàtica de Logos",
   "figs": [
    [
     "3",
@@ -115,8 +115,8 @@ window.LOGOS_PROJECTES = [
   "title": "Programa de suport a les dones en els àmbits rural i urbà",
   "sub": "Itineraris d'orientació laboral",
   "summary": "Itineraris individualitzats per millorar l'ocupabilitat de les dones i la seva participació en l'economia del territori.",
-  "img": "orientacio",
-  "alt": "Tècnica de Logos en una sessió d'orientació laboral",
+  "img": "aula-dones",
+  "alt": "Dones en una sessió de competències digitals a Logos",
   "figs": [
    [
     "59",
@@ -179,8 +179,8 @@ window.LOGOS_PROJECTES = [
   "title": "Servei Integral d'Inclusió",
   "sub": "Atenció especialitzada a col·lectius en risc",
   "summary": "Atenció social, laboral i formativa que té en compte totes les dificultats que envolten la persona.",
-  "img": "orientacio",
-  "alt": "Tècnics de Logos acompanyant persones usuàries",
+  "img": "joves-estudi",
+  "alt": "Joves estudiant en un espai d'acompanyament de Logos",
   "figs": [
    [
     "3",
@@ -289,8 +289,8 @@ window.LOGOS_PROJECTES = [
   "title": "Català per a Tots",
   "sub": "Integrant veus, teixint futurs",
   "summary": "Cursos, tallers culturals i sessions de cuina en català per afavorir la inclusió de les persones migrades.",
-  "img": "navegadors",
-  "alt": "Persones adultes en una sessió de formació",
+  "img": "aula-catala",
+  "alt": "Classe de català amb frases projectades a la pantalla",
   "figs": [
    [
     "10",
@@ -326,8 +326,8 @@ window.LOGOS_PROJECTES = [
   "title": "Comunitats contra l'Aïllament",
   "sub": "Voluntariat social",
   "summary": "Programa de voluntariat per combatre l'aïllament de les persones més vulnerables.",
-  "img": "joves",
-  "alt": "Grup de joves en un espai de Logos",
+  "img": "joves-detall",
+  "alt": "Jove fent deures en un espai de Logos",
   "figs": [],
   "intro": [
    "Programa de voluntariat social que impulsem en col·laboració amb Joves en Acció i la Direcció General d'Acció Cívica del Departament de Drets Socials."
@@ -378,7 +378,7 @@ window.LOGOS_PROJECTES = [
   "title": "Formació TIC al Consell de les Comunitats Gitanes",
   "sub": "Voluntariat i persones usuàries",
   "summary": "Formacions i seminaris digitals per al voluntariat i les persones usuàries dels programes del Consell.",
-  "img": "aula-digital",
+  "img": "navegadors",
   "alt": "Formació digital a l'aula",
   "figs": [],
   "intro": [
@@ -400,8 +400,8 @@ window.LOGOS_PROJECTES = [
   "title": "Empreses d'inserció",
   "sub": "Intress Creix i Aptos",
   "summary": "Creem llocs de treball per a persones en risc d'exclusió a través d'empreses d'inserció.",
-  "img": "facana",
-  "alt": "Seu de Logos a Tarragona",
+  "img": "facana-nova",
+  "alt": "Entrada de la seu de Logos a Tarragona",
   "figs": [],
   "intro": [
    "Logos ha creat, amb la Fundació Intress, l'empresa d'inserció Intress Creix, i ha col·laborat en la creació d'Iniciativa Aptos Empresa d'Inserció. Volem donar feina a col·lectius que sovint passen desapercebuts a les nostres comarques."

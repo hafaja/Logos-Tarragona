@@ -59,12 +59,13 @@
 </div></fieldset>
 <div class="fields">
 <div class="field"><label for="c-nom">Nom i cognoms</label><input id="c-nom" name="nom" autocomplete="name" required></div>
-<div class="field"><label for="c-mail">Correu electrònic</label><input id="c-mail" name="correu" type="email" autocomplete="email" required></div>
+<div class="field"><label for="c-mail">Correu electrònic</label><input id="c-mail" name="correu" type="email" autocomplete="email" placeholder="nom@exemple.cat" required></div>
 <div class="field org" hidden><label for="c-org">Organització</label><input id="c-org" name="organitzacio" autocomplete="organization"></div>
 <div class="field org" hidden><label for="c-tipus">Tipus d'organització</label><select id="c-tipus" name="tipus"><option>Administració pública</option><option>Entitat social</option><option>Fundació</option><option>Empresa</option></select></div>
+<div class="field field--full org" hidden><label for="c-motiu-r">Motiu de la reunió</label><select id="c-motiu-r" name="motiu_reunio"><option>Projecte o programa social</option><option>Formació per a equips o col·lectius</option><option>Assistència tècnica o gestió de projectes</option><option>Estudi o diagnosi</option><option>Pla d'igualtat o qualitat (ISO 9001)</option><option>Altres</option></select></div>
 <div class="field"><label for="c-tel">Telèfon (opcional)</label><input id="c-tel" name="telefon" type="tel" autocomplete="tel"></div>
 <div class="field"><label for="c-pref">Com prefereixes que et contactem?</label><select id="c-pref" name="preferencia"><option>Per correu electrònic</option><option>Per telèfon</option><option>Per WhatsApp</option></select></div>
-<div class="field field--full"><label for="c-msg" id="c-msg-label">La teva consulta</label><textarea id="c-msg" name="missatge" required></textarea></div>
+<div class="field field--full"><label for="c-msg" id="c-msg-label">La teva consulta</label><textarea id="c-msg" name="missatge" placeholder="Explica'ns breument el context i què necessites…" required></textarea></div>
 <div class="field field--full check"><input id="c-rgpd" type="checkbox" required><label for="c-rgpd">He llegit i accepto la <a href="#legal">política de privacitat</a>.</label></div>
 <div class="field--full"><button class="btn btn--dark" type="submit" id="c-send" style="width:100%">Enviar la consulta</button></div>
 </div>
@@ -74,7 +75,7 @@
 <div style="display:grid;gap:18px;align-content:center"><span class="eyebrow">On som</span><h2 style="font-size:clamp(32px,3.6vw,46px)">Ens trobareu a Tarragona</h2><p style="font-size:19px">Carrer Pau del Protectorat, 14<br>43004 Tarragona</p>
 <div class="hours"><strong style="color:var(--gold-ink);font-size:14px">Horari d'atenció</strong><div><b>Dilluns a dijous</b><span>8 a 14 h · 16 a 20 h</span></div><div><b>Divendres</b><span>Tancat</span></div></div>
 <a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&query=Carrer+Pau+del+Protectorat+14+43004+Tarragona" target="_blank" rel="noopener" style="justify-self:start">Obrir a Google Maps</a></div>
-<a class="where__photo" href="https://www.google.com/maps/search/?api=1&query=Carrer+Pau+del+Protectorat+14+43004+Tarragona" target="_blank" rel="noopener" aria-label="Veure la ubicació a Google Maps"><img src="assets/img/fotos/facana-1600.webp" srcset="assets/img/fotos/facana-800.webp 800w, assets/img/fotos/facana-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 66vw" alt="Façana i entrada de Logos al número 14 del Carrer Pau del Protectorat" loading="lazy" decoding="async"><span>Així és la nostra entrada · Pau del Protectorat, 14</span></a>
+<a class="where__photo" href="https://www.google.com/maps/search/?api=1&query=Carrer+Pau+del+Protectorat+14+43004+Tarragona" target="_blank" rel="noopener" aria-label="Veure la ubicació a Google Maps"><img src="assets/img/fotos/facana-nova-1600.webp" srcset="assets/img/fotos/facana-nova-800.webp 800w, assets/img/fotos/facana-nova-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 66vw" alt="Façana i entrada de Logos al número 14 del Carrer Pau del Protectorat" loading="lazy" decoding="async"><span>Així és la nostra entrada · Pau del Protectorat, 14</span></a>
 </div></section>
 
 </main>

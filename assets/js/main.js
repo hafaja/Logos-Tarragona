@@ -1,4 +1,9 @@
 /* Associació Logos – interaccions del web */
+/* ===== CONFIGURACIÓ =====
+   Enganxa aquí l'adreça del feed JSON de Behold (https://feeds.behold.so/XXXX)
+   quan Logos hagi connectat el seu Instagram. Si queda buit, es mostra "Segueix-nos". */
+var LOGOS_INSTAGRAM_FEED = "";
+
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -47,6 +52,7 @@
     ["Contacte", "Telèfon, WhatsApp, correu i horari", "contacte.html", "contacte telefon whatsapp mobil correu email horari adreca mapa"],
     ["Treballa amb nosaltres", "Enviar la teva candidatura", "contacte.html?motiu=feina#formulari", "treballar feina oferta cv curriculum candidatura"],
     ["Col·laboracions", "Entitats amb qui treballem", "index.html#col-laboracions", "col·laboracions entitats xarxa unesco diputacio port"],
+    ["Actualitat", "Últimes publicacions", "index.html#actualitat", "actualitat noticies novetats instagram facebook xarxes"],
     ["Galetes", "Política de galetes", "politica-galetes.html", "galetes cookies privacitat"]
   ];
   var searchBtn = $("[data-search-open]"), search = $("#cercador"), sInput = $("#cerca-input"), sList = $(".search__results");
@@ -125,6 +131,28 @@
       more.setAttribute("aria-expanded", String(open));
       more.textContent = open ? "Mostrar menys" : total;
     });
+  }
+
+
+  /* ---------- Actualitat: publicacions d'Instagram (Behold) ---------- */
+  var feedBox = $("#insta-feed");
+  if (feedBox && LOGOS_INSTAGRAM_FEED) {
+    var esc = function (t) { return String(t || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var fmt = function (iso) { try { return new Date(iso).toLocaleDateString("ca-ES", { day: "numeric", month: "long", year: "numeric" }); } catch (e) { return ""; } };
+    fetch(LOGOS_INSTAGRAM_FEED).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (data) {
+      var posts = (data.posts || []).slice(0, 3);
+      if (!posts.length) return;
+      var html = posts.map(function (p) {
+        var src = (p.sizes && p.sizes.medium && p.sizes.medium.mediaUrl) || p.thumbnailUrl || p.mediaUrl;
+        var text = (p.prunedCaption || p.caption || "").replace(/\s+/g, " ").trim();
+        if (text.length > 150) text = text.slice(0, 147).replace(/\s+\S*$/, "") + "…";
+        return '<a class="card" href="' + esc(p.permalink) + '" target="_blank" rel="noopener">' +
+          '<img src="' + esc(src) + '" alt="' + esc(text ? "Publicació: " + text.slice(0, 90) : "Publicació de Logos a Instagram") + '" loading="lazy" style="aspect-ratio:1/1;object-fit:cover;width:100%">' +
+          '<div class="card__body"><div class="tags"><span class="tag">Instagram</span><span class="tag tag--grey">' + fmt(p.timestamp) + "</span></div>" +
+          "<p>" + esc(text) + '</p><span class="card__more">Veure a Instagram</span></div></a>';
+      }).join("");
+      feedBox.insertAdjacentHTML("afterbegin", html);
+    }).catch(function () { /* si falla, queda el bloc "Segueix-nos" */ });
   }
 
   /* ---------- Formulari de contacte ---------- */

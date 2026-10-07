@@ -19,3 +19,8 @@ Web estàtic (HTML, CSS i JavaScript), sense dependències ni compilació.
 - Telèfons, correu, adreça i xarxes: a la capçalera i el peu de cada pàgina.
 - Projectes: `assets/js/projectes-data.js`.
 - Fotos: `assets/img/fotos/` (versions de 800 i 1600 px en WebP).
+
+## Idiomes
+- Català a l'arrel; castellà a `es/`, anglès a `en/`, francès a `fr/` i àrab (dreta a esquerra) a `ar/`.
+- Els textos de JavaScript (cercador, formulari, fitxes de projectes) són a `assets/js/main.js` i `assets/js/projectes.js`.
+- Dades de projectes per idioma: `assets/js/projectes-data-XX.js`.

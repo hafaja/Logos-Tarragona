@@ -262,3 +262,66 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     sync();
   }
 })();
+
+/* ===== Carrusel automàtic: Xarxes i plataformes (amb pausa) ===== */
+(function () {
+  var track = document.querySelector("#membres .members");
+  if (!track) return;
+  var L = {
+    ca: ["Anterior", "Següent", "Pausa", "Reprendre", "Xarxes i plataformes"],
+    es: ["Anterior", "Siguiente", "Pausa", "Reanudar", "Redes y plataformas"],
+    en: ["Previous", "Next", "Pause", "Play", "Networks and platforms"],
+    fr: ["Précédent", "Suivant", "Pause", "Reprendre", "Réseaux et plateformes"],
+    ar: ["السابق", "التالي", "إيقاف مؤقت", "استئناف", "الشبكات والمنصات"]
+  }[LOGOS_LANG] || null;
+  L = L || ["Anterior", "Següent", "Pausa", "Reprendre", "Xarxes"];
+  var rtl = document.documentElement.dir === "rtl";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  track.classList.add("members--carousel");
+  track.setAttribute("tabindex", "0");
+  track.setAttribute("aria-label", L[4]);
+  var ico = function (d) { return '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>'; };
+  var PAUSE = "M9 5v14M15 5v14", PLAY = "M8 5l11 7-11 7z";
+  var bar = document.createElement("div");
+  bar.className = "carousel-ctrl";
+  bar.innerHTML =
+    '<button type="button" class="carousel-btn" data-dir="-1" aria-label="' + L[0] + '">' + ico("M15 6l-6 6 6 6") + '</button>' +
+    '<button type="button" class="carousel-btn carousel-btn--play" aria-label="' + L[2] + '">' + ico(PAUSE) + '</button>' +
+    '<button type="button" class="carousel-btn" data-dir="1" aria-label="' + L[1] + '">' + ico("M9 6l6 6-6 6") + '</button>';
+  track.parentNode.insertBefore(bar, track.nextSibling);
+  var playBtn = bar.querySelector(".carousel-btn--play");
+  var userPaused = reduce, hover = false, timer = null;
+
+  function step() {
+    var card = track.querySelector(".member");
+    if (!card) return 0;
+    return card.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 16);
+  }
+  function go(dir) {
+    var max = track.scrollWidth - track.clientWidth;
+    var pos = Math.abs(track.scrollLeft);
+    var s = rtl ? -1 : 1;
+    if (dir > 0 && pos >= max - 4) { track.scrollTo({ left: 0, behavior: "smooth" }); return; }
+    if (dir < 0 && pos <= 4) { track.scrollTo({ left: s * max, behavior: "smooth" }); return; }
+    track.scrollBy({ left: s * dir * step(), behavior: "smooth" });
+  }
+  function setIcon() {
+    playBtn.innerHTML = ico(userPaused ? PLAY : PAUSE);
+    playBtn.setAttribute("aria-label", userPaused ? L[3] : L[2]);
+    playBtn.setAttribute("aria-pressed", String(userPaused));
+  }
+  function tick() { if (!userPaused && !hover && !document.hidden) go(1); }
+  function start() { clearInterval(timer); timer = setInterval(tick, 3500); }
+  bar.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    if (b === playBtn) { userPaused = !userPaused; setIcon(); }
+    else { go(+b.getAttribute("data-dir")); start(); }
+  });
+  ["mouseenter", "focusin", "touchstart"].forEach(function (ev) { track.addEventListener(ev, function () { hover = true; }, { passive: true }); });
+  ["mouseleave", "focusout", "touchend"].forEach(function (ev) { track.addEventListener(ev, function () { setTimeout(function () { hover = false; }, ev === "touchend" ? 4000 : 0); }, { passive: true }); });
+  track.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") { go(rtl ? -1 : 1); e.preventDefault(); }
+    if (e.key === "ArrowLeft") { go(rtl ? 1 : -1); e.preventDefault(); }
+  });
+  setIcon(); start();
+})();

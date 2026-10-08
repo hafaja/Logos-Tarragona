@@ -477,3 +477,38 @@ html, body { overflow-x: clip; }
   .topbar__links a { padding: 4px 2px; }
 }
 @media (max-width: 700px) { .search { padding: 20px 0 24px; } .search label { font-size: 22px; } }
+/* ===== Cicle del projecte ===== */
+.cycle { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; counter-reset: c; }
+.cycle__step { position: relative; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); padding: 26px 20px 24px; text-align: center; }
+.cycle__step:not(:last-child)::after { content: ""; position: absolute; top: 52px; right: -17px; width: 18px; height: 2px; background: var(--gold); }
+.cycle__icon { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; background: var(--tint); color: var(--ink); border: 2px solid var(--gold); }
+.cycle__step strong { display: block; font-family: var(--serif); font-size: 21px; color: var(--ink); margin-bottom: 8px; }
+.cycle__step p { font-size: 16px; color: var(--body); line-height: 1.5; }
+.cycle__note { margin: 26px auto 0; max-width: 900px; display: flex; align-items: center; gap: 14px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 16px 22px; font-size: 17px; color: var(--body); }
+.cycle__note strong { color: var(--ink); }
+.cycle__note-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--gold); color: var(--ink); }
+@media (max-width: 1100px) { .cycle { grid-template-columns: repeat(3, 1fr); } .cycle__step::after { display: none; } }
+@media (max-width: 700px) { .cycle { grid-template-columns: 1fr; } .cycle__step { display: grid; grid-template-columns: 56px 1fr; column-gap: 16px; text-align: start; padding: 18px; }
+  .cycle__icon { grid-row: span 2; margin: 0; } .cycle__step strong { margin: 4px 0 4px; } .cycle__note { align-items: flex-start; } }
+/* ===== Reforç de l'equip ===== */
+.reforc { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; background: var(--ink); color: var(--white); border-radius: var(--r-lg); padding: 52px 56px; }
+.reforc .eyebrow { color: var(--gold); }
+.reforc h2 { color: var(--white); font-size: clamp(30px, 3.4vw, 44px); margin: 12px 0 16px; }
+.reforc__intro > p { color: var(--on-ink); font-size: 19px; }
+.reforc__badge { margin-top: 24px; display: inline-flex; align-items: center; gap: 14px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); border-radius: var(--r-sm); padding: 12px 18px 12px 12px; }
+.reforc__badge strong { display: block; color: var(--white); }
+.reforc__badge small { color: var(--on-ink); font-size: 15px; }
+.reforc__side { background: var(--white); color: var(--body); border-radius: var(--r-md); padding: 10px 30px 26px; }
+.reforc__list { list-style: none; margin: 0; padding: 0; }
+.reforc__list li { display: flex; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+.reforc__list strong { color: var(--ink); }
+.reforc__num { flex-shrink: 0; font-family: var(--serif); font-weight: 700; font-size: 22px; color: var(--gold-ink); min-width: 32px; }
+.reforc__link { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-weight: 700; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--gold); padding-bottom: 2px; }
+.reforc__link:hover { color: var(--gold-ink); }
+[dir="rtl"] .reforc__link svg { transform: scaleX(-1); }
+@media (max-width: 900px) { .reforc { grid-template-columns: 1fr; padding: 32px 22px; gap: 28px; } .reforc__side { padding: 6px 20px 22px; } }
+/* ===== Solvència (acreditacions) ===== */
+.quality__list--acc small { display: block; color: var(--gold-ink); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+.quality__list--acc strong { font-family: var(--serif); font-size: 24px; color: var(--ink); margin: 2px 0 2px; }
+.quality__list--acc > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+[lang="ar"] .cycle__step strong, [lang="ar"] .quality__list--acc strong, [lang="ar"] .reforc__num { font-family: "Noto Kufi Arabic", "Noto Sans Arabic", Tahoma, sans-serif; }

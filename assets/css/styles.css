@@ -462,3 +462,8 @@ td { padding: 14px 16px; border-top: 1px solid var(--line); }
 }
 html, body { overflow-x: clip; }
 .net-card { min-height: 170px; } .net-card__kind { justify-content: center; text-align: center; }
+/* Logos de xarxes i plataformes */
+.member { display: flex; flex-direction: column; }
+.member__logo { height: 96px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+.member__logo img { max-height: 68px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
+.member__logo--text { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--ink); text-align: center; }

@@ -467,3 +467,13 @@ html, body { overflow-x: clip; }
 .member__logo { height: 96px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
 .member__logo img { max-height: 68px; max-width: 100%; width: auto; height: auto; object-fit: contain; }
 .member__logo--text { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--ink); text-align: center; }
+/* Cercador: el contingut va en columna (no hereta la fila del header) */
+.header .search .wrap { display: block; min-height: 0; }
+.search { max-height: calc(100vh - 92px); overflow-y: auto; }
+/* Telèfon i correu visibles també en mòbil i tauleta */
+@media (max-width: 1240px) {
+  .topbar .wrap { flex-wrap: wrap; justify-content: center; row-gap: 0; }
+  .topbar__links { display: flex; width: 100%; justify-content: center; gap: 18px; padding-top: 8px; font-size: 14px; }
+  .topbar__links a { padding: 4px 2px; }
+}
+@media (max-width: 700px) { .search { padding: 20px 0 24px; } .search label { font-size: 22px; } }

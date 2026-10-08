@@ -564,3 +564,15 @@ html, body { overflow-x: clip; }
   .brand img { max-width: 110px; height: auto; }
 }
 @media (max-width: 600px) { .doc-txt { flex: 1 1 calc(100% - 62px); } }
+/* Logos Acompanya al menú: més visible, amb subtítol */
+.nav__link--app::before { content: none; }
+.nav__link.nav__link--app { gap: 10px; margin-inline-start: 6px; padding: 6px 14px; min-height: 52px; background: var(--tint); border: 2px solid var(--gold); border-radius: 14px; color: var(--ink); line-height: 1.15; }
+.nav__link--app:hover { background: var(--gold); }
+.app__dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(242,188,44,.35); flex-shrink: 0; }
+.nav__link--app:hover .app__dot { background: var(--ink); }
+.app__txt { display: flex; flex-direction: column; text-align: start; }
+.app__txt strong { font-size: 16px; font-weight: 700; }
+.app__txt small { font-size: 12.5px; font-weight: 600; color: var(--gold-ink); }
+.nav__link--app:hover .app__txt small { color: var(--ink); }
+@media (max-width: 1400px) and (min-width: 1241px) { .nav__link.nav__link--app { padding: 5px 10px; margin-inline-start: 4px; } .app__txt strong { font-size: 15px; } .app__txt small { font-size: 12px; } }
+@media (max-width: 1240px) { .nav.is-open .nav__link--app { justify-content: flex-start; margin: 12px 0 0; border-radius: 14px; border-bottom: 2px solid var(--gold); min-height: 60px; } }

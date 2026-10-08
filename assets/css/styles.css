@@ -576,3 +576,15 @@ html, body { overflow-x: clip; }
 .nav__link--app:hover .app__txt small { color: var(--ink); }
 @media (max-width: 1400px) and (min-width: 1241px) { .nav__link.nav__link--app { padding: 5px 10px; margin-inline-start: 4px; } .app__txt strong { font-size: 15px; } .app__txt small { font-size: 12px; } }
 @media (max-width: 1240px) { .nav.is-open .nav__link--app { justify-content: flex-start; margin: 12px 0 0; border-radius: 14px; border-bottom: 2px solid var(--gold); min-height: 60px; } }
+/* ===== Carrusel de xarxes i plataformes ===== */
+.members.members--carousel { display: flex; grid-template-columns: none; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 4px; }
+.members--carousel::-webkit-scrollbar { display: none; }
+.members--carousel .member { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; }
+.members--carousel:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 16px; }
+@media (max-width: 900px) { .members--carousel .member { flex-basis: calc((100% - 16px) / 2); } }
+@media (max-width: 600px) { .members--carousel .member { flex-basis: 86%; } }
+.carousel-ctrl { display: flex; justify-content: center; gap: 10px; margin-top: 18px; }
+.carousel-btn { width: 46px; height: 46px; border-radius: 50%; border: 2px solid var(--ink); background: var(--white); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+.carousel-btn:hover { background: var(--ink); color: var(--white); }
+.carousel-btn--play { background: var(--gold); border-color: var(--gold); }
+[dir="rtl"] .carousel-btn[data-dir] svg { transform: scaleX(-1); }

@@ -124,15 +124,15 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   var INDEX = INDEX_ALL[LOGOS_LANG] || INDEX_ALL.ca;
   var UI = {
     ca: { noRes: "No hem trobat res.", write: "Escriu-nos i t'ajudem", less: "Mostrar menys",
-      form: { "Consulta general": ["La teva consulta", "Enviar la consulta"], "Sol·licitar una reunió": ["Expliqueu-nos el projecte o la necessitat", "Sol·licitar la reunió"], "Treballar amb nosaltres": ["Explica'ns el teu perfil i què t'interessa (pots adjuntar el CV per correu)", "Enviar la candidatura"] } },
+      form: { "Consulta general": ["La teva consulta", "Enviar la consulta"], "Sol·licitar una reunió": ["Expliqueu-nos el projecte o la necessitat", "Sol·licitar la reunió"], "Treballar amb nosaltres": ["Explica'ns el teu perfil i què t'interessa", "Enviar la candidatura"] } },
     es: { noRes: "No hemos encontrado nada.", write: "Escríbenos y te ayudamos", less: "Mostrar menos",
-      form: { "Consulta general": ["Tu consulta", "Enviar la consulta"], "Sol·licitar una reunió": ["Explicadnos el proyecto o la necesidad", "Solicitar la reunión"], "Treballar amb nosaltres": ["Explícanos tu perfil y qué te interesa (puedes adjuntar el CV por correo)", "Enviar la candidatura"] } }
+      form: { "Consulta general": ["Tu consulta", "Enviar la consulta"], "Sol·licitar una reunió": ["Explicadnos el proyecto o la necesidad", "Solicitar la reunión"], "Treballar amb nosaltres": ["Explícanos tu perfil y qué te interesa", "Enviar la candidatura"] } }
     ,en: { noRes: "Nothing found.", write: "Write to us and we'll help", less: "Show less",
-      form: { "Consulta general": ["Your enquiry", "Send enquiry"], "Sol·licitar una reunió": ["Tell us about the project or need", "Request the meeting"], "Treballar amb nosaltres": ["Tell us about your profile and interests (you can email us your CV)", "Send application"] } }
+      form: { "Consulta general": ["Your enquiry", "Send enquiry"], "Sol·licitar una reunió": ["Tell us about the project or need", "Request the meeting"], "Treballar amb nosaltres": ["Tell us about your profile and interests", "Send application"] } }
     ,fr: { noRes: "Aucun résultat.", write: "Écrivez-nous, nous vous aiderons", less: "Afficher moins",
-      form: { "Consulta general": ["Votre demande", "Envoyer la demande"], "Sol·licitar una reunió": ["Présentez-nous le projet ou le besoin", "Demander le rendez-vous"], "Treballar amb nosaltres": ["Parlez-nous de votre profil et de vos intérêts (vous pouvez envoyer votre CV par e-mail)", "Envoyer la candidature"] } }
+      form: { "Consulta general": ["Votre demande", "Envoyer la demande"], "Sol·licitar una reunió": ["Présentez-nous le projet ou le besoin", "Demander le rendez-vous"], "Treballar amb nosaltres": ["Parlez-nous de votre profil et de vos intérêts", "Envoyer la candidature"] } }
     ,ar: { noRes: "لم نجد أي نتيجة.", write: "اكتب لنا وسنساعدك", less: "عرض أقل",
-      form: { "Consulta general": ["استفسارك", "إرسال الاستفسار"], "Sol·licitar una reunió": ["اشرحوا لنا المشروع أو الحاجة", "طلب الموعد"], "Treballar amb nosaltres": ["حدّثنا عن ملفك المهني واهتماماتك (يمكنك إرسال سيرتك الذاتية بالبريد الإلكتروني)", "إرسال الطلب"] } }
+      form: { "Consulta general": ["استفسارك", "إرسال الاستفسار"], "Sol·licitar una reunió": ["اشرحوا لنا المشروع أو الحاجة", "طلب الموعد"], "Treballar amb nosaltres": ["حدّثنا عن ملفك المهني واهتماماتك", "إرسال الطلب"] } }
   };
   var U = UI[LOGOS_LANG] || UI.ca;
 
@@ -249,9 +249,17 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     function sync() {
       var v = $("input[name=motiu]:checked").value;
       $$(".org").forEach(function (o) { o.hidden = v !== "Sol·licitar una reunió"; });
+      var cvBox = $(".cv"), cvIn = $("#c-cv");
+      if (cvBox && cvIn) { var isJob = v === "Treballar amb nosaltres"; cvBox.hidden = !isJob; cvIn.disabled = !isJob; cvIn.required = isJob; }
       label.textContent = TXT[v][0]; send.textContent = TXT[v][1];
     }
     $$("input[name=motiu]").forEach(function (r) { r.addEventListener("change", sync); });
+    var cvInput = $("#c-cv");
+    if (cvInput) cvInput.addEventListener("change", function () {
+      var f = cvInput.files && cvInput.files[0];
+      cvInput.setCustomValidity(f && f.size > 5 * 1024 * 1024 ? cvInput.getAttribute("data-toobig") : "");
+      cvInput.reportValidity();
+    });
     form.addEventListener("submit", function () {
       var v = $("input[name=motiu]:checked").value;
       form.querySelector("[name=_next]").value = new URL(LOGOS_PFX + "gracies.html", location.href).href;

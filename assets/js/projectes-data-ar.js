@@ -1,8 +1,268 @@
 window.LOGOS_PROJECTES = [
  {
+  "id": "construim",
+  "amb": "الإدماج المهني",
+  "year": "2026",
+  "title": "Construïm Futur",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "توجيه مهني وتدريب عملي ومرافقة شخصية للوصول إلى فرص حقيقية في المنطقة.",
+  "img": "joves-estudi",
+  "alt": "نشاط لجمعية لوغوس – Construïm Futur",
+  "figs": [],
+  "intro": [
+   "برنامج يساعد المشاركين على تحديد أهدافهم وتعزيز كفاءاتهم والوصول إلى فرص العمل في المنطقة، مع مراعاة العوائق الرقمية والاجتماعية والتدريبية والشخصية."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "jobclub",
+  "amb": "الإدماج المهني",
+  "year": "2026",
+  "title": "JOB CLUB A3",
+  "sub": "Diputació de Tarragona",
+  "summary": "فضاء للتوجيه والإرشاد للنساء الراغبات في الحصول على عمل أو تحسين وضعهن المهني.",
+  "img": "aula-dones",
+  "alt": "نشاط لجمعية لوغوس – JOB CLUB A3",
+  "figs": [],
+  "intro": [
+   "نرافق البحث النشط عن عمل وتنظيم طلبات التوظيف واستراتيجيات التطور المهني، من منظور النوع الاجتماعي لتحديد العوائق الخاصة وتعزيز الاستقلالية في القرارات المهنية."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/diputacio.webp",
+    "alt": "Diputació de Tarragona"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "autonomia-digital",
+  "amb": "الفجوة الرقمية",
+  "year": "2026",
+  "title": "Autonomia Digital Activa",
+  "sub": "Fundación Ibercaja",
+  "summary": "تدريب لاستخدام الموارد الرقمية بمزيد من الأمان والاستقلالية.",
+  "img": "aula-ordinadors",
+  "alt": "نشاط لجمعية لوغوس – Autonomia Digital Activa",
+  "figs": [],
+  "intro": [
+   "مشروع للتدريب والاستقلالية الرقمية يواصل عملنا لسدّ الفجوة الرقمية."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mirada",
+  "amb": "الإدماج الاجتماعي",
+  "year": "2025 – 2026",
+  "title": "Mirada Endavant",
+  "sub": "الحقوق الاجتماعية والإدماج · حكومة كتالونيا",
+  "summary": "تدخّل شامل مع الأشخاص والأسر في وضع هشّ في حيّي Part Baixa وBarri del Port.",
+  "img": "recepcio",
+  "alt": "نشاط لجمعية لوغوس – Mirada Endavant",
+  "figs": [],
+  "intro": [
+   "نجمع بين الدعم النفسي والتوجيه نحو الموارد الاجتماعية والكفاءات الأساسية والرقمية والمرافقة المهنية، بالتنسيق مع خدمات المنطقة لتلبية احتياجات تظهر غالبًا في الوقت نفسه."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-drets-socials.webp",
+    "alt": "Generalitat de Catalunya – Drets Socials i Inclusió"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "arrels",
+  "amb": "الإدماج الاجتماعي",
+  "year": "2025 – 2026",
+  "title": "Arrels / Raíces: إعادة الروابط الأسرية",
+  "sub": "بالتعاون مع TAMAIDE",
+  "summary": "نتعاون مع TAMAIDE لتعزيز الروابط الأسرية ومرافقة الأسر التي لديها أطفال ومراهقون.",
+  "img": "joves",
+  "alt": "نشاط لجمعية لوغوس – Arrels / Raíces: إعادة الروابط الأسرية",
+  "figs": [],
+  "intro": [
+   "تدخّل تقوده جمعية TAMAIDE يشمل الدعم النفسي والتوجيه والوساطة الأسرية والأنشطة التربوية الاجتماعية. تشارك Logos كجهة متعاونة بخبرتها في العمل الاجتماعي والتنسيق المحلي."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/tamaide.webp",
+    "alt": "TAMAIDE"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "temps",
+  "amb": "المساواة",
+  "year": "2025 – 2026",
+  "title": "Temps, cures i equitat",
+  "sub": "وزارة المساواة والنسويات",
+  "summary": "توعية بالتنظيم الاجتماعي لأعمال الرعاية وتقاسم المسؤوليات.",
+  "img": "igualtat",
+  "alt": "نشاط لجمعية لوغوس – Temps, cures i equitat",
+  "figs": [],
+  "intro": [
+   "نتأمل في كيفية توزيع مهام الرعاية وكيف يؤثر هذا التوزيع في المشاركة الاجتماعية والتدريب والعمل، خاصة لدى النساء."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "cuidem",
+  "amb": "المساواة",
+  "year": "2025 – 2026",
+  "title": "Cuidem en igualtat",
+  "sub": "وزارة المساواة والنسويات",
+  "summary": "تعزيز ممارسات رعاية أكثر مساواة وتجاوز الأدوار النمطية للجنسين.",
+  "img": "entrada-interior",
+  "alt": "نشاط لجمعية لوغوس – Cuidem en igualtat",
+  "figs": [],
+  "intro": [
+   "أنشطة توعية وتقاسم للمسؤوليات لإبراز عدم المساواة في توزيع الأعمال المنزلية وأعمال الرعاية، وتوسيع الفرص الشخصية والمهنية."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "red-arana",
+  "amb": "الإدماج المهني",
+  "year": "2025 – 2026",
+  "title": "Yo Emprendo وRuralízate وImpulsa't",
+  "sub": "برامج ضمن شبكة Red Araña",
+  "summary": "مبادرات لريادة الأعمال والفرص في الوسط الريفي ودعم المسارات المهنية.",
+  "img": "joves-detall",
+  "alt": "نشاط لجمعية لوغوس – Yo Emprendo وRuralízate وImpulsa't",
+  "figs": [],
+  "intro": [
+   "نشارك في برامج شبكة Red Araña التي توسّع خيارات العمل: العمل الحر كطريق لبناء مشروع مهني، والفرص في الأوساط الريفية، ودعم المسارات المهنية."
+  ],
+  "secs": [
+   {
+    "h": "البرامج",
+    "items": [
+     "Yo Emprendo: ريادة الأعمال والعمل الحر",
+     "Ruralízate: فرص العمل في الوسط الريفي",
+     "Impulsa't: دعم المسارات المهنية"
+    ]
+   }
+  ],
+  "sup": [
+   {
+    "src": "assets/img/logos/red-arana.webp",
+    "alt": "Red Araña"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "futur",
+  "amb": "الإدماج المهني",
+  "year": "2025",
+  "title": "Futur en Xarxa",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "مسارات إدماج مهني تشمل التشخيص الفردي والتوجيه والتدريب العملي والوصول إلى فرص المنطقة.",
+  "img": "aula-digital",
+  "alt": "نشاط لجمعية لوغوس – Futur en Xarxa",
+  "figs": [],
+  "intro": [
+   "تعالج المسارات الاحتياجات الاجتماعية والمهنية والرقمية معًا لتعزيز الاستقلالية والبحث النشط عن عمل، بهدف تحسين دائم لقابلية التشغيل والحصول على عمل متى أمكن."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "oportunidad",
+  "amb": "الإدماج الاجتماعي",
+  "year": "2025",
+  "title": "Oportunidad y Cambio",
+  "sub": "Fundación Ibercaja",
+  "summary": "مرافقة وفتح فرص للأشخاص في وضع هشّ.",
+  "img": "facana",
+  "alt": "نشاط لجمعية لوغوس – Oportunidad y Cambio",
+  "figs": [],
+  "intro": [
+   "مبادرة بدعم من Fundación Ibercaja ضمن عملنا في مرافقة الأشخاص في وضع هشّ."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mais",
+  "amb": "الإدماج المهني",
+  "year": "2024 – 2025",
+  "title": "برنامج MAIS",
+  "sub": "وزارة الأعمال والعمل · حكومة كتالونيا",
+  "summary": "مسارات إدماج مهني مخصّصة للمستفيدين من الدخل المضمون والأشخاص المعرّضين للإقصاء.",
+  "img": "orientacio",
+  "alt": "نشاط لجمعية لوغوس – برنامج MAIS",
+  "figs": [
+   [
+    "60",
+    "مقعدًا مُدارًا"
+   ],
+   [
+    "24",
+    "حالة إدماج في سوق العمل"
+   ]
+  ],
+  "intro": [
+   "يجمع برنامج تدابير الإدماج النشطة بين التشخيص الاجتماعي المهني والتوجيه الفردي وتطوير الكفاءات والمتابعة المستمرة، ويعمل على مهارات البحث عن عمل وعلى الصعوبات الاجتماعية أو الشخصية التي قد تعيق الإدماج."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/generalitat.webp",
+    "alt": "Generalitat de Catalunya"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "الفجوة الرقمية",
-  "year": "2019 – 2022",
+  "year": "2019 – 2024",
   "title": "Logos Social Up Digital",
   "sub": "نسدّ الفجوة الرقمية",
   "summary": "نساعد المواطنين على التواصل رقميًا مع الإدارات وإنجاز أي إجراء عبر الإنترنت.",
@@ -19,7 +279,7 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "برنامج بدأ بالتطوع وبمساهمات خاصة (2019 و2020)، ثم موّلته Diputació de Tarragona في 2021 و2022. لاحظت الخدمات الاجتماعية ومكاتب الشؤون الاجتماعية وخدمة التشغيل أن كثيرًا من المعرّضين للإقصاء لا يملكون الوسائل أو المعرفة لإنجاز الإجراءات الرقمية التي تفرضها الإدارة اليوم.",
+   "برنامج بدأ بالتطوع وبمساهمات خاصة (2019)، ثم موّلته Diputació de Tarragona من 2020 إلى 2024. لاحظت الخدمات الاجتماعية ومكاتب الشؤون الاجتماعية وخدمة التشغيل أن كثيرًا من المعرّضين للإقصاء لا يملكون الوسائل أو المعرفة لإنجاز الإجراءات الرقمية التي تفرضها الإدارة اليوم.",
    "إلى جانب إنجاز الإجراءات، نعرّف كل شخص بالمنح والموارد الأنسب له ونعدّ معه خطة عمل نحو سوق الشغل."
   ],
   "secs": [
@@ -246,7 +506,7 @@ window.LOGOS_PROJECTES = [
  {
   "id": "trenta",
   "amb": "التدريب",
-  "year": "2023",
+  "year": "2023 – 2024",
   "title": "تدريب رقمي لبرنامج 30+",
   "sub": "بلدية طراغونة",
   "summary": "أربع دورات من 25 ساعة في المهارات الرقمية للعاملين في برنامج 30 Plus.",

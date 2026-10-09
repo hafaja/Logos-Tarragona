@@ -1,8 +1,268 @@
 window.LOGOS_PROJECTES = [
  {
+  "id": "construim",
+  "amb": "Employment",
+  "year": "2026",
+  "title": "Construïm Futur",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Career guidance, hands-on training and personal support to connect with real opportunities in the area.",
+  "img": "joves-estudi",
+  "alt": "Associació Logos activity – Construïm Futur",
+  "figs": [],
+  "intro": [
+   "A programme that helps participants set goals, strengthen their skills and connect with local job opportunities. We approach employability as a whole, taking into account digital, social, training and personal barriers."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "jobclub",
+  "amb": "Employment",
+  "year": "2026",
+  "title": "JOB CLUB A3",
+  "sub": "Diputació de Tarragona",
+  "summary": "Guidance and advice for women who want to find a job or improve their professional situation.",
+  "img": "aula-dones",
+  "alt": "Associació Logos activity – JOB CLUB A3",
+  "figs": [],
+  "intro": [
+   "We support active job searching, organising applications and career-progression strategies, with a gender perspective to identify specific obstacles and strengthen women's autonomy in work decisions."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/diputacio.webp",
+    "alt": "Diputació de Tarragona"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "autonomia-digital",
+  "amb": "Digital divide",
+  "year": "2026",
+  "title": "Autonomia Digital Activa",
+  "sub": "Fundación Ibercaja",
+  "summary": "Training so that people can use digital resources more safely and independently.",
+  "img": "aula-ordinadors",
+  "alt": "Associació Logos activity – Autonomia Digital Activa",
+  "figs": [],
+  "intro": [
+   "A digital skills and autonomy project that continues our work against the digital divide."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mirada",
+  "amb": "Inclusion",
+  "year": "2025 – 2026",
+  "title": "Mirada Endavant",
+  "sub": "Social Rights and Inclusion · Government of Catalonia",
+  "summary": "Comprehensive support for vulnerable people and families in the Part Baixa and Barri del Port areas.",
+  "img": "recepcio",
+  "alt": "Associació Logos activity – Mirada Endavant",
+  "figs": [],
+  "intro": [
+   "We combine emotional support, guidance on social resources, basic and digital skills and employment support, coordinating with local services to address needs that often arise at the same time."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-drets-socials.webp",
+    "alt": "Generalitat de Catalunya – Drets Socials i Inclusió"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "arrels",
+  "amb": "Inclusion",
+  "year": "2025 – 2026",
+  "title": "Arrels / Raíces: Family Reconnection",
+  "sub": "In collaboration with TAMAIDE",
+  "summary": "We work with TAMAIDE to strengthen family bonds and support families with children and teenagers.",
+  "img": "joves",
+  "alt": "Associació Logos activity – Arrels / Raíces: Family Reconnection",
+  "figs": [],
+  "intro": [
+   "A TAMAIDE programme offering psychological support, guidance, family mediation and socio-educational activities. Logos takes part as a partner organisation, contributing its experience in social care and local coordination."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/tamaide.webp",
+    "alt": "TAMAIDE"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "temps",
+  "amb": "Equality",
+  "year": "2025 – 2026",
+  "title": "Temps, cures i equitat",
+  "sub": "Department of Equality and Feminisms",
+  "summary": "Awareness-raising on how care is organised in society and on shared responsibility.",
+  "img": "igualtat",
+  "alt": "Associació Logos activity – Temps, cures i equitat",
+  "figs": [],
+  "intro": [
+   "We reflect on how care tasks are shared and how this affects social participation, training and employment, especially for women."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "cuidem",
+  "amb": "Equality",
+  "year": "2025 – 2026",
+  "title": "Cuidem en igualtat",
+  "sub": "Department of Equality and Feminisms",
+  "summary": "Promoting fairer care practices and moving beyond gender roles.",
+  "img": "entrada-interior",
+  "alt": "Associació Logos activity – Cuidem en igualtat",
+  "figs": [],
+  "intro": [
+   "Awareness and shared-responsibility actions to make visible the inequalities in how housework and care are shared, and to broaden personal and professional opportunities."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "red-arana",
+  "amb": "Employment",
+  "year": "2025 – 2026",
+  "title": "Yo Emprendo, Ruralízate and Impulsa't",
+  "sub": "Programmes within the Red Araña network",
+  "summary": "Initiatives on entrepreneurship, opportunities in rural areas and boosting career paths.",
+  "img": "joves-detall",
+  "alt": "Associació Logos activity – Yo Emprendo, Ruralízate and Impulsa't",
+  "figs": [],
+  "intro": [
+   "We take part in Red Araña programmes that widen employment options: self-employment as a way to build a professional project, opportunities in rural settings and support for career paths."
+  ],
+  "secs": [
+   {
+    "h": "Programmes",
+    "items": [
+     "Yo Emprendo: entrepreneurship and self-employment",
+     "Ruralízate: job opportunities in rural areas",
+     "Impulsa't: boosting career paths"
+    ]
+   }
+  ],
+  "sup": [
+   {
+    "src": "assets/img/logos/red-arana.webp",
+    "alt": "Red Araña"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "futur",
+  "amb": "Employment",
+  "year": "2025",
+  "title": "Futur en Xarxa",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Employment pathways with individual assessment, guidance, hands-on training and access to local opportunities.",
+  "img": "aula-digital",
+  "alt": "Associació Logos activity – Futur en Xarxa",
+  "figs": [],
+  "intro": [
+   "The pathways address social, employment and digital needs together to strengthen autonomy and active job seeking, aiming for a lasting improvement in employability and, where possible, a job."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "oportunidad",
+  "amb": "Inclusion",
+  "year": "2025",
+  "title": "Oportunidad y Cambio",
+  "sub": "Fundación Ibercaja",
+  "summary": "Support and new opportunities for people in vulnerable situations.",
+  "img": "facana",
+  "alt": "Associació Logos activity – Oportunidad y Cambio",
+  "figs": [],
+  "intro": [
+   "An initiative supported by Fundación Ibercaja as part of our work with people in vulnerable situations."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mais",
+  "amb": "Employment",
+  "year": "2024 – 2025",
+  "title": "MAIS Programme",
+  "sub": "Department of Business and Labour · Government of Catalonia",
+  "summary": "Personalised employment pathways for people receiving the guaranteed income and at risk of exclusion.",
+  "img": "orientacio",
+  "alt": "Associació Logos activity – MAIS Programme",
+  "figs": [
+   [
+    "60",
+    "places managed"
+   ],
+   [
+    "24",
+    "people into work"
+   ]
+  ],
+  "intro": [
+   "The Active Integration Measures Programme combines socio-occupational assessment, individual guidance, skills development and ongoing follow-up. It works on job-seeking skills as well as on the social or personal difficulties that can affect finding work."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/generalitat.webp",
+    "alt": "Generalitat de Catalunya"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Digital divide",
-  "year": "2019 – 2022",
+  "year": "2019 – 2024",
   "title": "Logos Social Up Digital",
   "sub": "Bridging the digital divide",
   "summary": "We help people deal with public administrations online and complete any procedure on the internet.",
@@ -19,7 +279,7 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "A programme that began with volunteers and private funding (2019 and 2020) and was funded by the Diputació de Tarragona in 2021 and 2022. Social services, social affairs offices and the Catalan employment service found that many people at risk of exclusion lack the means or knowledge to complete the online procedures the administration now requires.",
+   "A programme that began with volunteers and private funding (2019) and was funded by the Diputació de Tarragona from 2020 to 2024. Social services, social affairs offices and the Catalan employment service found that many people at risk of exclusion lack the means or knowledge to complete the online procedures the administration now requires.",
    "Besides doing the paperwork, we inform people about the benefits and resources that best suit them and draw up an individual work plan towards employment."
   ],
   "secs": [
@@ -246,7 +506,7 @@ window.LOGOS_PROJECTES = [
  {
   "id": "trenta",
   "amb": "Training",
-  "year": "2023",
+  "year": "2023 – 2024",
   "title": "ICT training for the 30+ Programme",
   "sub": "Tarragona City Council",
   "summary": "Four 25-hour digital skills courses for workers on the 30 Plus Programme.",

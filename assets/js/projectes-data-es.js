@@ -1,8 +1,268 @@
 window.LOGOS_PROJECTES = [
  {
+  "id": "construim",
+  "amb": "Inserción",
+  "year": "2026",
+  "title": "Construïm Futur",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Orientación laboral, formación práctica y acompañamiento personalizado para conectar con oportunidades reales del territorio.",
+  "img": "joves-estudi",
+  "alt": "Actividad de la Associació Logos – Construïm Futur",
+  "figs": [],
+  "intro": [
+   "Programa que ayuda a las personas participantes a identificar objetivos, reforzar competencias y conectar con oportunidades laborales del territorio. Trabajamos la empleabilidad de forma integral, teniendo en cuenta las barreras digitales, sociales, formativas y personales."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "jobclub",
+  "amb": "Inserción",
+  "year": "2026",
+  "title": "JOB CLUB A3",
+  "sub": "Diputació de Tarragona",
+  "summary": "Espacio de orientación y asesoramiento para mujeres que quieren acceder a un empleo o mejorar su situación profesional.",
+  "img": "aula-dones",
+  "alt": "Actividad de la Associació Logos – JOB CLUB A3",
+  "figs": [],
+  "intro": [
+   "Acompañamos la búsqueda activa de empleo, la organización de las candidaturas y las estrategias de promoción profesional, con perspectiva de género para identificar obstáculos específicos y reforzar la autonomía en las decisiones laborales."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/diputacio.webp",
+    "alt": "Diputació de Tarragona"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "autonomia-digital",
+  "amb": "Brecha digital",
+  "year": "2026",
+  "title": "Autonomia Digital Activa",
+  "sub": "Fundación Ibercaja",
+  "summary": "Capacitación para que las personas utilicen los recursos digitales con más seguridad e independencia.",
+  "img": "aula-ordinadors",
+  "alt": "Actividad de la Associació Logos – Autonomia Digital Activa",
+  "figs": [],
+  "intro": [
+   "Proyecto de capacitación y autonomía digital que da continuidad a nuestra línea de trabajo contra la brecha digital."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mirada",
+  "amb": "Inclusión",
+  "year": "2025 – 2026",
+  "title": "Mirada Endavant",
+  "sub": "Derechos Sociales e Inclusión · Generalitat de Catalunya",
+  "summary": "Intervención integral con personas y familias en situación de vulnerabilidad de la Part Baixa y el Barri del Port.",
+  "img": "recepcio",
+  "alt": "Actividad de la Associació Logos – Mirada Endavant",
+  "figs": [],
+  "intro": [
+   "Combinamos apoyo emocional, orientación en recursos sociales, competencias básicas y digitales y acompañamiento sociolaboral, en coordinación con los servicios del territorio para atender necesidades que a menudo se presentan a la vez."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-drets-socials.webp",
+    "alt": "Generalitat de Catalunya – Drets Socials i Inclusió"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "arrels",
+  "amb": "Inclusión",
+  "year": "2025 – 2026",
+  "title": "Arrels / Raíces: Reconexión Familiar",
+  "sub": "Colaboración con TAMAIDE",
+  "summary": "Colaboramos con TAMAIDE para reforzar los vínculos familiares y acompañar a familias con niños y adolescentes.",
+  "img": "joves",
+  "alt": "Actividad de la Associació Logos – Arrels / Raíces: Reconexión Familiar",
+  "figs": [],
+  "intro": [
+   "Intervención de la entidad TAMAIDE con apoyo psicológico, orientación, mediación familiar y actividades socioeducativas. Logos participa como entidad colaboradora, aportando su experiencia en atención social y coordinación territorial."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/tamaide.webp",
+    "alt": "TAMAIDE"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "temps",
+  "amb": "Igualdad",
+  "year": "2025 – 2026",
+  "title": "Temps, cures i equitat",
+  "sub": "Departamento de Igualdad y Feminismos",
+  "summary": "Sensibilización sobre la organización social de los cuidados y la corresponsabilidad.",
+  "img": "igualtat",
+  "alt": "Actividad de la Associació Logos – Temps, cures i equitat",
+  "figs": [],
+  "intro": [
+   "Reflexionamos sobre cómo se reparten las tareas de cuidado y cómo este reparto condiciona la participación social, la formación y el empleo, especialmente de las mujeres."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "cuidem",
+  "amb": "Igualdad",
+  "year": "2025 – 2026",
+  "title": "Cuidem en igualtat",
+  "sub": "Departamento de Igualdad y Feminismos",
+  "summary": "Fomento de prácticas de cuidado más igualitarias y superación de los roles de género.",
+  "img": "entrada-interior",
+  "alt": "Actividad de la Associació Logos – Cuidem en igualtat",
+  "figs": [],
+  "intro": [
+   "Acciones de sensibilización y corresponsabilidad para visibilizar las desigualdades en el reparto de las tareas domésticas y de cuidado, y ampliar las oportunidades personales y profesionales."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "red-arana",
+  "amb": "Inserción",
+  "year": "2025 – 2026",
+  "title": "Yo Emprendo, Ruralízate e Impulsa't",
+  "sub": "Programas en el marco de Red Araña",
+  "summary": "Iniciativas de emprendimiento, oportunidades en el entorno rural e impulso de trayectorias profesionales.",
+  "img": "joves-detall",
+  "alt": "Actividad de la Associació Logos – Yo Emprendo, Ruralízate e Impulsa't",
+  "figs": [],
+  "intro": [
+   "Participamos en programas de la red Red Araña que amplían las opciones de empleo: el autoempleo como vía para construir un proyecto profesional, las oportunidades en contextos rurales y el impulso de trayectorias sociolaborales."
+  ],
+  "secs": [
+   {
+    "h": "Programas",
+    "items": [
+     "Yo Emprendo: emprendimiento y autoempleo",
+     "Ruralízate: oportunidades sociolaborales en el entorno rural",
+     "Impulsa't: impulso de trayectorias profesionales"
+    ]
+   }
+  ],
+  "sup": [
+   {
+    "src": "assets/img/logos/red-arana.webp",
+    "alt": "Red Araña"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "futur",
+  "amb": "Inserción",
+  "year": "2025",
+  "title": "Futur en Xarxa",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Itinerarios sociolaborales con diagnóstico individual, orientación, formación práctica y acceso a oportunidades del territorio.",
+  "img": "aula-digital",
+  "alt": "Actividad de la Associació Logos – Futur en Xarxa",
+  "figs": [],
+  "intro": [
+   "Los itinerarios trabajan de forma conjunta necesidades sociales, laborales y digitales para reforzar la autonomía y la búsqueda activa de empleo, con el objetivo de una mejora sostenible de la empleabilidad y, cuando es posible, la inserción laboral."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "oportunidad",
+  "amb": "Inclusión",
+  "year": "2025",
+  "title": "Oportunidad y Cambio",
+  "sub": "Fundación Ibercaja",
+  "summary": "Acompañamiento y promoción de oportunidades para personas en situación de vulnerabilidad.",
+  "img": "facana",
+  "alt": "Actividad de la Associació Logos – Oportunidad y Cambio",
+  "figs": [],
+  "intro": [
+   "Iniciativa con el apoyo de Fundación Ibercaja dentro de nuestra línea de acompañamiento a personas en situación de vulnerabilidad."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/ibercaja.webp",
+    "alt": "Fundación Ibercaja"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "mais",
+  "amb": "Inserción",
+  "year": "2024 – 2025",
+  "title": "Programa MAIS",
+  "sub": "Departamento de Empresa y Trabajo · Generalitat de Catalunya",
+  "summary": "Itinerarios personalizados de inserción para personas perceptoras de la renta garantizada y en riesgo de exclusión.",
+  "img": "orientacio",
+  "alt": "Actividad de la Associació Logos – Programa MAIS",
+  "figs": [
+   [
+    "60",
+    "plazas gestionadas"
+   ],
+   [
+    "24",
+    "inserciones laborales"
+   ]
+  ],
+  "intro": [
+   "El Programa de Medidas Activas de Inserción combina diagnóstico sociolaboral, orientación individual, mejora competencial y seguimiento continuado. Trabaja tanto las habilidades para encontrar empleo como las dificultades sociales o personales que pueden condicionar la inserción."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/generalitat.webp",
+    "alt": "Generalitat de Catalunya"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Brecha digital",
-  "year": "2019 – 2022",
+  "year": "2019 – 2024",
   "title": "Logos Social Up Digital",
   "sub": "Rompemos la brecha digital",
   "summary": "Ayudamos a la ciudadanía a relacionarse digitalmente con las administraciones y a hacer cualquier gestión en línea.",
@@ -19,7 +279,7 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Programa nacido con voluntariado y aportaciones privadas (2019 y 2020) y financiado por la Diputació de Tarragona en 2021 y 2022. Los servicios sociales básicos, las oficinas de asuntos sociales y el SOC detectaron que muchas personas en riesgo de exclusión no tienen recursos ni conocimientos para hacer los trámites digitales que hoy exige la administración.",
+   "Programa nacido con voluntariado y aportaciones privadas (2019) y financiado por la Diputació de Tarragona de 2020 a 2024. Los servicios sociales básicos, las oficinas de asuntos sociales y el SOC detectaron que muchas personas en riesgo de exclusión no tienen recursos ni conocimientos para hacer los trámites digitales que hoy exige la administración.",
    "Además de hacer los trámites, informamos sobre las prestaciones y los recursos que mejor se adaptan a cada persona y elaboramos el plan de trabajo de cada una hacia el mercado laboral."
   ],
   "secs": [
@@ -246,7 +506,7 @@ window.LOGOS_PROJECTES = [
  {
   "id": "trenta",
   "amb": "Formación",
-  "year": "2023",
+  "year": "2023 – 2024",
   "title": "Formación TIC del Programa 30+",
   "sub": "Ayuntamiento de Tarragona",
   "summary": "Cuatro cursos de 25 horas de competencias digitales para personas trabajadoras del Programa 30 Plus.",

@@ -361,6 +361,32 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "menjar",
+  "amb": "Inclusió",
+  "year": "Actiu",
+  "title": "Reaprofitament de menjar",
+  "sub": "Amb la xarxa XAMA",
+  "summary": "Reduïm el malbaratament alimentari i fem arribar productes frescos a persones en situació vulnerable.",
+  "img": "",
+  "alt": "",
+  "figs": [
+   [
+    "+400",
+    "famílies a Tarragona"
+   ],
+   [
+    "+1.250",
+    "persones cada mes a la província"
+   ]
+  ],
+  "intro": [
+   "Projecte de malbaratament zero que proporciona productes frescos (verdura, fruita, embotits…) a persones en risc d'exclusió, en col·laboració amb la XAMA, Xarxa d'Ajuda Mútua Alimentària, a Tarragona, Reus, Cambrils i Vila-seca."
+  ],
+  "secs": [],
+  "sup": [],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Bretxa digital",
   "year": "2019 – 2024",
@@ -724,32 +750,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Joves en Acció"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusió",
-  "year": "Actiu",
-  "title": "Reaprofitament de menjar",
-  "sub": "Amb la xarxa XAMA",
-  "summary": "Reduïm el malbaratament alimentari i fem arribar productes frescos a persones en situació vulnerable.",
-  "img": "",
-  "alt": "",
-  "figs": [
-   [
-    "+400",
-    "famílies a Tarragona"
-   ],
-   [
-    "+1.250",
-    "persones cada mes a la província"
-   ]
-  ],
-  "intro": [
-   "Projecte de malbaratament zero que proporciona productes frescos (verdura, fruita, embotits…) a persones en risc d'exclusió, en col·laboració amb la XAMA, Xarxa d'Ajuda Mútua Alimentària, a Tarragona, Reus, Cambrils i Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {

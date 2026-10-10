@@ -361,6 +361,32 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "menjar",
+  "amb": "Inclusion",
+  "year": "En cours",
+  "title": "Récupération alimentaire",
+  "sub": "Avec le réseau XAMA",
+  "summary": "Nous réduisons le gaspillage alimentaire et apportons des produits frais aux personnes en situation de vulnérabilité.",
+  "img": "",
+  "alt": "",
+  "figs": [
+   [
+    "+400",
+    "familles à Tarragone"
+   ],
+   [
+    "+1.250",
+    "personnes chaque mois dans la province"
+   ]
+  ],
+  "intro": [
+   "Projet zéro gaspillage qui fournit des produits frais (légumes, fruits, charcuterie…) aux personnes en risque d'exclusion, avec la XAMA, réseau d'entraide alimentaire, à Tarragone, Reus, Cambrils et Vila-seca."
+  ],
+  "secs": [],
+  "sup": [],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Fracture numérique",
   "year": "2019 – 2024",
@@ -724,32 +750,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Joves en Acció"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusion",
-  "year": "En cours",
-  "title": "Récupération alimentaire",
-  "sub": "Avec le réseau XAMA",
-  "summary": "Nous réduisons le gaspillage alimentaire et apportons des produits frais aux personnes en situation de vulnérabilité.",
-  "img": "",
-  "alt": "",
-  "figs": [
-   [
-    "+400",
-    "familles à Tarragone"
-   ],
-   [
-    "+1.250",
-    "personnes chaque mois dans la province"
-   ]
-  ],
-  "intro": [
-   "Projet zéro gaspillage qui fournit des produits frais (légumes, fruits, charcuterie…) aux personnes en risque d'exclusion, avec la XAMA, réseau d'entraide alimentaire, à Tarragone, Reus, Cambrils et Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {

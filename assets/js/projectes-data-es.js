@@ -361,6 +361,32 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "menjar",
+  "amb": "Inclusión",
+  "year": "Activo",
+  "title": "Aprovechamiento de alimentos",
+  "sub": "Con la red XAMA",
+  "summary": "Reducimos el desperdicio alimentario y hacemos llegar productos frescos a personas en situación vulnerable.",
+  "img": "",
+  "alt": "",
+  "figs": [
+   [
+    "+400",
+    "familias en Tarragona"
+   ],
+   [
+    "+1.250",
+    "personas cada mes en la provincia"
+   ]
+  ],
+  "intro": [
+   "Proyecto de desperdicio cero que proporciona productos frescos (verdura, fruta, embutidos…) a personas en riesgo de exclusión, en colaboración con la XAMA, Red de Ayuda Mutua Alimentaria, en Tarragona, Reus, Cambrils y Vila-seca."
+  ],
+  "secs": [],
+  "sup": [],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Brecha digital",
   "year": "2019 – 2024",
@@ -724,32 +750,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Joves en Acció"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusión",
-  "year": "Activo",
-  "title": "Aprovechamiento de alimentos",
-  "sub": "Con la red XAMA",
-  "summary": "Reducimos el desperdicio alimentario y hacemos llegar productos frescos a personas en situación vulnerable.",
-  "img": "",
-  "alt": "",
-  "figs": [
-   [
-    "+400",
-    "familias en Tarragona"
-   ],
-   [
-    "+1.250",
-    "personas cada mes en la provincia"
-   ]
-  ],
-  "intro": [
-   "Proyecto de desperdicio cero que proporciona productos frescos (verdura, fruta, embutidos…) a personas en riesgo de exclusión, en colaboración con la XAMA, Red de Ayuda Mutua Alimentaria, en Tarragona, Reus, Cambrils y Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {

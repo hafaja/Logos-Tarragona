@@ -18,7 +18,7 @@
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var BASKET = '<img class="ph-logo" src="' + BASE + 'assets/img/logo-logos.png" alt="Logos – Associació Logos Projectes Socials" loading="lazy">';
   function pic(p, sizes) {
-    if (!p.img) return '<div class="card__ph">' + BASKET + "</div>";
+    if (!p.img) return "";
     return '<img src="' + BASE + 'assets/img/fotos/' + p.img + '-1600.webp" srcset="' + BASE + 'assets/img/fotos/' + p.img + '-800.webp 800w, ' + BASE + 'assets/img/fotos/' + p.img + '-1600.webp 1600w" sizes="' + sizes + '" alt="' + esc(p.alt) + '" loading="lazy">';
   }
   function renderFilters() {
@@ -32,7 +32,7 @@
   }
   function renderGrid() {
     grid.innerHTML = P.filter(function (p) { return filter === AMBITS[0] || p.amb === filter; }).map(function (p) {
-      return '<a class="card" href="#' + p.id + '">' + pic(p, "(max-width: 620px) 100vw, 33vw") +
+      return '<a class="card' + (p.img ? "" : " card--nophoto") + '" href="#' + p.id + '">' + pic(p, "(max-width: 620px) 100vw, 33vw") +
         '<div class="card__body"><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +
         "<h3>" + esc(p.title) + "</h3><p>" + esc(p.summary) + '</p><span class="card__more">' + T.card + '</span></div></a>';
     }).join("");
@@ -43,7 +43,7 @@
     var secs = p.secs.map(function (s) { return '<div class="box"><h3>' + esc(s.h) + '</h3><ul class="ticks">' + s.items.map(function (it) { return "<li>" + esc(it) + "</li>"; }).join("") + "</ul></div>"; }).join("");
     var link = p.link ? '<p style="margin-top:18px"><a href="' + p.link[1] + '" target="_blank" rel="noopener" style="font-weight:700">' + esc(p.link[0]) + "</a></p>" : "";
     var sup = p.sup.length ? '<div class="support"><h3>' + T.sup + '</h3><div class="logo-grid" style="grid-template-columns:1fr 1fr">' + p.sup.map(function (s) { return '<div class="logo-tile"><img src="' + BASE + s.src + '" alt="' + esc(s.alt) + '" loading="lazy"></div>'; }).join("") + "</div></div>" : "";
-    var photo = p.img ? pic(p, "(max-width: 900px) 100vw, 40vw") : '<div class="detail__ph">' + BASKET + "</div>";
+    var photo = p.img ? pic(p, "(max-width: 900px) 100vw, 40vw") : "";
     detail.innerHTML =
       '<div class="detail__nav"><a class="btn btn--line btn--sm" href="#">' + T.all + '</a><div style="display:flex;gap:10px"><a class="btn btn--line btn--sm" href="#' + prev.id + '" aria-label="' + T.prevL + esc(prev.title) + '">' + T.prev + '</a><a class="btn btn--line btn--sm" href="#' + next.id + '" aria-label="' + T.nextL + esc(next.title) + '">' + T.next + '</a></div></div>' +
       '<div class="detail"><article><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +

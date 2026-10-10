@@ -361,6 +361,32 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "menjar",
+  "amb": "Inclusion",
+  "year": "Ongoing",
+  "title": "Food recovery",
+  "sub": "With the XAMA network",
+  "summary": "We reduce food waste and bring fresh produce to people in vulnerable situations.",
+  "img": "",
+  "alt": "",
+  "figs": [
+   [
+    "+400",
+    "families in Tarragona"
+   ],
+   [
+    "+1.250",
+    "people every month across the province"
+   ]
+  ],
+  "intro": [
+   "Zero-waste project providing fresh produce (vegetables, fruit, cold meats…) to people at risk of exclusion, in partnership with XAMA, the food mutual-aid network, in Tarragona, Reus, Cambrils and Vila-seca."
+  ],
+  "secs": [],
+  "sup": [],
+  "link": null
+ },
+ {
   "id": "social-up",
   "amb": "Digital divide",
   "year": "2019 – 2024",
@@ -724,32 +750,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Joves en Acció"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusion",
-  "year": "Ongoing",
-  "title": "Food recovery",
-  "sub": "With the XAMA network",
-  "summary": "We reduce food waste and bring fresh produce to people in vulnerable situations.",
-  "img": "",
-  "alt": "",
-  "figs": [
-   [
-    "+400",
-    "families in Tarragona"
-   ],
-   [
-    "+1.250",
-    "people every month across the province"
-   ]
-  ],
-  "intro": [
-   "Zero-waste project providing fresh produce (vegetables, fruit, cold meats…) to people at risk of exclusion, in partnership with XAMA, the food mutual-aid network, in Tarragona, Reus, Cambrils and Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {

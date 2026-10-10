@@ -4,15 +4,28 @@ window.LOGOS_PROJECTES = [
   "amb": "Employment",
   "year": "2026",
   "title": "Construïm Futur",
-  "sub": "Fundació \"la Caixa\"",
-  "summary": "Career guidance, hands-on training and personal support to connect with real opportunities in the area.",
+  "sub": "Your path to employment",
+  "summary": "Career guidance and job placement through personalised pathways to improve employability and reach new opportunities.",
   "img": "joves-estudi",
   "alt": "Associació Logos activity – Construïm Futur",
   "figs": [],
   "intro": [
-   "A programme that helps participants set goals, strengthen their skills and connect with local job opportunities. We approach employability as a whole, taking into account digital, social, training and personal barriers."
+   "A career guidance and job placement project for people who want to improve their employability or return to work, with support tailored to each situation.",
+   "We design personalised pathways around each person's goals: we identify strengths and skills to build on and organise the job search. We see employment as a process that also fosters autonomy, equal opportunities and social inclusion. Supported by Fundació \"la Caixa\" (Social Projects Call)."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "What you will find",
+    "items": [
+     "Career guidance: goals and concrete steps in your job search",
+     "Hands-on training in the skills employers need",
+     "Individual follow-up",
+     "Skills building: strengths and areas to improve",
+     "Links with local companies and workplaces",
+     "Access to services and resources that support job placement"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/fundacio-la-caixa.webp",
@@ -70,15 +83,37 @@ window.LOGOS_PROJECTES = [
   "amb": "Inclusion",
   "year": "2025 – 2026",
   "title": "Mirada Endavant",
-  "sub": "Social Rights and Inclusion · Government of Catalonia",
-  "summary": "Comprehensive support for vulnerable people and families in the Part Baixa and Barri del Port areas.",
+  "sub": "Support to move forward with more autonomy",
+  "summary": "Personalised support for people and families in or at risk of social exclusion, especially in Tarragona's Barri del Port.",
   "img": "recepcio",
   "alt": "Associació Logos activity – Mirada Endavant",
   "figs": [],
   "intro": [
-   "We combine emotional support, guidance on social resources, basic and digital skills and employment support, coordinating with local services to address needs that often arise at the same time."
+   "Mirada Endavant offers support tailored to each situation, combining different areas of work depending on the needs identified.",
+   "We use a participatory and intersectional approach to foster autonomy, strengthen capacities and encourage people to play a more active role in their surroundings and community. Supported by the Catalan Department of Social Rights and Inclusion."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "Who it is for",
+    "items": [
+     "Women",
+     "Migrants",
+     "Vulnerable people and families",
+     "Groups that find it hard to access resources, services or opportunities"
+    ]
+   },
+   {
+    "h": "How we support people",
+    "items": [
+     "Emotional support",
+     "Basic skills training",
+     "Digital skills",
+     "Employment guidance",
+     "Access to resources and services",
+     "Coordination with social, health and education services"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/gen-drets-socials.webp",
@@ -92,19 +127,56 @@ window.LOGOS_PROJECTES = [
   "amb": "Inclusion",
   "year": "2025 – 2026",
   "title": "Arrels / Raíces: Family Reconnection",
-  "sub": "In collaboration with TAMAIDE",
-  "summary": "We work with TAMAIDE to strengthen family bonds and support families with children and teenagers.",
+  "sub": "An Associació Tamaide initiative · Logos collaborates",
+  "summary": "Comprehensive support for vulnerable families with children and teenagers, to strengthen family life and autonomy.",
   "img": "joves",
   "alt": "Associació Logos activity – Arrels / Raíces: Family Reconnection",
   "figs": [],
   "intro": [
-   "A TAMAIDE programme offering psychological support, guidance, family mediation and socio-educational activities. Logos takes part as a partner organisation, contributing its experience in social care and local coordination."
+   "Arrels combines psychological, educational and social support with tools to strengthen family life. Many family difficulties cannot be tackled in isolation, so the project considers the needs of every family member.",
+   "It is an initiative of Associació Tamaide in which Logos Projectes Socials takes part as a partner organisation. It is co-funded by the European Union under actions on social inclusion, the child guarantee and the fight against poverty."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "For families",
+    "items": [
+     "Psychological care",
+     "Family mediation",
+     "Positive parenting workshops",
+     "Employability support",
+     "Digital skills",
+     "Gender equality, culture and participation activities"
+    ]
+   },
+   {
+    "h": "For children and young people",
+    "items": [
+     "Homework support",
+     "Play centre",
+     "Holiday camps",
+     "Youth activities",
+     "Family outings"
+    ]
+   },
+   {
+    "h": "Who it is for",
+    "items": [
+     "Single-parent or large families",
+     "Families facing financial hardship or unemployment",
+     "Migrant families",
+     "Families affected by gender-based violence",
+     "Other situations affecting children's and young people's development"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/tamaide.webp",
-    "alt": "TAMAIDE"
+    "alt": "Associació Tamaide"
+   },
+   {
+    "src": "assets/img/logos/ue-cofinancat.webp",
+    "alt": "Co-funded by the European Union"
    }
   ],
   "link": null
@@ -208,18 +280,35 @@ window.LOGOS_PROJECTES = [
  },
  {
   "id": "oportunidad",
-  "amb": "Inclusion",
+  "amb": "Digital divide",
   "year": "2025",
   "title": "Oportunidad y Cambio",
-  "sub": "Fundación Ibercaja",
-  "summary": "Support and new opportunities for people in vulnerable situations.",
+  "sub": "Digital empowerment prevents exclusion",
+  "summary": "A preventive project that uses ICT to help people avoid social and labour exclusion.",
   "img": "facana",
   "alt": "Associació Logos activity – Oportunidad y Cambio",
   "figs": [],
   "intro": [
-   "An initiative supported by Fundación Ibercaja as part of our work with people in vulnerable situations."
+   "We see the digital divide not just as a technology gap but as a social barrier that can limit access to rights, opportunities and personal development.",
+   "We work with an intersectional gender perspective, considering how gender, class, origin or sexual orientation shape access to digital and job opportunities. Supported by Fundación Ibercaja."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "Goals",
+    "items": [
+     "Empower people through digital learning",
+     "Build paths towards autonomy, employability and full social participation"
+    ]
+   },
+   {
+    "h": "How we do it",
+    "items": [
+     "Workshops",
+     "Personalised support",
+     "ICT skills training"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/ibercaja.webp",
@@ -280,7 +369,8 @@ window.LOGOS_PROJECTES = [
   ],
   "intro": [
    "A programme that began with volunteers and private funding (2019) and was funded by the Diputació de Tarragona from 2020 to 2024. Social services, social affairs offices and the Catalan employment service found that many people at risk of exclusion lack the means or knowledge to complete the online procedures the administration now requires.",
-   "Besides doing the paperwork, we inform people about the benefits and resources that best suit them and draw up an individual work plan towards employment."
+   "Besides doing the paperwork, we inform people about the benefits and resources that best suit them and draw up an individual work plan towards employment.",
+   "Today the service is part of the inclusion service of Tarragona City Council's Municipal Institute of Social Services and is registered in RESES under number S11009."
   ],
   "secs": [
    {
@@ -319,6 +409,10 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/joves-accio.webp",
     "alt": "Joves en Acció"
+   },
+   {
+    "src": "assets/img/logos/imsst.webp",
+    "alt": "Institut Municipal de Serveis Socials – Ajuntament de Tarragona"
    }
   ],
   "link": null

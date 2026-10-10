@@ -4,15 +4,28 @@ window.LOGOS_PROJECTES = [
   "amb": "Insertion",
   "year": "2026",
   "title": "Construïm Futur",
-  "sub": "Fundació \"la Caixa\"",
-  "summary": "Orientation professionnelle, formation pratique et accompagnement personnalisé pour accéder à de vraies opportunités du territoire.",
+  "sub": "Votre chemin vers l'emploi",
+  "summary": "Orientation et insertion professionnelle avec des parcours personnalisés pour améliorer l'employabilité et accéder à de nouvelles opportunités.",
   "img": "joves-estudi",
   "alt": "Activité de l'Associació Logos – Construïm Futur",
   "figs": [],
   "intro": [
-   "Programme qui aide les participants à définir des objectifs, renforcer leurs compétences et accéder aux opportunités d'emploi du territoire. Nous abordons l'employabilité de façon globale, en tenant compte des obstacles numériques, sociaux, de formation et personnels."
+   "Projet d'orientation et d'insertion professionnelle pour les personnes qui veulent améliorer leur employabilité ou retrouver le marché du travail, avec un accompagnement adapté à chaque situation.",
+   "Nous concevons des parcours personnalisés selon les objectifs de chacun : nous identifions les points forts et les compétences à renforcer et organisons la recherche d'emploi. Nous voyons l'emploi comme un processus qui favorise aussi l'autonomie, l'égalité des chances et l'inclusion sociale. Avec le soutien de la Fundació \"la Caixa\" (appel à projets sociaux)."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "Ce que vous y trouverez",
+    "items": [
+     "Orientation professionnelle : objectifs et étapes concrètes de la recherche d'emploi",
+     "Formation pratique aux compétences demandées par le marché",
+     "Suivi individualisé",
+     "Renforcement des compétences : points forts et axes d'amélioration",
+     "Liens avec les entreprises et milieux professionnels du territoire",
+     "Accès aux services et ressources qui favorisent l'insertion"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/fundacio-la-caixa.webp",
@@ -70,15 +83,37 @@ window.LOGOS_PROJECTES = [
   "amb": "Inclusion",
   "year": "2025 – 2026",
   "title": "Mirada Endavant",
-  "sub": "Droits sociaux et Inclusion · Generalitat de Catalunya",
-  "summary": "Intervention globale auprès de personnes et de familles vulnérables de la Part Baixa et du Barri del Port.",
+  "sub": "Un accompagnement pour avancer avec plus d'autonomie",
+  "summary": "Accompagnement personnalisé de personnes et de familles en situation ou à risque d'exclusion sociale, en particulier dans le Barri del Port de Tarragone.",
   "img": "recepcio",
   "alt": "Activité de l'Associació Logos – Mirada Endavant",
   "figs": [],
   "intro": [
-   "Nous associons soutien émotionnel, orientation vers les ressources sociales, compétences de base et numériques et accompagnement socioprofessionnel, en coordination avec les services du territoire pour répondre à des besoins qui se présentent souvent en même temps."
+   "Mirada Endavant propose un accompagnement adapté à chaque situation, en combinant différents domaines d'intervention selon les besoins identifiés.",
+   "Nous travaillons avec une méthode participative et intersectionnelle pour favoriser l'autonomie, renforcer les capacités et encourager une participation plus active des personnes dans leur environnement et leur communauté. Projet soutenu par le Département des Droits sociaux et de l'Inclusion."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "À qui s'adresse-t-il",
+    "items": [
+     "Femmes",
+     "Personnes migrantes",
+     "Personnes et familles en situation de vulnérabilité",
+     "Groupes ayant des difficultés d'accès aux ressources, services ou opportunités"
+    ]
+   },
+   {
+    "h": "Comment nous accompagnons",
+    "items": [
+     "Accompagnement émotionnel",
+     "Formation aux compétences de base",
+     "Compétences numériques",
+     "Orientation socioprofessionnelle",
+     "Accès aux ressources et services",
+     "Coordination avec les services sociaux, de santé et éducatifs"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/gen-drets-socials.webp",
@@ -92,19 +127,56 @@ window.LOGOS_PROJECTES = [
   "amb": "Inclusion",
   "year": "2025 – 2026",
   "title": "Arrels / Raíces : reconnexion familiale",
-  "sub": "En collaboration avec TAMAIDE",
-  "summary": "Nous collaborons avec TAMAIDE pour renforcer les liens familiaux et accompagner les familles avec enfants et adolescents.",
+  "sub": "Initiative de l'Associació Tamaide · Logos y collabore",
+  "summary": "Soutien global aux familles vulnérables avec enfants et adolescents, pour renforcer la vie familiale et l'autonomie.",
   "img": "joves",
   "alt": "Activité de l'Associació Logos – Arrels / Raíces : reconnexion familiale",
   "figs": [],
   "intro": [
-   "Intervention de l'association TAMAIDE avec soutien psychologique, orientation, médiation familiale et activités socio-éducatives. Logos y participe comme organisation partenaire, en apportant son expérience de l'action sociale et de la coordination territoriale."
+   "Arrels associe soutien psychologique, éducatif et social et outils pour renforcer la vie familiale. Beaucoup de difficultés familiales ne peuvent pas être traitées isolément : le projet tient donc compte des besoins de tous les membres de la famille.",
+   "C'est une initiative de l'Associació Tamaide à laquelle Logos Projectes Socials participe comme organisation partenaire. Elle est cofinancée par l'Union européenne, dans le cadre d'actions d'inclusion sociale, de garantie pour l'enfance et de lutte contre la pauvreté."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "Pour les familles",
+    "items": [
+     "Accompagnement psychologique",
+     "Médiation familiale",
+     "Ateliers de parentalité positive",
+     "Soutien à l'employabilité",
+     "Compétences numériques",
+     "Activités d'égalité de genre, de culture et de participation"
+    ]
+   },
+   {
+    "h": "Pour les enfants et les jeunes",
+    "items": [
+     "Soutien scolaire",
+     "Ludothèque",
+     "Centres de vacances",
+     "Activités pour les jeunes",
+     "Sorties en famille"
+    ]
+   },
+   {
+    "h": "À qui s'adresse-t-il",
+    "items": [
+     "Familles monoparentales ou nombreuses",
+     "Familles en difficulté socio-économique ou au chômage",
+     "Familles migrantes",
+     "Familles touchées par les violences de genre",
+     "Autres situations qui affectent le développement des enfants et des jeunes"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/tamaide.webp",
-    "alt": "TAMAIDE"
+    "alt": "Associació Tamaide"
+   },
+   {
+    "src": "assets/img/logos/ue-cofinancat.webp",
+    "alt": "Cofinancé par l'Union européenne"
    }
   ],
   "link": null
@@ -208,18 +280,35 @@ window.LOGOS_PROJECTES = [
  },
  {
   "id": "oportunidad",
-  "amb": "Inclusion",
+  "amb": "Fracture numérique",
   "year": "2025",
   "title": "Oportunidad y Cambio",
-  "sub": "Fundación Ibercaja",
-  "summary": "Accompagnement et ouverture d'opportunités pour les personnes en situation de vulnérabilité.",
+  "sub": "Autonomiser par le numérique, c'est prévenir l'exclusion",
+  "summary": "Projet préventif qui utilise les TIC pour éviter les situations d'exclusion sociale et professionnelle.",
   "img": "facana",
   "alt": "Activité de l'Associació Logos – Oportunidad y Cambio",
   "figs": [],
   "intro": [
-   "Initiative soutenue par la Fundación Ibercaja dans le cadre de notre accompagnement des personnes en situation de vulnérabilité."
+   "Nous voyons la fracture numérique non seulement comme un écart technologique, mais comme une barrière sociale qui peut limiter l'accès aux droits, aux opportunités et au développement personnel.",
+   "Nous travaillons avec une perspective de genre intersectionnelle, en tenant compte de la façon dont le genre, la classe, l'origine ou l'orientation sexuelle influencent l'accès aux opportunités numériques et professionnelles. Avec le soutien de la Fundación Ibercaja."
   ],
-  "secs": [],
+  "secs": [
+   {
+    "h": "Objectifs",
+    "items": [
+     "Autonomiser les personnes grâce à l'apprentissage numérique",
+     "Ouvrir des chemins vers l'autonomie, l'employabilité et la pleine participation sociale"
+    ]
+   },
+   {
+    "h": "Comment nous faisons",
+    "items": [
+     "Ateliers",
+     "Accompagnement personnalisé",
+     "Formation aux compétences TIC"
+    ]
+   }
+  ],
   "sup": [
    {
     "src": "assets/img/logos/ibercaja.webp",
@@ -280,7 +369,8 @@ window.LOGOS_PROJECTES = [
   ],
   "intro": [
    "Programme lancé avec des bénévoles et des fonds privés (2019), puis financé par la Diputació de Tarragona de 2020 à 2024. Les services sociaux, les bureaux d'affaires sociales et le service public de l'emploi ont constaté que beaucoup de personnes en risque d'exclusion n'ont ni les moyens ni les connaissances pour faire les démarches en ligne qu'exige aujourd'hui l'administration.",
-   "En plus des démarches, nous informons chaque personne des prestations et des ressources les mieux adaptées et établissons avec elle un plan de travail vers l'emploi."
+   "En plus des démarches, nous informons chaque personne des prestations et des ressources les mieux adaptées et établissons avec elle un plan de travail vers l'emploi.",
+   "Aujourd'hui, le service fait partie du service d'inclusion de l'Institut municipal des services sociaux de la Mairie de Tarragone et il est inscrit au RESES sous le numéro S11009."
   ],
   "secs": [
    {
@@ -319,6 +409,10 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/joves-accio.webp",
     "alt": "Joves en Acció"
+   },
+   {
+    "src": "assets/img/logos/imsst.webp",
+    "alt": "Institut Municipal de Serveis Socials – Ajuntament de Tarragona"
    }
   ],
   "link": null

@@ -614,3 +614,6 @@ html, body { overflow-x: clip; }
 .detail__ph { border: 2px solid var(--gold); }
 .card__ph .ph-logo { width: 58%; max-width: 240px; height: auto; aspect-ratio: auto; object-fit: contain; }
 .detail__ph .ph-logo { width: 60%; max-width: 320px; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 0; }
+/* Projectes sense foto: targeta només amb text */
+.card--nophoto { border-top: 5px solid var(--gold); }
+.card--nophoto .card__body { padding-top: 26px; }

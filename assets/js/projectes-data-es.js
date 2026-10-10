@@ -5,24 +5,35 @@ window.LOGOS_PROJECTES = [
   "year": "2026",
   "title": "Construïm Futur",
   "sub": "Tu camino hacia el empleo",
-  "summary": "Orientación e inserción laboral con itinerarios personalizados para mejorar la empleabilidad y acceder a nuevas oportunidades profesionales.",
-  "img": "joves-estudi",
-  "alt": "Actividad de la Associació Logos – Construïm Futur",
+  "summary": "Orientación e inserción laboral para mejorar la empleabilidad y acceder a nuevas oportunidades profesionales, con un acompañamiento adaptado a cada realidad.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "Proyecto de orientación e inserción laboral para personas que quieren mejorar su empleabilidad o reincorporarse al mercado de trabajo, con un acompañamiento adaptado a cada situación.",
-   "Diseñamos itinerarios personalizados según los objetivos de cada persona: identificamos fortalezas y competencias a reforzar y organizamos el proceso de búsqueda de empleo. Entendemos el empleo como un proceso que también favorece la autonomía, la igualdad de oportunidades y la inclusión social. Con el apoyo de la Fundació \"la Caixa\" (Convocatoria de Proyectos Sociales)."
+   "Proyecto de orientación e inserción laboral dirigido a personas que quieren mejorar su empleabilidad y acceder a nuevas oportunidades profesionales, con un acompañamiento adaptado a cada realidad. Más oportunidades, más empleo, más futuro.",
+   "Itinerarios adaptados a cada persona: no todas las personas parten del mismo punto ni necesitan el mismo tipo de acompañamiento. Por eso, Construïm Futur trabaja mediante itinerarios personalizados, adaptados a las necesidades y a los objetivos profesionales de cada participante. Este enfoque permite orientar mejor los pasos a seguir, identificar competencias a reforzar y trabajar de forma más ordenada el proceso de búsqueda y mejora del empleo.",
+   "Competencias para el mercado laboral actual: acceder a nuevas oportunidades laborales también implica revisar y reforzar las competencias necesarias para moverse en el mercado de trabajo actual. Construïm Futur acompaña a cada participante a identificar fortalezas, necesidades de mejora y recursos que pueden facilitar su incorporación o retorno al mundo laboral.",
+   "La inserción laboral no se plantea solo como el acceso puntual a un empleo, sino como un proceso en el que la persona debe disponer de más herramientas para tomar decisiones, afrontar cambios y construir su propio recorrido profesional.",
+   "Construïm Futur se ha desarrollado con el apoyo de la Fundació \"la Caixa\", en el marco de su Convocatoria de Proyectos Sociales. Este apoyo permite impulsar actuaciones orientadas a mejorar la empleabilidad, reforzar la autonomía de las personas y favorecer procesos de inclusión social vinculados al territorio."
   ],
   "secs": [
    {
-    "h": "Qué encontrarás",
+    "h": "Orientación, formación y acompañamiento",
     "items": [
-     "Orientación laboral: objetivos y pasos concretos en la búsqueda de empleo",
-     "Formación práctica en las competencias que pide el mercado",
-     "Seguimiento individualizado",
-     "Refuerzo de competencias: fortalezas y aspectos a mejorar",
-     "Conexión con empresas y entornos profesionales del territorio",
-     "Acceso a servicios y recursos que favorecen la inserción"
+     "Orientación laboral: definición de objetivos y pasos concretos en el proceso de búsqueda o mejora de empleo",
+     "Formación práctica: aprendizajes orientados a reforzar competencias útiles para el mercado laboral actual",
+     "Acompañamiento individualizado: seguimiento adaptado a la situación, las necesidades y los objetivos de cada participante",
+     "Refuerzo de competencias: identificación de fortalezas y necesidades de mejora para avanzar profesionalmente",
+     "Conexión con empresas: aproximación a oportunidades y entornos profesionales vinculados al territorio",
+     "Recursos del territorio: acceso a servicios y recursos que pueden reforzar el proceso de inserción laboral"
+    ]
+   },
+   {
+    "h": "Autonomía, igualdad de oportunidades e inclusión",
+    "items": [
+     "Autonomía: reforzar la capacidad de cada persona para tomar decisiones y avanzar con más herramientas en su itinerario profesional",
+     "Igualdad de oportunidades: favorecer procesos de acceso al empleo que tengan en cuenta las necesidades y el punto de partida de cada participante",
+     "Inclusión social: conectar empleabilidad, acompañamiento y recursos para facilitar procesos de inserción más ajustados a cada realidad"
     ]
    }
   ],
@@ -41,8 +52,8 @@ window.LOGOS_PROJECTES = [
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
   "summary": "Espacio de orientación y asesoramiento para mujeres que quieren acceder a un empleo o mejorar su situación profesional.",
-  "img": "aula-dones",
-  "alt": "Actividad de la Associació Logos – JOB CLUB A3",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Acompañamos la búsqueda activa de empleo, la organización de las candidaturas y las estrategias de promoción profesional, con perspectiva de género para identificar obstáculos específicos y reforzar la autonomía en las decisiones laborales."
@@ -63,8 +74,8 @@ window.LOGOS_PROJECTES = [
   "title": "Autonomia Digital Activa",
   "sub": "Fundación Ibercaja",
   "summary": "Capacitación para que las personas utilicen los recursos digitales con más seguridad e independencia.",
-  "img": "aula-ordinadors",
-  "alt": "Actividad de la Associació Logos – Autonomia Digital Activa",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Proyecto de capacitación y autonomía digital que da continuidad a nuestra línea de trabajo contra la brecha digital."
@@ -84,17 +95,20 @@ window.LOGOS_PROJECTES = [
   "year": "2025 – 2026",
   "title": "Mirada Endavant",
   "sub": "Acompañamiento para avanzar con más autonomía",
-  "summary": "Acompañamiento personalizado a personas y familias en situación o riesgo de exclusión social, especialmente en el Barri del Port de Tarragona.",
-  "img": "recepcio",
-  "alt": "Actividad de la Associació Logos – Mirada Endavant",
+  "summary": "Acompañamiento personalizado a personas y familias en situación o riesgo de exclusión social, con especial incidencia en el Barri del Port de Tarragona.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "Mirada Endavant ofrece un acompañamiento adaptado a cada situación, combinando distintos ámbitos de intervención según las necesidades detectadas.",
-   "Trabajamos con una metodología participativa e interseccional para favorecer la autonomía, reforzar las capacidades y promover una participación más activa de las personas en su entorno y en la comunidad. Proyecto con el apoyo del Departament de Drets Socials i Inclusió."
+   "Proyecto de acompañamiento personalizado dirigido a personas y familias en situación o riesgo de exclusión social, con especial incidencia en el Barri del Port de Tarragona.",
+   "Mirada Endavant acompaña a personas que afrontan dificultades sociales, económicas y digitales, adaptando la intervención a cada situación y a las necesidades detectadas. El acompañamiento se adapta a cada situación y combina distintos ámbitos de intervención según las necesidades detectadas.",
+   "La intervención integra distintos tipos de apoyo para abordar situaciones complejas desde una mirada global, conectando necesidades personales, sociales, formativas y laborales. Un acompañamiento coordinado que permite trabajar distintas dimensiones de la situación de cada persona.",
+   "Participación y empoderamiento: Mirada Endavant trabaja desde una metodología participativa e interseccional, generando espacios de acompañamiento y empoderamiento. El objetivo es facilitar procesos que permitan a las personas ganar autonomía, reforzar capacidades y participar con más herramientas en su entorno y en la comunidad.",
+   "Sumamos miradas para construir oportunidades: acompañamiento, competencias, orientación y trabajo comunitario para reforzar la autonomía de personas y familias y facilitar procesos de inclusión más ajustados a cada realidad. El proyecto cuenta con el apoyo del Departament de Drets Socials i Inclusió."
   ],
   "secs": [
    {
-    "h": "A quién se dirige",
+    "h": "Una respuesta adaptada a realidades diversas",
     "items": [
      "Mujeres",
      "Personas migrantes",
@@ -103,7 +117,7 @@ window.LOGOS_PROJECTES = [
     ]
    },
    {
-    "h": "Cómo acompañamos",
+    "h": "Apoyo emocional, competencias y orientación",
     "items": [
      "Acompañamiento emocional",
      "Formación en competencias básicas",
@@ -128,43 +142,41 @@ window.LOGOS_PROJECTES = [
   "year": "2025 – 2026",
   "title": "Arrels / Raíces: Reconexión Familiar",
   "sub": "Iniciativa de la Associació Tamaide · Logos colabora",
-  "summary": "Apoyo integral a familias con niños y adolescentes en situación de vulnerabilidad, para reforzar la convivencia y la autonomía.",
-  "img": "joves",
-  "alt": "Actividad de la Associació Logos – Arrels / Raíces: Reconexión Familiar",
+  "summary": "Acompañamiento integral a familias con niños y adolescentes en situación de vulnerabilidad, con apoyo psicológico, educativo y social.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "Arrels combina apoyo psicológico, educativo y social con herramientas para fortalecer la vida familiar. Muchas dificultades familiares no pueden abordarse de forma aislada, por eso el proyecto tiene en cuenta las necesidades de todos los miembros de la familia.",
-   "Es una iniciativa de la Associació Tamaide en la que Logos Projectes Socials participa como entidad colaboradora. Está cofinanciada por la Unión Europea, en el marco de actuaciones de inclusión social, garantía infantil y lucha contra la pobreza."
+   "Acompañamiento integral para familias con niños y adolescentes en situación de vulnerabilidad, que combina apoyo psicológico, educativo y social para reforzar la convivencia y la autonomía.",
+   "Arrels parte de una idea sencilla: muchas dificultades familiares no pueden abordarse de forma aislada. Por eso el proyecto tiene en cuenta las necesidades de cada miembro de la familia, y el acompañamiento es flexible y se adapta a cada realidad familiar.",
+   "Los niños y adolescentes también tienen actividades y espacios propios que favorecen el aprendizaje, el bienestar y la convivencia. El apoyo familiar se complementa con recursos para mejorar la autonomía personal en ámbitos como las competencias digitales, la empleabilidad, la crianza positiva, la participación social y la cultura.",
+   "Trabajo en red: el proyecto es una iniciativa de la Associació Tamaide, desarrollada en colaboración con Logos Projectes Socials. Cuenta con financiación europea vinculada a la inclusión social, la garantía infantil y la lucha contra la pobreza. La colaboración entre entidades especializadas permite una respuesta multidisciplinar.",
+   "Una intervención centrada en la familia: el proyecto aborda la inclusión social desde el acompañamiento, la prevención y el trabajo conjunto, y busca crear un entorno donde familias, niños y adolescentes encuentren apoyo y recursos para reforzar sus vínculos y avanzar hacia una mayor autonomía."
   ],
   "secs": [
    {
-    "h": "Para las familias",
+    "h": "Un espacio de apoyo para toda la familia",
     "items": [
      "Atención psicológica",
      "Mediación familiar",
-     "Talleres de parentalidad positiva",
-     "Apoyo a la empleabilidad",
-     "Competencias digitales",
-     "Actividades de igualdad de género, cultura y participación"
-    ]
-   },
-   {
-    "h": "Para niños y jóvenes",
-    "items": [
-     "Refuerzo escolar",
+     "Talleres de crianza positiva",
+     "Orientación para la empleabilidad",
+     "Formación en competencias digitales",
+     "Actividades de igualdad, cultura y participación",
+     "Actividades para jóvenes y adolescentes",
      "Ludoteca",
-     "Casales de vacaciones",
-     "Actividades juveniles",
-     "Salidas en familia"
+     "Refuerzo académico",
+     "Casales durante las vacaciones",
+     "Salidas y actividades familiares para reforzar los vínculos"
     ]
    },
    {
-    "h": "A quién se dirige",
+    "h": "Familias atendidas",
     "items": [
      "Familias monoparentales o numerosas",
-     "Familias con dificultades socioeconómicas o en paro",
+     "Dificultades socioeconómicas o paro",
      "Familias migrantes",
-     "Familias afectadas por violencia de género",
+     "Situaciones de violencia de género",
      "Otras situaciones que afectan al desarrollo de niños y jóvenes"
     ]
    }
@@ -188,8 +200,8 @@ window.LOGOS_PROJECTES = [
   "title": "Temps, cures i equitat",
   "sub": "Departamento de Igualdad y Feminismos",
   "summary": "Sensibilización sobre la organización social de los cuidados y la corresponsabilidad.",
-  "img": "igualtat",
-  "alt": "Actividad de la Associació Logos – Temps, cures i equitat",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Reflexionamos sobre cómo se reparten las tareas de cuidado y cómo este reparto condiciona la participación social, la formación y el empleo, especialmente de las mujeres."
@@ -210,8 +222,8 @@ window.LOGOS_PROJECTES = [
   "title": "Cuidem en igualtat",
   "sub": "Departamento de Igualdad y Feminismos",
   "summary": "Fomento de prácticas de cuidado más igualitarias y superación de los roles de género.",
-  "img": "entrada-interior",
-  "alt": "Actividad de la Associació Logos – Cuidem en igualtat",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Acciones de sensibilización y corresponsabilidad para visibilizar las desigualdades en el reparto de las tareas domésticas y de cuidado, y ampliar las oportunidades personales y profesionales."
@@ -232,8 +244,8 @@ window.LOGOS_PROJECTES = [
   "title": "Yo Emprendo, Ruralízate e Impulsa't",
   "sub": "Programas en el marco de Red Araña",
   "summary": "Iniciativas de emprendimiento, oportunidades en el entorno rural e impulso de trayectorias profesionales.",
-  "img": "joves-detall",
-  "alt": "Actividad de la Associació Logos – Yo Emprendo, Ruralízate e Impulsa't",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Participamos en programas de la red Red Araña que amplían las opciones de empleo: el autoempleo como vía para construir un proyecto profesional, las oportunidades en contextos rurales y el impulso de trayectorias sociolaborales."
@@ -263,8 +275,8 @@ window.LOGOS_PROJECTES = [
   "title": "Futur en Xarxa",
   "sub": "Fundació \"la Caixa\"",
   "summary": "Itinerarios sociolaborales con diagnóstico individual, orientación, formación práctica y acceso a oportunidades del territorio.",
-  "img": "aula-digital",
-  "alt": "Actividad de la Associació Logos – Futur en Xarxa",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Los itinerarios trabajan de forma conjunta necesidades sociales, laborales y digitales para reforzar la autonomía y la búsqueda activa de empleo, con el objetivo de una mejora sostenible de la empleabilidad y, cuando es posible, la inserción laboral."
@@ -285,8 +297,8 @@ window.LOGOS_PROJECTES = [
   "title": "Oportunidad y Cambio",
   "sub": "Empoderar digitalmente es prevenir la exclusión",
   "summary": "Proyecto preventivo que utiliza las TIC para evitar situaciones de exclusión social y laboral.",
-  "img": "facana",
-  "alt": "Actividad de la Associació Logos – Oportunidad y Cambio",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Entendemos la brecha digital no solo como una diferencia tecnológica, sino como una barrera social que puede limitar el acceso a derechos, oportunidades y desarrollo personal.",
@@ -324,8 +336,8 @@ window.LOGOS_PROJECTES = [
   "title": "Programa MAIS",
   "sub": "Departamento de Empresa y Trabajo · Generalitat de Catalunya",
   "summary": "Itinerarios personalizados de inserción para personas perceptoras de la renta garantizada y en riesgo de exclusión.",
-  "img": "orientacio",
-  "alt": "Actividad de la Associació Logos – Programa MAIS",
+  "img": "",
+  "alt": "",
   "figs": [
    [
     "60",
@@ -369,8 +381,9 @@ window.LOGOS_PROJECTES = [
   ],
   "intro": [
    "Programa nacido con voluntariado y aportaciones privadas (2019) y financiado por la Diputació de Tarragona de 2020 a 2024. Los servicios sociales básicos, las oficinas de asuntos sociales y el SOC detectaron que muchas personas en riesgo de exclusión no tienen recursos ni conocimientos para hacer los trámites digitales que hoy exige la administración.",
+   "Técnicos de Logos y profesionales de los servicios sociales han detectado que muchas personas en riesgo de exclusión no tienen recursos materiales ni conocimientos para hacer los trámites digitales básicos. Los servicios sociales han derivado al programa unas 2.200 personas. El programa se enmarca en la Estrategia Catalana para el Empleo de Calidad 2021-2030 y en un informe de Mobile World Capital Barcelona, que distingue tres tipos de brecha: de acceso, de uso y de calidad del uso. Como dice la estrategia: «La imposibilidad de acceder a Internet dificulta el acceso al mercado de trabajo».",
    "Además de hacer los trámites, informamos sobre las prestaciones y los recursos que mejor se adaptan a cada persona y elaboramos el plan de trabajo de cada una hacia el mercado laboral.",
-   "Actualmente el servicio forma parte del servicio de inclusión del Institut Municipal de Serveis Socials del Ayuntamiento de Tarragona y está inscrito en el RESES con el número S11009."
+   "Servicio de apoyo digital a los servicios sociales básicos, inscrito en el Registre d'Entitats i Serveis Socials (RESES) con el n.º S11009. En sus inicios con voluntariado, y con la colaboración del Institut Municipal de Serveis Socials del Ayuntamiento de Tarragona, dentro del servicio de inclusión, realizamos el programa Logos Social Up Digital, en el que ayudamos a toda la ciudadanía a relacionarse digitalmente con las administraciones y a hacer cualquier gestión digital, y ofrecemos información sobre las prestaciones y los recursos que mejor se adaptan a cada persona. El programa cuenta con el apoyo del Ayuntamiento de Tarragona, Repsol y el Port de Tarragona, y la colaboración de Joves en Acció."
   ],
   "secs": [
    {
@@ -390,6 +403,20 @@ window.LOGOS_PROJECTES = [
      "De acceso: poder o no acceder a la tecnología",
      "De uso: saber o no utilizarla",
      "De calidad de uso: aprovechar bien las herramientas de la red"
+    ]
+   },
+   {
+    "h": "Inserción laboral",
+    "items": [
+     "Elaboración de un plan de trabajo para cada persona usuaria",
+     "Trabajo de la motivación para encontrar empleo, el conocimiento del mercado laboral, los canales y las herramientas de búsqueda y, finalmente, la inserción"
+    ]
+   },
+   {
+    "h": "Colaboración",
+    "items": [
+     "El servicio está a disposición de los responsables de oficinas de atención al público de la comarca, que pueden derivar personas",
+     "La difusión se hace por redes sociales y prensa"
     ]
    }
   ],

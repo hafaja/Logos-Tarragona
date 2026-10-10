@@ -5,24 +5,35 @@ window.LOGOS_PROJECTES = [
   "year": "2026",
   "title": "Construïm Futur",
   "sub": "Your path to employment",
-  "summary": "Career guidance and job placement through personalised pathways to improve employability and reach new opportunities.",
-  "img": "joves-estudi",
-  "alt": "Associació Logos activity – Construïm Futur",
+  "summary": "Career guidance and job placement to improve employability and reach new professional opportunities, with support adapted to each situation.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "A career guidance and job placement project for people who want to improve their employability or return to work, with support tailored to each situation.",
-   "We design personalised pathways around each person's goals: we identify strengths and skills to build on and organise the job search. We see employment as a process that also fosters autonomy, equal opportunities and social inclusion. Supported by Fundació \"la Caixa\" (Social Projects Call)."
+   "A career guidance and job placement project for people who want to improve their employability and reach new professional opportunities, with support adapted to each situation. More opportunities, more jobs, more future.",
+   "Pathways adapted to each person: not everyone starts from the same point or needs the same kind of support. That is why Construïm Futur works with personalised pathways, tailored to each participant's needs and career goals. This makes it easier to plan the next steps, identify skills to strengthen and organise the job search and career progression.",
+   "Skills for today's job market: reaching new job opportunities also means reviewing and strengthening the skills needed in today's labour market. Construïm Futur helps each participant identify strengths, areas for improvement and resources that can support their entry or return to work.",
+   "Job placement is not seen just as getting a single job, but as a process in which people gain more tools to make decisions, face change and build their own career path.",
+   "Construïm Futur has been developed with the support of Fundació \"la Caixa\" through its Social Projects Call. This support makes it possible to carry out actions that improve employability, strengthen people's autonomy and foster social inclusion in the local area."
   ],
   "secs": [
    {
-    "h": "What you will find",
+    "h": "Guidance, training and support",
     "items": [
-     "Career guidance: goals and concrete steps in your job search",
-     "Hands-on training in the skills employers need",
-     "Individual follow-up",
-     "Skills building: strengths and areas to improve",
-     "Links with local companies and workplaces",
-     "Access to services and resources that support job placement"
+     "Career guidance: setting goals and concrete steps in the job search or career progression",
+     "Hands-on training: learning focused on skills useful in today's job market",
+     "Individual support: follow-up adapted to each participant's situation, needs and goals",
+     "Skills building: identifying strengths and areas to improve in order to progress",
+     "Links with companies: getting closer to local opportunities and workplaces",
+     "Local resources: access to services and resources that can support job placement"
+    ]
+   },
+   {
+    "h": "Autonomy, equal opportunities and inclusion",
+    "items": [
+     "Autonomy: strengthening each person's ability to make decisions and progress with more tools on their career path",
+     "Equal opportunities: fostering access to employment that takes into account each participant's needs and starting point",
+     "Social inclusion: connecting employability, support and resources so that job placement fits each reality"
     ]
    }
   ],
@@ -41,8 +52,8 @@ window.LOGOS_PROJECTES = [
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
   "summary": "Guidance and advice for women who want to find a job or improve their professional situation.",
-  "img": "aula-dones",
-  "alt": "Associació Logos activity – JOB CLUB A3",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "We support active job searching, organising applications and career-progression strategies, with a gender perspective to identify specific obstacles and strengthen women's autonomy in work decisions."
@@ -63,8 +74,8 @@ window.LOGOS_PROJECTES = [
   "title": "Autonomia Digital Activa",
   "sub": "Fundación Ibercaja",
   "summary": "Training so that people can use digital resources more safely and independently.",
-  "img": "aula-ordinadors",
-  "alt": "Associació Logos activity – Autonomia Digital Activa",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "A digital skills and autonomy project that continues our work against the digital divide."
@@ -84,17 +95,20 @@ window.LOGOS_PROJECTES = [
   "year": "2025 – 2026",
   "title": "Mirada Endavant",
   "sub": "Support to move forward with more autonomy",
-  "summary": "Personalised support for people and families in or at risk of social exclusion, especially in Tarragona's Barri del Port.",
-  "img": "recepcio",
-  "alt": "Associació Logos activity – Mirada Endavant",
+  "summary": "Personalised support for people and families in or at risk of social exclusion, with a particular focus on Tarragona's Barri del Port.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "Mirada Endavant offers support tailored to each situation, combining different areas of work depending on the needs identified.",
-   "We use a participatory and intersectional approach to foster autonomy, strengthen capacities and encourage people to play a more active role in their surroundings and community. Supported by the Catalan Department of Social Rights and Inclusion."
+   "A personalised support project for people and families in or at risk of social exclusion, with a particular focus on Tarragona's Barri del Port.",
+   "Mirada Endavant supports people facing social, economic and digital difficulties, adapting the work to each situation and to the needs identified, and combining different areas of intervention as required.",
+   "The work brings together different kinds of support to address complex situations from a holistic perspective, connecting personal, social, training and employment needs. Coordinated support makes it possible to work on the different dimensions of each person's situation.",
+   "Participation and empowerment: Mirada Endavant uses a participatory and intersectional approach, creating spaces for support and empowerment. The aim is to help people gain autonomy, strengthen their capacities and take part, with more tools, in their surroundings and community.",
+   "Bringing perspectives together to build opportunities: support, skills, guidance and community work to strengthen the autonomy of people and families and make inclusion processes fit each reality. The project is supported by the Catalan Department of Social Rights and Inclusion."
   ],
   "secs": [
    {
-    "h": "Who it is for",
+    "h": "A response adapted to diverse realities",
     "items": [
      "Women",
      "Migrants",
@@ -103,7 +117,7 @@ window.LOGOS_PROJECTES = [
     ]
    },
    {
-    "h": "How we support people",
+    "h": "Emotional support, skills and guidance",
     "items": [
      "Emotional support",
      "Basic skills training",
@@ -128,43 +142,41 @@ window.LOGOS_PROJECTES = [
   "year": "2025 – 2026",
   "title": "Arrels / Raíces: Family Reconnection",
   "sub": "An Associació Tamaide initiative · Logos collaborates",
-  "summary": "Comprehensive support for vulnerable families with children and teenagers, to strengthen family life and autonomy.",
-  "img": "joves",
-  "alt": "Associació Logos activity – Arrels / Raíces: Family Reconnection",
+  "summary": "Comprehensive support for vulnerable families with children and teenagers, combining psychological, educational and social support.",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
-   "Arrels combines psychological, educational and social support with tools to strengthen family life. Many family difficulties cannot be tackled in isolation, so the project considers the needs of every family member.",
-   "It is an initiative of Associació Tamaide in which Logos Projectes Socials takes part as a partner organisation. It is co-funded by the European Union under actions on social inclusion, the child guarantee and the fight against poverty."
+   "Comprehensive support for vulnerable families with children and teenagers, combining psychological, educational and social support to strengthen family life and autonomy.",
+   "Arrels starts from a simple idea: many family difficulties cannot be tackled in isolation. That is why the project considers the needs of every family member, and the support is flexible and adapted to each family.",
+   "Children and teenagers also have their own activities and spaces that foster learning, wellbeing and living together. Family support is complemented with resources to improve personal autonomy in areas such as digital skills, employability, positive parenting, social participation and culture.",
+   "Partnership work: the project is an initiative of Associació Tamaide, carried out in collaboration with Logos Projectes Socials. It has European funding linked to social inclusion, the child guarantee and the fight against poverty. Collaboration between specialised organisations makes a multidisciplinary response possible.",
+   "A family-centred approach: the project addresses social inclusion through support, prevention and joint work, aiming to create an environment where families, children and teenagers find support and resources to strengthen their bonds and move towards greater autonomy."
   ],
   "secs": [
    {
-    "h": "For families",
+    "h": "Support for the whole family",
     "items": [
      "Psychological care",
      "Family mediation",
      "Positive parenting workshops",
-     "Employability support",
-     "Digital skills",
-     "Gender equality, culture and participation activities"
-    ]
-   },
-   {
-    "h": "For children and young people",
-    "items": [
-     "Homework support",
+     "Employability guidance",
+     "Digital skills training",
+     "Equality, culture and participation activities",
+     "Activities for young people and teenagers",
      "Play centre",
+     "Homework support",
      "Holiday camps",
-     "Youth activities",
-     "Family outings"
+     "Family outings and activities to strengthen bonds"
     ]
    },
    {
-    "h": "Who it is for",
+    "h": "Families we support",
     "items": [
      "Single-parent or large families",
-     "Families facing financial hardship or unemployment",
+     "Financial hardship or unemployment",
      "Migrant families",
-     "Families affected by gender-based violence",
+     "Situations of gender-based violence",
      "Other situations affecting children's and young people's development"
     ]
    }
@@ -188,8 +200,8 @@ window.LOGOS_PROJECTES = [
   "title": "Temps, cures i equitat",
   "sub": "Department of Equality and Feminisms",
   "summary": "Awareness-raising on how care is organised in society and on shared responsibility.",
-  "img": "igualtat",
-  "alt": "Associació Logos activity – Temps, cures i equitat",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "We reflect on how care tasks are shared and how this affects social participation, training and employment, especially for women."
@@ -210,8 +222,8 @@ window.LOGOS_PROJECTES = [
   "title": "Cuidem en igualtat",
   "sub": "Department of Equality and Feminisms",
   "summary": "Promoting fairer care practices and moving beyond gender roles.",
-  "img": "entrada-interior",
-  "alt": "Associació Logos activity – Cuidem en igualtat",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "Awareness and shared-responsibility actions to make visible the inequalities in how housework and care are shared, and to broaden personal and professional opportunities."
@@ -232,8 +244,8 @@ window.LOGOS_PROJECTES = [
   "title": "Yo Emprendo, Ruralízate and Impulsa't",
   "sub": "Programmes within the Red Araña network",
   "summary": "Initiatives on entrepreneurship, opportunities in rural areas and boosting career paths.",
-  "img": "joves-detall",
-  "alt": "Associació Logos activity – Yo Emprendo, Ruralízate and Impulsa't",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "We take part in Red Araña programmes that widen employment options: self-employment as a way to build a professional project, opportunities in rural settings and support for career paths."
@@ -263,8 +275,8 @@ window.LOGOS_PROJECTES = [
   "title": "Futur en Xarxa",
   "sub": "Fundació \"la Caixa\"",
   "summary": "Employment pathways with individual assessment, guidance, hands-on training and access to local opportunities.",
-  "img": "aula-digital",
-  "alt": "Associació Logos activity – Futur en Xarxa",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "The pathways address social, employment and digital needs together to strengthen autonomy and active job seeking, aiming for a lasting improvement in employability and, where possible, a job."
@@ -285,8 +297,8 @@ window.LOGOS_PROJECTES = [
   "title": "Oportunidad y Cambio",
   "sub": "Digital empowerment prevents exclusion",
   "summary": "A preventive project that uses ICT to help people avoid social and labour exclusion.",
-  "img": "facana",
-  "alt": "Associació Logos activity – Oportunidad y Cambio",
+  "img": "",
+  "alt": "",
   "figs": [],
   "intro": [
    "We see the digital divide not just as a technology gap but as a social barrier that can limit access to rights, opportunities and personal development.",
@@ -324,8 +336,8 @@ window.LOGOS_PROJECTES = [
   "title": "MAIS Programme",
   "sub": "Department of Business and Labour · Government of Catalonia",
   "summary": "Personalised employment pathways for people receiving the guaranteed income and at risk of exclusion.",
-  "img": "orientacio",
-  "alt": "Associació Logos activity – MAIS Programme",
+  "img": "",
+  "alt": "",
   "figs": [
    [
     "60",
@@ -369,8 +381,9 @@ window.LOGOS_PROJECTES = [
   ],
   "intro": [
    "A programme that began with volunteers and private funding (2019) and was funded by the Diputació de Tarragona from 2020 to 2024. Social services, social affairs offices and the Catalan employment service found that many people at risk of exclusion lack the means or knowledge to complete the online procedures the administration now requires.",
+   "Logos staff and social services professionals found that many people at risk of exclusion lack the equipment and knowledge to complete basic online procedures. Social services have referred around 2,200 people to the programme. It is framed within the Catalan Strategy for Quality Employment 2021-2030 and a report by Mobile World Capital Barcelona, which distinguishes three kinds of divide: access, use and quality of use. As the strategy puts it: “Being unable to access the Internet makes it harder to access the job market.”",
    "Besides doing the paperwork, we inform people about the benefits and resources that best suit them and draw up an individual work plan towards employment.",
-   "Today the service is part of the inclusion service of Tarragona City Council's Municipal Institute of Social Services and is registered in RESES under number S11009."
+   "Digital support service for basic social services, registered in the Catalan Register of Social Service Entities and Services (RESES) under no. S11009. Starting out with volunteers, and in collaboration with the inclusion service of Tarragona City Council's Municipal Institute of Social Services, we run the Logos Social Up Digital programme, helping all residents deal with public administrations online and complete any digital procedure, and providing information on the benefits and resources best suited to each person. The programme is supported by Tarragona City Council, Repsol and the Port of Tarragona, in collaboration with Joves en Acció."
   ],
   "secs": [
    {
@@ -390,6 +403,20 @@ window.LOGOS_PROJECTES = [
      "Access: being able to use technology or not",
      "Use: knowing how to use it or not",
      "Quality of use: making good use of online tools"
+    ]
+   },
+   {
+    "h": "Getting into work",
+    "items": [
+     "A work plan for each participant",
+     "Working on motivation to find a job, knowledge of the job market, job-search channels and tools and, finally, getting a job"
+    ]
+   },
+   {
+    "h": "Collaboration",
+    "items": [
+     "The service is available to managers of public service offices in the area, who can refer people to it",
+     "It is promoted through social media and the press"
     ]
    }
   ],

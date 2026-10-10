@@ -16,7 +16,7 @@
       filters = list.querySelector(".filters"), detail = document.getElementById("fitxa");
   var filter = AMBITS[0];
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-  var BASKET = '<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11h16l-1.5 9h-13L4 11zM8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></svg>';
+  var BASKET = '<img class="ph-logo" src="' + BASE + 'assets/img/logo-logos.png" alt="Logos – Associació Logos Projectes Socials" loading="lazy">';
   function pic(p, sizes) {
     if (!p.img) return '<div class="card__ph">' + BASKET + "</div>";
     return '<img src="' + BASE + 'assets/img/fotos/' + p.img + '-1600.webp" srcset="' + BASE + 'assets/img/fotos/' + p.img + '-800.webp 800w, ' + BASE + 'assets/img/fotos/' + p.img + '-1600.webp 1600w" sizes="' + sizes + '" alt="' + esc(p.alt) + '" loading="lazy">';
@@ -49,7 +49,7 @@
       '<div class="detail"><article><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +
       '<h2 id="fitxa-titol" tabindex="-1">' + esc(p.title) + '</h2><p class="detail__sub">' + esc(p.sub) + "</p>" +
       p.intro.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + figs + secs + link + "</article>" +
-      "<aside>" + photo + sup + '<div class="cta-box"><strong>' + T.join + '</strong><a class="btn btn--dark" href="https://logos-acompana-digitalmente.netlify.app">' + T.acc + '</a><a class="btn btn--line" href="' + PFX + 'contacte.html">' + T.contact + '</a><a class="cta-box__job" href="' + PFX + 'contacte.html?motiu=feina#formulari">' + T.work + ' →</a></div></aside></div>';
+      "<aside>" + photo + sup + '<div class="cta-box"><strong>' + T.join + '</strong><a class="btn btn--dark" href="https://logos-acompana-digitalmente.netlify.app">' + T.acc + '</a><a class="btn btn--line" href="' + PFX + 'contacte.html">' + T.contact + '</a></div></aside></div>';
   }
   function route() {
     var id = location.hash.replace("#", ""), p = P.filter(function (x) { return x.id === id; })[0];

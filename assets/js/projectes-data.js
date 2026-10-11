@@ -406,43 +406,42 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Programa nascut amb voluntariat i aportacions privades (2019) i finançat per la Diputació de Tarragona del 2020 al 2024. Els serveis socials bàsics, les oficines d'afers socials i el SOC van detectar que moltes persones en risc d'exclusió no tenen recursos ni coneixements per fer els tràmits digitals que avui exigeix l'administració.",
-   "Tècnics de Logos i professionals dels serveis socials han detectat que moltes persones en risc d'exclusió no tenen recursos materials ni coneixements per fer els tràmits digitals bàsics. Els serveis socials hi han derivat unes 2.200 persones. El programa s'emmarca en l'Estratègia Catalana per a l'Ocupació de Qualitat 2021-2030 i en un informe de Mobile World Capital Barcelona, que distingeix tres tipus de bretxa: d'accés, d'ús i de qualitat de l'ús. Com diu l'estratègia: «La impossibilitat per accedir a Internet dificulta l'accés al mercat de treball».",
-   "A més de fer els tràmits, informem sobre les prestacions i els recursos que més s'adapten a cada persona i elaborem el pla de treball de cadascú cap al mercat laboral.",
-   "Servei de suport digital als serveis socials bàsics, inscrit al Registre d'Entitats i Serveis Socials (RESES) amb el núm. S11009. En uns inicis amb voluntariat, i amb la col·laboració de l'Institut Municipal de Serveis Socials de l'Ajuntament de Tarragona, dins del servei d'inclusió, realitzem el programa Logos Social Up Digital, on ajudem tota la ciutadania a relacionar-se digitalment amb les administracions i a fer qualsevol gestió digital, i oferim informació sobre les prestacions i els recursos que més s'adapten a les persones. El programa compta amb el suport de l'Ajuntament de Tarragona, Repsol i el Port de Tarragona, i la col·laboració de Joves en Acció."
+   "Programa de suport a les persones afectades per la bretxa digital. Va començar el 2019 amb aportacions privades i després el va finançar la Diputació de Tarragona.",
+   "Els tècnics de Logos i els professionals dels serveis socials bàsics, de les oficines d'Afers Socials i Famílies i del SOC van constatar que moltes persones en risc d'exclusió no tenen els recursos ni els coneixements per fer els tràmits digitals que avui exigeix l'administració. Els serveis socials de Tarragona i altres serveis d'atenció social ens han derivat 2.200 persones.",
+   "Per què és necessari: l'Estratègia Catalana per a l'Ocupació de Qualitat 2021-2030 recull la reducció de la bretxa digital com un dels seus reptes (Repte 13) i afirma que «la impossibilitat per accedir a Internet dificulta l'accés al mercat de treball».",
+   "Servei de suport digital als serveis socials bàsics, inscrit al RESES amb el núm. S11009, en col·laboració amb el servei d'inclusió de l'Institut Municipal de Serveis Socials de l'Ajuntament de Tarragona. Compta amb el suport de l'Ajuntament de Tarragona, Repsol i el Port de Tarragona, i la col·laboració de Joves en Acció."
   ],
   "secs": [
    {
     "h": "Fem de pont amb l'administració",
     "items": [
      "Cita prèvia als departaments de la Generalitat",
-     "Formularis i documentació de l'administració",
+     "Formularis i documentació",
      "Correu electrònic i identitat digital (idCAT)",
-     "Prestacions com l'Ingrés Mínim Vital i la Renda Garantida",
+     "Prestacions que s'han de demanar per internet, com l'Ingrés Mínim Vital, necessari per tramitar la Renda Garantida de Ciutadania",
      "Capitalitzacions i gestions de la demanda d'ocupació",
-     "Lectura de notificacions e-NOTUM"
+     "Lectura de notificacions electròniques (e-NOTUM)"
     ]
    },
    {
-    "h": "Les tres bretxes que treballem",
+    "h": "Les tres bretxes digitals",
     "items": [
-     "D'accés: poder o no accedir a la tecnologia",
-     "D'ús: saber o no utilitzar-la",
-     "De qualitat d'ús: aprofitar bé les eines de la xarxa"
+     "D'accés: poder accedir o no a la tecnologia",
+     "D'ús: saber-la utilitzar o no",
+     "De qualitat de l'ús: la capacitat d'aprofitar bé les eines de la xarxa"
     ]
    },
    {
     "h": "Inserció laboral",
     "items": [
-     "Elaboració d'un pla de treball per a cada persona usuària",
-     "Treball de la motivació per trobar feina, el coneixement del mercat laboral, els canals i les eines de recerca i, finalment, la inserció"
+     "Elaborem un pla de treball per a cada persona cap a la seva incorporació al mercat laboral"
     ]
    },
    {
-    "h": "Col·laboració",
+    "h": "Un servei col·laboratiu",
     "items": [
-     "El servei està a disposició dels responsables d'oficines d'atenció al públic de la comarca, que hi poden derivar persones",
-     "La difusió es fa per xarxes socials i premsa"
+     "Qualsevol oficina d'atenció al públic de la comarca ens pot derivar persones",
+     "Donem a conèixer el servei directament, a les xarxes socials i a la premsa"
     ]
    }
   ],
@@ -520,8 +519,8 @@ window.LOGOS_PROJECTES = [
   "amb": "Inserció",
   "year": "Convocatòria 2023",
   "title": "Programa de suport a les dones en els àmbits rural i urbà",
-  "sub": "Itineraris d'orientació laboral",
-  "summary": "Itineraris individualitzats per millorar l'ocupabilitat de les dones i la seva participació en l'economia del territori.",
+  "sub": "Amb el suport del Servei d'Ocupació de Catalunya",
+  "summary": "Itineraris individualitzats d'orientació laboral per millorar la capacitació de les dones i la seva participació en l'economia del territori.",
   "img": "aula-dones",
   "alt": "Dones en una sessió de competències digitals a Logos",
   "figs": [
@@ -539,19 +538,17 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Amb el suport del Servei d'Ocupació de Catalunya, el programa ofereix atenció i orientació laboral individualitzada, formació i assessorament en els àmbits digital, tecnològic, emprenedor i d'economia social: productes de proximitat, ús forestal i agrícola, comerç en línia i suport a la dependència.",
-   "Totes les participants han millorat les seves competències digitals."
+   "El programa ofereix itineraris individualitzats d'atenció i orientació laboral per millorar la capacitació de les dones dels àmbits rural i urbà i augmentar la seva participació en l'activitat econòmica del territori.",
+   "Totes les participants han millorat les seves competències digitals, i 8 ho han acreditat amb el certificat ACTIC."
   ],
   "secs": [
    {
-    "h": "On hem actuat",
+    "h": "Formació i assessorament",
     "items": [
-     "Tarragona",
-     "Els Pallaresos",
-     "Perafort",
-     "Castellvell",
-     "El Morell",
-     "La Pobla de Montornès"
+     "Competències digitals i tecnològiques",
+     "Emprenedoria i economia social",
+     "Productes locals i economia verda, ús forestal i agrícola",
+     "Comerç en línia i atenció a la dependència"
     ]
    }
   ],
@@ -695,7 +692,7 @@ window.LOGOS_PROJECTES = [
   "year": "Actiu",
   "title": "Català per a Tots",
   "sub": "Integrant veus, teixint futurs",
-  "summary": "Cursos, tallers culturals i sessions de cuina en català per afavorir la inclusió de les persones migrades.",
+  "summary": "Cursos, tallers culturals i sessions de cuina en català per afavorir la inclusió social i cultural de les persones migrades.",
   "img": "aula-catala",
   "alt": "Classe de català amb frases projectades a la pantalla",
   "figs": [
@@ -705,16 +702,26 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Promovem l'ús i l'aprenentatge del català entre les persones migrades combinant cursos de llengua, activitats culturals, espais de trobada interculturals i cuina catalana, per crear ponts de diàleg i comprensió mútua."
+   "Projecte per promoure l'aprenentatge i l'ús del català entre les persones migrades. Combina cursos de llengua, activitats culturals, espais de trobada intercultural i sessions de cuina en català.",
+   "L'objectiu és millorar les competències lingüístiques i, alhora, afavorir la inclusió social i cultural, crear ponts de diàleg i posar en valor la cultura catalana."
   ],
   "secs": [
    {
+    "h": "Objectius",
+    "items": [
+     "Millorar les competències lingüístiques perquè les persones participants guanyin confiança i puguin participar plenament en la societat catalana",
+     "Apropar la cultura catalana (història, tradicions i gastronomia) a través d'activitats pràctiques",
+     "Formar educadors i professionals de la promoció lingüística en metodologies innovadores i eines digitals",
+     "Ampliar la visibilitat del català a les xarxes socials amb contingut creat al projecte"
+    ]
+   },
+   {
     "h": "Activitats",
     "items": [
-     "Cursos de català per a persones nouvingudes",
-     "Tallers culturals i sessions de cuina catalana",
-     "Tallers d'andragogia per a professionals de la difusió del català",
-     "Difusió i creació de contingut a les xarxes socials"
+     "Cursos de català: cursos de 10 setmanes per adquirir les eines bàsiques de la llengua",
+     "Tallers culturals i de cuina catalana: dues sessions per practicar el català en situacions quotidianes",
+     "Tallers per a professionals de l'educació d'adults: estratègies per ensenyar català, amb especial atenció a la difusió digital",
+     "Difusió a les xarxes socials: publicació del contingut dels tallers i cursos per arribar a més públic"
     ]
    }
   ],
@@ -780,23 +787,20 @@ window.LOGOS_PROJECTES = [
   "year": "Actiu",
   "title": "Empreses d'inserció",
   "sub": "Intress Creix i Aptos",
-  "summary": "Creem llocs de treball per a persones en risc d'exclusió a través d'empreses d'inserció.",
+  "summary": "Creem llocs de treball per a persones en situació o risc d'exclusió social a través d'empreses d'inserció.",
   "img": "facana-nova",
   "alt": "Entrada de la seu de Logos a Tarragona",
   "figs": [],
   "intro": [
-   "Logos ha creat, amb la Fundació Intress, l'empresa d'inserció Intress Creix, i ha col·laborat en la creació d'Iniciativa Aptos Empresa d'Inserció. Volem donar feina a col·lectius que sovint passen desapercebuts a les nostres comarques."
+   "Una empresa d'inserció desenvolupa una activitat econòmica (producció de béns o prestació de serveis) amb una finalitat principal: la integració sociolaboral de persones en situació o greu risc d'exclusió social.",
+   "Al nostre territori, molts recursos s'adrecen, amb raó, a persones amb discapacitat. En canvi, altres col·lectius en risc d'exclusió sovint queden sense prou oportunitats laborals. Per això volem generar llocs de treball adreçats a aquestes persones."
   ],
   "secs": [
    {
-    "h": "Per què ser socialment responsable",
+    "h": "Empreses que hem impulsat",
     "items": [
-     "Aporta valor i reputació al territori",
-     "Millora la imatge i fidelitza clients",
-     "Redueix el risc de conflictes socials",
-     "Suma innovació i creativitat",
-     "Crea ocupació estable i de qualitat",
-     "Afavoreix el consum responsable"
+     "Intress Creix Empresa d'Inserció Laboral, S.L.: creada per Logos juntament amb la Fundació Intress",
+     "Aptos Empresa d'Inserció, S.L.: Logos ha col·laborat en la seva creació"
     ]
    }
   ],
@@ -810,6 +814,9 @@ window.LOGOS_PROJECTES = [
     "alt": "Aptos Inserció i Servei"
    }
   ],
-  "link": null
+  "link": [
+   "Per què ser socialment responsable →",
+   "que-fem.html#rsc"
+  ]
  }
 ];

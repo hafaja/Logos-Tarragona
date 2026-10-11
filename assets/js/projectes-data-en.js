@@ -392,7 +392,7 @@ window.LOGOS_PROJECTES = [
   "year": "2019 – 2024",
   "title": "Logos Social Up Digital",
   "sub": "Bridging the digital divide",
-  "summary": "We help people deal with public administrations online and complete any procedure on the internet.",
+  "summary": "We help people deal with public administrations online and complete any digital procedure.",
   "img": "navegadors",
   "alt": "Digital skills workshop in the Logos computer room",
   "figs": [
@@ -406,43 +406,42 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "A programme that began with volunteers and private funding (2019) and was funded by the Diputació de Tarragona from 2020 to 2024. Social services, social affairs offices and the Catalan employment service found that many people at risk of exclusion lack the means or knowledge to complete the online procedures the administration now requires.",
-   "Logos staff and social services professionals found that many people at risk of exclusion lack the equipment and knowledge to complete basic online procedures. Social services have referred around 2,200 people to the programme. It is framed within the Catalan Strategy for Quality Employment 2021-2030 and a report by Mobile World Capital Barcelona, which distinguishes three kinds of divide: access, use and quality of use. As the strategy puts it: “Being unable to access the Internet makes it harder to access the job market.”",
-   "Besides doing the paperwork, we inform people about the benefits and resources that best suit them and draw up an individual work plan towards employment.",
-   "Digital support service for basic social services, registered in the Catalan Register of Social Service Entities and Services (RESES) under no. S11009. Starting out with volunteers, and in collaboration with the inclusion service of Tarragona City Council's Municipal Institute of Social Services, we run the Logos Social Up Digital programme, helping all residents deal with public administrations online and complete any digital procedure, and providing information on the benefits and resources best suited to each person. The programme is supported by Tarragona City Council, Repsol and the Port of Tarragona, in collaboration with Joves en Acció."
+   "A programme supporting people affected by the digital divide. It began in 2019 with private funding and was later funded by the Diputació de Tarragona.",
+   "Logos staff and professionals from basic social services, social affairs and family offices and the Catalan Employment Service (SOC) found that many people at risk of exclusion lack the resources and knowledge to complete the online procedures that public administrations now require. Tarragona's social services and other social care services have referred 2,200 people to us.",
+   "Why it matters: the Catalan Strategy for Quality Employment 2021-2030 includes reducing the digital divide as one of its challenges (Challenge 13) and states that “being unable to access the Internet makes it harder to access the job market”.",
+   "A digital support service for basic social services, registered in RESES under no. S11009, in collaboration with the inclusion service of Tarragona City Council's Municipal Institute of Social Services. Supported by Tarragona City Council, Repsol and the Port of Tarragona, in collaboration with Joves en Acció."
   ],
   "secs": [
    {
-    "h": "We act as a bridge with the administration",
+    "h": "Bridging the gap with public administrations",
     "items": [
-     "Appointments with Catalan Government departments",
-     "Forms and documents for the administration",
-     "Email and digital identity (idCAT)",
-     "Benefits such as the Minimum Living Income and Guaranteed Income",
-     "Lump-sum payments and job-seeker procedures",
-     "Reading e-NOTUM notifications"
+     "Appointments with Government of Catalonia departments",
+     "Forms and paperwork",
+     "Email account and digital ID (idCAT)",
+     "Benefits that must be applied for online, such as the Minimum Living Income, required to apply for the Guaranteed Citizen Income",
+     "Lump-sum unemployment payments and job-seeker procedures",
+     "Reading electronic notifications (e-NOTUM)"
     ]
    },
    {
-    "h": "The three divides we address",
+    "h": "The three digital divides",
     "items": [
-     "Access: being able to use technology or not",
-     "Use: knowing how to use it or not",
-     "Quality of use: making good use of online tools"
+     "Access: whether or not people can access technology",
+     "Use: whether or not they know how to use it",
+     "Quality of use: the ability to make good use of online tools"
     ]
    },
    {
     "h": "Getting into work",
     "items": [
-     "A work plan for each participant",
-     "Working on motivation to find a job, knowledge of the job market, job-search channels and tools and, finally, getting a job"
+     "We draw up a work plan for each person towards entering the job market"
     ]
    },
    {
-    "h": "Collaboration",
+    "h": "A collaborative service",
     "items": [
-     "The service is available to managers of public service offices in the area, who can refer people to it",
-     "It is promoted through social media and the press"
+     "Any public service office in the area can refer people to us",
+     "We promote the service directly, on social media and in the press"
     ]
    }
   ],
@@ -520,8 +519,8 @@ window.LOGOS_PROJECTES = [
   "amb": "Employment",
   "year": "2023 call",
   "title": "Support programme for women in rural and urban areas",
-  "sub": "Career guidance pathways",
-  "summary": "Personalised pathways to improve women's employability and their participation in the local economy.",
+  "sub": "Supported by the Catalan Employment Service (SOC)",
+  "summary": "Individual career guidance pathways to build women's skills and increase their participation in the local economy.",
   "img": "aula-dones",
   "alt": "Women in a digital skills session at Logos",
   "figs": [
@@ -539,19 +538,17 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "With the support of the Catalan Public Employment Service, the programme offers personalised career guidance, training and advice in digital, technology, entrepreneurship and social economy fields: local products, forestry and agriculture, online commerce and care for dependent people.",
-   "All participants improved their digital skills."
+   "The programme offers individual support and career guidance pathways to build the skills of women in rural and urban areas and increase their participation in the local economy.",
+   "All participants improved their digital skills, and 8 had this certified with the ACTIC certificate."
   ],
   "secs": [
    {
-    "h": "Where we worked",
+    "h": "Training and advice",
     "items": [
-     "Tarragona",
-     "Els Pallaresos",
-     "Perafort",
-     "Castellvell",
-     "El Morell",
-     "La Pobla de Montornès"
+     "Digital and technology skills",
+     "Entrepreneurship and social economy",
+     "Local products and green economy, forestry and agriculture",
+     "Online commerce and care for dependent people"
     ]
    }
   ],
@@ -695,7 +692,7 @@ window.LOGOS_PROJECTES = [
   "year": "Ongoing",
   "title": "Català per a Tots",
   "sub": "Weaving voices, building futures",
-  "summary": "Courses, cultural workshops and cooking sessions in Catalan to support the inclusion of migrants.",
+  "summary": "Catalan courses, cultural workshops and cooking sessions to foster the social and cultural inclusion of migrants.",
   "img": "aula-catala",
   "alt": "Catalan class with sentences projected on the screen",
   "figs": [
@@ -705,16 +702,26 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "We promote the use and learning of Catalan among migrants through language courses, cultural activities, intercultural meeting spaces and Catalan cooking, building bridges of dialogue and mutual understanding."
+   "A project to promote learning and using Catalan among migrants. It combines language courses, cultural activities, intercultural meeting spaces and cooking sessions in Catalan.",
+   "The aim is to improve language skills while fostering social and cultural inclusion, building bridges of dialogue and celebrating Catalan culture."
   ],
   "secs": [
    {
+    "h": "Goals",
+    "items": [
+     "Improve language skills so participants gain confidence and can take a full part in Catalan society",
+     "Bring Catalan culture (history, traditions and food) closer through hands-on activities",
+     "Train educators and language-promotion professionals in innovative methods and digital tools",
+     "Raise the visibility of Catalan on social media with content created in the project"
+    ]
+   },
+   {
     "h": "Activities",
     "items": [
-     "Catalan courses for newcomers",
-     "Cultural workshops and Catalan cooking sessions",
-     "Adult-education workshops for Catalan-language trainers",
-     "Spreading the project and creating content on social media"
+     "Catalan courses: 10-week courses to acquire the basic tools of the language",
+     "Cultural and Catalan cooking workshops: two sessions to practise Catalan in everyday situations",
+     "Workshops for adult-education professionals: strategies for teaching Catalan, with a focus on digital outreach",
+     "Social media outreach: sharing content from the workshops and courses to reach a wider audience"
     ]
    }
   ],
@@ -780,23 +787,20 @@ window.LOGOS_PROJECTES = [
   "year": "Ongoing",
   "title": "Social enterprises",
   "sub": "Intress Creix i Aptos",
-  "summary": "We create jobs for people at risk of exclusion through social enterprises.",
+  "summary": "We create jobs for people in or at risk of social exclusion through work integration social enterprises.",
   "img": "facana-nova",
   "alt": "Entrance to the Logos office in Tarragona",
   "figs": [],
   "intro": [
-   "Together with Fundació Intress, Logos created the social enterprise Intress Creix, and helped set up Iniciativa Aptos Empresa d'Inserció. We want to provide work for groups who are often overlooked in our region."
+   "A work integration social enterprise carries out an economic activity (producing goods or providing services) with one main purpose: the social and labour integration of people in or at serious risk of social exclusion.",
+   "In our area, many resources rightly focus on people with disabilities. Other groups at risk of exclusion, however, often lack enough job opportunities. That is why we want to create jobs for them."
   ],
   "secs": [
    {
-    "h": "Why be socially responsible",
+    "h": "Enterprises we have promoted",
     "items": [
-     "Adds value and reputation locally",
-     "Improves image and customer loyalty",
-     "Reduces the risk of social conflict",
-     "Brings innovation and creativity",
-     "Creates stable, quality jobs",
-     "Encourages responsible consumption"
+     "Intress Creix Empresa d'Inserció Laboral, S.L.: set up by Logos together with Fundació Intress",
+     "Aptos Empresa d'Inserció, S.L.: Logos collaborated in setting it up"
     ]
    }
   ],
@@ -810,6 +814,9 @@ window.LOGOS_PROJECTES = [
     "alt": "Aptos Inserció i Servei"
    }
   ],
-  "link": null
+  "link": [
+   "Why be socially responsible →",
+   "en-que-fem.html#rsc"
+  ]
  }
 ];

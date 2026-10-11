@@ -41,7 +41,7 @@
     var i = P.indexOf(p), prev = P[(i - 1 + P.length) % P.length], next = P[(i + 1) % P.length];
     var figs = p.figs.length ? '<div class="figs">' + p.figs.map(function (f) { return '<div class="fig"><b>' + esc(f[0]) + "</b><span>" + esc(f[1]) + "</span></div>"; }).join("") + "</div>" : "";
     var secs = p.secs.map(function (s) { return '<div class="box"><h3>' + esc(s.h) + '</h3><ul class="ticks">' + s.items.map(function (it) { return "<li>" + esc(it) + "</li>"; }).join("") + "</ul></div>"; }).join("");
-    var link = p.link ? '<p style="margin-top:18px"><a href="' + p.link[1] + '" target="_blank" rel="noopener" style="font-weight:700">' + esc(p.link[0]) + "</a></p>" : "";
+    var link = p.link ? '<p style="margin-top:18px"><a href="' + p.link[1] + '"' + (/^https?:/.test(p.link[1]) ? ' target="_blank" rel="noopener"' : '') + ' style="font-weight:700">' + esc(p.link[0]) + "</a></p>" : "";
     var sup = p.sup.length ? '<div class="support"><h3>' + T.sup + '</h3><div class="logo-grid" style="grid-template-columns:1fr 1fr">' + p.sup.map(function (s) { return '<div class="logo-tile"><img src="' + BASE + s.src + '" alt="' + esc(s.alt) + '" loading="lazy"></div>'; }).join("") + "</div></div>" : "";
     var photo = p.img ? pic(p, "(max-width: 900px) 100vw, 40vw") : "";
     detail.innerHTML =

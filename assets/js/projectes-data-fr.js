@@ -392,7 +392,7 @@ window.LOGOS_PROJECTES = [
   "year": "2019 – 2024",
   "title": "Logos Social Up Digital",
   "sub": "Réduire la fracture numérique",
-  "summary": "Nous aidons les citoyens à communiquer en ligne avec les administrations et à faire toutes leurs démarches sur internet.",
+  "summary": "Nous aidons les habitants à interagir en ligne avec les administrations et à effectuer toute démarche numérique.",
   "img": "navegadors",
   "alt": "Atelier de compétences numériques dans la salle informatique de Logos",
   "figs": [
@@ -406,43 +406,42 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Programme lancé avec des bénévoles et des fonds privés (2019), puis financé par la Diputació de Tarragona de 2020 à 2024. Les services sociaux, les bureaux d'affaires sociales et le service public de l'emploi ont constaté que beaucoup de personnes en risque d'exclusion n'ont ni les moyens ni les connaissances pour faire les démarches en ligne qu'exige aujourd'hui l'administration.",
-   "L'équipe de Logos et les professionnels des services sociaux ont constaté que beaucoup de personnes à risque d'exclusion n'ont ni l'équipement ni les connaissances pour faire les démarches numériques de base. Les services sociaux ont orienté environ 2 200 personnes vers le programme. Celui-ci s'inscrit dans la Stratégie catalane pour l'emploi de qualité 2021-2030 et dans un rapport de Mobile World Capital Barcelona, qui distingue trois fractures : d'accès, d'usage et de qualité d'usage. Comme le dit la stratégie : « L'impossibilité d'accéder à Internet complique l'accès au marché du travail. »",
-   "En plus des démarches, nous informons chaque personne des prestations et des ressources les mieux adaptées et établissons avec elle un plan de travail vers l'emploi.",
-   "Service d'appui numérique aux services sociaux de base, inscrit au Registre des entités et services sociaux (RESES) sous le n° S11009. Lancé avec des bénévoles et en collaboration avec le service d'inclusion de l'Institut municipal des services sociaux de la Mairie de Tarragone, le programme Logos Social Up Digital aide tous les habitants à interagir en ligne avec les administrations et à effectuer toute démarche numérique, et informe sur les aides et ressources les mieux adaptées à chacun. Le programme est soutenu par la Mairie de Tarragone, Repsol et le Port de Tarragone, en collaboration avec Joves en Acció."
+   "Programme d'appui aux personnes touchées par la fracture numérique. Il a démarré en 2019 grâce à des fonds privés, puis a été financé par la Diputació de Tarragona.",
+   "L'équipe de Logos et les professionnels des services sociaux de base, des bureaux des Affaires sociales et de la Famille et du SOC ont constaté que beaucoup de personnes à risque d'exclusion n'ont ni les moyens ni les connaissances pour effectuer les démarches numériques exigées aujourd'hui par l'administration. Les services sociaux de Tarragone et d'autres services d'action sociale nous ont orienté 2 200 personnes.",
+   "Pourquoi c'est nécessaire : la Stratégie catalane pour l'emploi de qualité 2021-2030 fait de la réduction de la fracture numérique l'un de ses défis (défi 13) et affirme que « l'impossibilité d'accéder à Internet complique l'accès au marché du travail ».",
+   "Service d'appui numérique aux services sociaux de base, inscrit au RESES sous le n° S11009, en collaboration avec le service d'inclusion de l'Institut municipal des services sociaux de la Mairie de Tarragone. Avec le soutien de la Mairie de Tarragone, de Repsol et du Port de Tarragone, et la collaboration de Joves en Acció."
   ],
   "secs": [
    {
-    "h": "Nous faisons le lien avec l'administration",
+    "h": "Un pont avec l'administration",
     "items": [
-     "Rendez-vous auprès des départements du gouvernement catalan",
-     "Formulaires et documents administratifs",
+     "Rendez-vous auprès des départements de la Generalitat",
+     "Formulaires et documents",
      "Adresse e-mail et identité numérique (idCAT)",
-     "Prestations comme le revenu minimum vital et le revenu garanti",
-     "Capitalisations et démarches de demandeur d'emploi",
-     "Lecture des notifications e-NOTUM"
+     "Aides à demander en ligne, comme le Revenu minimum vital, nécessaire pour demander le Revenu garanti de citoyenneté",
+     "Capitalisation des allocations et démarches de demandeur d'emploi",
+     "Lecture des notifications électroniques (e-NOTUM)"
     ]
    },
    {
-    "h": "Les trois fractures sur lesquelles nous agissons",
+    "h": "Les trois fractures numériques",
     "items": [
      "D'accès : pouvoir ou non accéder à la technologie",
      "D'usage : savoir ou non l'utiliser",
-     "De qualité d'usage : bien tirer parti des outils en ligne"
+     "De qualité d'usage : savoir bien tirer parti des outils en ligne"
     ]
    },
    {
     "h": "Insertion professionnelle",
     "items": [
-     "Élaboration d'un plan de travail pour chaque personne",
-     "Travail sur la motivation à trouver un emploi, la connaissance du marché du travail, les canaux et outils de recherche et, enfin, l'insertion"
+     "Nous élaborons un plan de travail pour chaque personne en vue de son entrée sur le marché du travail"
     ]
    },
    {
-    "h": "Collaboration",
+    "h": "Un service collaboratif",
     "items": [
-     "Le service est à la disposition des responsables des bureaux d'accueil du public de la région, qui peuvent y orienter des personnes",
-     "La diffusion se fait par les réseaux sociaux et la presse"
+     "Tout bureau d'accueil du public de la région peut nous orienter des personnes",
+     "Nous faisons connaître le service directement, sur les réseaux sociaux et dans la presse"
     ]
    }
   ],
@@ -520,8 +519,8 @@ window.LOGOS_PROJECTES = [
   "amb": "Insertion",
   "year": "Appel 2023",
   "title": "Programme de soutien aux femmes en milieu rural et urbain",
-  "sub": "Parcours d'orientation professionnelle",
-  "summary": "Parcours personnalisés pour améliorer l'employabilité des femmes et leur participation à l'économie locale.",
+  "sub": "Avec le soutien du Service public de l'emploi de Catalogne (SOC)",
+  "summary": "Parcours individualisés d'orientation professionnelle pour renforcer les compétences des femmes et leur participation à l'économie du territoire.",
   "img": "aula-dones",
   "alt": "Femmes lors d'une séance de compétences numériques à Logos",
   "figs": [
@@ -539,19 +538,17 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Avec le soutien du Service public de l'emploi de Catalogne, le programme propose une orientation professionnelle personnalisée, des formations et des conseils dans les domaines du numérique, de la technologie, de l'entrepreneuriat et de l'économie sociale : produits locaux, forêt et agriculture, commerce en ligne et aide aux personnes dépendantes.",
-   "Toutes les participantes ont amélioré leurs compétences numériques."
+   "Le programme propose des parcours individualisés d'accompagnement et d'orientation professionnelle pour renforcer les compétences des femmes en milieu rural et urbain et accroître leur participation à l'activité économique du territoire.",
+   "Toutes les participantes ont amélioré leurs compétences numériques, et 8 l'ont fait certifier avec le certificat ACTIC."
   ],
   "secs": [
    {
-    "h": "Où nous sommes intervenus",
+    "h": "Formation et conseil",
     "items": [
-     "Tarragona",
-     "Els Pallaresos",
-     "Perafort",
-     "Castellvell",
-     "El Morell",
-     "La Pobla de Montornès"
+     "Compétences numériques et technologiques",
+     "Entrepreneuriat et économie sociale",
+     "Produits locaux et économie verte, usages forestiers et agricoles",
+     "Commerce en ligne et aide aux personnes dépendantes"
     ]
    }
   ],
@@ -695,7 +692,7 @@ window.LOGOS_PROJECTES = [
   "year": "En cours",
   "title": "Català per a Tots",
   "sub": "Tisser les voix, construire l'avenir",
-  "summary": "Cours, ateliers culturels et séances de cuisine en catalan pour favoriser l'inclusion des personnes migrantes.",
+  "summary": "Cours, ateliers culturels et séances de cuisine en catalan pour favoriser l'inclusion sociale et culturelle des personnes migrantes.",
   "img": "aula-catala",
   "alt": "Cours de catalan avec des phrases projetées à l'écran",
   "figs": [
@@ -705,16 +702,26 @@ window.LOGOS_PROJECTES = [
    ]
   ],
   "intro": [
-   "Nous encourageons l'usage et l'apprentissage du catalan chez les personnes migrantes grâce à des cours de langue, des activités culturelles, des espaces de rencontre interculturels et la cuisine catalane, pour créer des ponts de dialogue et de compréhension mutuelle."
+   "Projet pour encourager l'apprentissage et l'usage du catalan chez les personnes migrantes. Il associe cours de langue, activités culturelles, espaces de rencontre interculturelle et séances de cuisine en catalan.",
+   "L'objectif est d'améliorer les compétences linguistiques tout en favorisant l'inclusion sociale et culturelle, en créant des ponts de dialogue et en valorisant la culture catalane."
   ],
   "secs": [
    {
+    "h": "Objectifs",
+    "items": [
+     "Améliorer les compétences linguistiques pour que les participants gagnent en confiance et participent pleinement à la société catalane",
+     "Faire découvrir la culture catalane (histoire, traditions et gastronomie) par des activités pratiques",
+     "Former les éducateurs et professionnels de la promotion linguistique aux méthodes innovantes et aux outils numériques",
+     "Donner plus de visibilité au catalan sur les réseaux sociaux avec des contenus créés dans le projet"
+    ]
+   },
+   {
     "h": "Activités",
     "items": [
-     "Cours de catalan pour les personnes nouvellement arrivées",
-     "Ateliers culturels et séances de cuisine catalane",
-     "Ateliers d'andragogie pour les formateurs en catalan",
-     "Diffusion et création de contenus sur les réseaux sociaux"
+     "Cours de catalan : cours de 10 semaines pour acquérir les bases de la langue",
+     "Ateliers culturels et de cuisine catalane : deux séances pour pratiquer le catalan dans des situations du quotidien",
+     "Ateliers pour les professionnels de l'éducation des adultes : stratégies pour enseigner le catalan, en particulier par le numérique",
+     "Diffusion sur les réseaux sociaux : publication des contenus des ateliers et des cours pour toucher un public plus large"
     ]
    }
   ],
@@ -780,23 +787,20 @@ window.LOGOS_PROJECTES = [
   "year": "En cours",
   "title": "Entreprises d'insertion",
   "sub": "Intress Creix i Aptos",
-  "summary": "Nous créons des emplois pour les personnes en risque d'exclusion grâce aux entreprises d'insertion.",
+  "summary": "Nous créons des emplois pour les personnes en situation ou à risque d'exclusion sociale grâce à des entreprises d'insertion.",
   "img": "facana-nova",
   "alt": "Entrée des locaux de Logos à Tarragone",
   "figs": [],
   "intro": [
-   "Avec la Fundació Intress, Logos a créé l'entreprise d'insertion Intress Creix, et a participé à la création d'Iniciativa Aptos Empresa d'Inserció. Nous voulons donner du travail à des publics souvent oubliés dans notre région."
+   "Une entreprise d'insertion exerce une activité économique (production de biens ou prestation de services) avec un objectif principal : l'insertion sociale et professionnelle de personnes en situation ou à fort risque d'exclusion sociale.",
+   "Sur notre territoire, de nombreuses ressources s'adressent, à juste titre, aux personnes en situation de handicap. D'autres publics à risque d'exclusion manquent pourtant souvent d'opportunités d'emploi. C'est pourquoi nous voulons créer des emplois pour eux."
   ],
   "secs": [
    {
-    "h": "Pourquoi être socialement responsable",
+    "h": "Entreprises que nous avons lancées",
     "items": [
-     "Apporte valeur et réputation au territoire",
-     "Améliore l'image et fidélise les clients",
-     "Réduit le risque de conflits sociaux",
-     "Apporte innovation et créativité",
-     "Crée des emplois stables et de qualité",
-     "Favorise la consommation responsable"
+     "Intress Creix Empresa d'Inserció Laboral, S.L. : créée par Logos avec la Fundació Intress",
+     "Aptos Empresa d'Inserció, S.L. : Logos a participé à sa création"
     ]
    }
   ],
@@ -810,6 +814,9 @@ window.LOGOS_PROJECTES = [
     "alt": "Aptos Inserció i Servei"
    }
   ],
-  "link": null
+  "link": [
+   "Pourquoi être socialement responsable →",
+   "fr-que-fem.html#rsc"
+  ]
  }
 ];

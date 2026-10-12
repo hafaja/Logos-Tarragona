@@ -617,3 +617,6 @@ html, body { overflow-x: clip; }
 /* Projectes sense foto: targeta només amb text */
 .card--nophoto { border-top: 5px solid var(--gold); }
 .card--nophoto .card__body { padding-top: 26px; }
+.detail--full { grid-template-columns: 1fr; max-width: 900px; }
+/* Franja superior sense telèfon ni correu */
+.topbar .wrap { justify-content: flex-end; }

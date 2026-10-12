@@ -46,10 +46,10 @@
     var photo = p.img ? pic(p, "(max-width: 900px) 100vw, 40vw") : "";
     detail.innerHTML =
       '<div class="detail__nav"><a class="btn btn--line btn--sm" href="#">' + T.all + '</a><div style="display:flex;gap:10px"><a class="btn btn--line btn--sm" href="#' + prev.id + '" aria-label="' + T.prevL + esc(prev.title) + '">' + T.prev + '</a><a class="btn btn--line btn--sm" href="#' + next.id + '" aria-label="' + T.nextL + esc(next.title) + '">' + T.next + '</a></div></div>' +
-      '<div class="detail"><article><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +
+      '<div class="detail' + (photo || sup ? '' : ' detail--full') + '"><article><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +
       '<h2 id="fitxa-titol" tabindex="-1">' + esc(p.title) + '</h2><p class="detail__sub">' + esc(p.sub) + "</p>" +
       p.intro.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + figs + secs + link + "</article>" +
-      "<aside>" + photo + sup + '<div class="cta-box"><strong>' + T.join + '</strong><a class="btn btn--dark" href="https://logos-acompana-digitalmente.netlify.app">' + T.acc + '</a><a class="btn btn--line" href="' + PFX + 'contacte.html">' + T.contact + '</a></div></aside></div>';
+      (photo || sup ? "<aside>" + photo + sup + "</aside>" : "") + '</div>';
   }
   function route() {
     var id = location.hash.replace("#", ""), p = P.filter(function (x) { return x.id === id; })[0];

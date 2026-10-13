@@ -628,3 +628,4 @@ html, body { overflow-x: clip; }
 [dir="rtl"] .net-card__go { direction: rtl; }
 .hours--public > div { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: start; }
 .hours--public > div span { text-align: start; }
+a.member__logo { text-decoration: none; border: 2px solid transparent; transition: border-color .2s; } a.member__logo:hover { border-color: var(--gold); }

@@ -333,3 +333,47 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   });
   setIcon(); start();
 })();
+
+/* Hero slideshow */
+(function () {
+  var box = document.querySelector(".hero__slides"); if (!box) return;
+  var s = box.querySelectorAll(".hero__slide"), d = box.querySelectorAll(".hero__dots span"), i = 0;
+  if (s.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  setInterval(function () {
+    if (document.hidden) return;
+    s[i].classList.remove("is-on"); d[i] && d[i].classList.remove("is-on");
+    i = (i + 1) % s.length;
+    s[i].loading = "eager"; s[i].classList.add("is-on"); d[i] && d[i].classList.add("is-on");
+  }, 5000);
+})();
+
+/* Galeria coverflow */
+(function () {
+  var g = document.getElementById("galeria"); if (!g) return;
+  var sl = g.querySelectorAll(".gal__slide"), dots = g.querySelectorAll(".gal__dots button"), n = sl.length, cur = 1, timer;
+  var rtl = document.documentElement.dir === "rtl";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function render() {
+    for (var k = 0; k < n; k++) {
+      var off = (k - cur + n) % n; if (off > n / 2) off -= n;
+      if (rtl) off = -off;
+      sl[k].className = "gal__slide" + (off === 0 ? " is-0" : off === 1 ? " is-1" : off === -1 ? " is-m1" : off === 2 ? " is-2" : off === -2 ? " is-m2" : "");
+      sl[k].setAttribute("aria-hidden", off === 0 ? "false" : "true");
+      sl[k].tabIndex = off === 0 ? 0 : -1;
+      dots[k] && dots[k].classList.toggle("is-on", k === cur);
+    }
+  }
+  function go(i) { cur = (i + n) % n; render(); }
+  function start() { if (reduce) return; stop(); timer = setInterval(function () { if (!document.hidden) go(cur + 1); }, 4500); }
+  function stop() { clearInterval(timer); }
+  g.querySelector(".gal__nav--prev").addEventListener("click", function () { go(cur - 1); start(); });
+  g.querySelector(".gal__nav--next").addEventListener("click", function () { go(cur + 1); start(); });
+  dots.forEach(function (d, k) { d.addEventListener("click", function () { go(k); start(); }); });
+  sl.forEach(function (s, k) { s.addEventListener("click", function (e) { if (k !== cur) { e.preventDefault(); go(k); start(); } }); });
+  var st = g.querySelector(".gal__stage"), x0 = null;
+  st.addEventListener("mouseenter", stop); st.addEventListener("mouseleave", start);
+  st.addEventListener("focusin", stop); st.addEventListener("focusout", start);
+  st.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+  st.addEventListener("touchend", function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(cur + ((dx < 0) !== rtl ? 1 : -1)); x0 = null; start(); });
+  render(); start();
+})();

@@ -6,8 +6,8 @@ window.LOGOS_PROJECTES = [
   "title": "Construïm Futur",
   "sub": "Votre chemin vers l'emploi",
   "summary": "Orientation et insertion professionnelle pour améliorer l'employabilité et accéder à de nouvelles opportunités, avec un accompagnement adapté à chaque réalité.",
-  "img": "",
-  "alt": "",
+  "img": "construim",
+  "alt": "Atelier « Travaillons notre CV » en salle de formation",
   "figs": [],
   "intro": [
    "Projet d'orientation et d'insertion professionnelle destiné aux personnes qui veulent améliorer leur employabilité et accéder à de nouvelles opportunités professionnelles, avec un accompagnement adapté à chaque réalité. Plus d'opportunités, plus d'emploi, plus d'avenir.",
@@ -52,8 +52,8 @@ window.LOGOS_PROJECTES = [
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
   "summary": "Espace d'orientation et de conseil pour les femmes qui veulent accéder à un emploi ou améliorer leur situation professionnelle.",
-  "img": "",
-  "alt": "",
+  "img": "jobclub",
+  "alt": "Séance de groupe pour préparer le CV",
   "figs": [],
   "intro": [
    "Nous accompagnons la recherche active d'emploi, l'organisation des candidatures et les stratégies d'évolution professionnelle, avec une perspective de genre pour identifier les obstacles spécifiques et renforcer l'autonomie dans les choix professionnels."
@@ -74,8 +74,8 @@ window.LOGOS_PROJECTES = [
   "title": "Autonomia Digital Activa",
   "sub": "Fundación Ibercaja",
   "summary": "Formation pour utiliser les ressources numériques avec plus d'assurance et d'autonomie.",
-  "img": "",
-  "alt": "",
+  "img": "autonomia-digital",
+  "alt": "Formation aux appels vidéo pour parler avec la famille",
   "figs": [],
   "intro": [
    "Projet de formation et d'autonomie numérique qui prolonge notre travail contre la fracture numérique."
@@ -96,8 +96,8 @@ window.LOGOS_PROJECTES = [
   "title": "Mirada Endavant",
   "sub": "Un accompagnement pour avancer avec plus d'autonomie",
   "summary": "Accompagnement personnalisé de personnes et de familles en situation ou à risque d'exclusion sociale, en particulier dans le Barri del Port de Tarragone.",
-  "img": "",
-  "alt": "",
+  "img": "mirada",
+  "alt": "Activité participative avec Kahoot en classe",
   "figs": [],
   "intro": [
    "Projet d'accompagnement personnalisé destiné aux personnes et aux familles en situation ou à risque d'exclusion sociale, en particulier dans le Barri del Port de Tarragone.",
@@ -143,8 +143,8 @@ window.LOGOS_PROJECTES = [
   "title": "Arrels / Raíces : reconnexion familiale",
   "sub": "Initiative de l'Associació Tamaide · Logos y collabore",
   "summary": "Accompagnement global des familles vulnérables avec enfants et adolescents, avec un soutien psychologique, éducatif et social.",
-  "img": "",
-  "alt": "",
+  "img": "arrels",
+  "alt": "Accompagnement individuel du projet Raíces",
   "figs": [],
   "intro": [
    "Accompagnement global des familles avec enfants et adolescents en situation de vulnérabilité, qui associe soutien psychologique, éducatif et social pour renforcer la vie familiale et l'autonomie.",
@@ -200,8 +200,8 @@ window.LOGOS_PROJECTES = [
   "title": "Temps, cures i equitat",
   "sub": "Département de l'Égalité et des Féminismes",
   "summary": "Sensibilisation à l'organisation sociale du soin et au partage des responsabilités.",
-  "img": "",
-  "alt": "",
+  "img": "entrada-interior",
+  "alt": "Entrée et espace d'accueil de Logos",
   "figs": [],
   "intro": [
    "Nous réfléchissons à la manière dont les tâches de soin sont réparties et à la façon dont cette répartition influence la participation sociale, la formation et l'emploi, en particulier des femmes."
@@ -222,8 +222,8 @@ window.LOGOS_PROJECTES = [
   "title": "Cuidem en igualtat",
   "sub": "Département de l'Égalité et des Féminismes",
   "summary": "Promotion de pratiques de soin plus égalitaires et dépassement des rôles de genre.",
-  "img": "",
-  "alt": "",
+  "img": "orientacio",
+  "alt": "Séance d'accompagnement dans l'espace d'orientation",
   "figs": [],
   "intro": [
    "Actions de sensibilisation et de coresponsabilité pour rendre visibles les inégalités dans le partage des tâches domestiques et de soin, et élargir les opportunités personnelles et professionnelles."
@@ -244,8 +244,8 @@ window.LOGOS_PROJECTES = [
   "title": "Yo Emprendo, Ruralízate et Impulsa't",
   "sub": "Programmes du réseau Red Araña",
   "summary": "Initiatives d'entrepreneuriat, d'opportunités en milieu rural et d'élan pour les parcours professionnels.",
-  "img": "",
-  "alt": "",
+  "img": "red-arana",
+  "alt": "Accueil au secrétariat avec la Red Araña",
   "figs": [],
   "intro": [
    "Nous participons à des programmes du réseau Red Araña qui élargissent les options d'emploi : l'auto-entrepreneuriat comme voie pour construire un projet professionnel, les opportunités en milieu rural et l'élan donné aux parcours socioprofessionnels."
@@ -275,8 +275,8 @@ window.LOGOS_PROJECTES = [
   "title": "Futur en Xarxa",
   "sub": "Fundació \"la Caixa\"",
   "summary": "Parcours socioprofessionnels avec diagnostic individuel, orientation, formation pratique et accès aux opportunités du territoire.",
-  "img": "",
-  "alt": "",
+  "img": "futur",
+  "alt": "Exercice pratique avec Canva en classe",
   "figs": [],
   "intro": [
    "Les parcours traitent ensemble les besoins sociaux, professionnels et numériques afin de renforcer l'autonomie et la recherche active d'emploi, avec pour objectif une amélioration durable de l'employabilité et, si possible, l'insertion professionnelle."
@@ -297,8 +297,8 @@ window.LOGOS_PROJECTES = [
   "title": "Oportunidad y Cambio",
   "sub": "Autonomiser par le numérique, c'est prévenir l'exclusion",
   "summary": "Projet préventif qui utilise les TIC pour éviter les situations d'exclusion sociale et professionnelle.",
-  "img": "",
-  "alt": "",
+  "img": "oportunidad",
+  "alt": "Pratique sur ordinateur en salle informatique",
   "figs": [],
   "intro": [
    "Nous voyons la fracture numérique non seulement comme un écart technologique, mais comme une barrière sociale qui peut limiter l'accès aux droits, aux opportunités et au développement personnel.",
@@ -336,8 +336,8 @@ window.LOGOS_PROJECTES = [
   "title": "Programme MAIS",
   "sub": "Département de l'Entreprise et du Travail · Generalitat de Catalunya",
   "summary": "Parcours d'insertion personnalisés pour les bénéficiaires du revenu garanti et les personnes à risque d'exclusion.",
-  "img": "",
-  "alt": "",
+  "img": "mais",
+  "alt": "Rédaction du CV en classe",
   "figs": [
    [
     "60",
@@ -367,8 +367,8 @@ window.LOGOS_PROJECTES = [
   "title": "Récupération alimentaire",
   "sub": "Avec le réseau XAMA",
   "summary": "Nous réduisons le gaspillage alimentaire et apportons des produits frais aux personnes en situation de vulnérabilité.",
-  "img": "",
-  "alt": "",
+  "img": "recepcio",
+  "alt": "Accueil de Logos, point d'attention aux personnes",
   "figs": [
    [
     "+400",

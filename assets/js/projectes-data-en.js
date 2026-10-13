@@ -6,8 +6,8 @@ window.LOGOS_PROJECTES = [
   "title": "Construïm Futur",
   "sub": "Your path to employment",
   "summary": "Career guidance and job placement to improve employability and reach new professional opportunities, with support adapted to each situation.",
-  "img": "",
-  "alt": "",
+  "img": "construim",
+  "alt": "“Let's work on our CV” workshop in the training room",
   "figs": [],
   "intro": [
    "A career guidance and job placement project for people who want to improve their employability and reach new professional opportunities, with support adapted to each situation. More opportunities, more jobs, more future.",
@@ -52,8 +52,8 @@ window.LOGOS_PROJECTES = [
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
   "summary": "Guidance and advice for women who want to find a job or improve their professional situation.",
-  "img": "",
-  "alt": "",
+  "img": "jobclub",
+  "alt": "Group session to prepare CVs",
   "figs": [],
   "intro": [
    "We support active job searching, organising applications and career-progression strategies, with a gender perspective to identify specific obstacles and strengthen women's autonomy in work decisions."
@@ -74,8 +74,8 @@ window.LOGOS_PROJECTES = [
   "title": "Autonomia Digital Activa",
   "sub": "Fundación Ibercaja",
   "summary": "Training so that people can use digital resources more safely and independently.",
-  "img": "",
-  "alt": "",
+  "img": "autonomia-digital",
+  "alt": "Video-call training to keep in touch with family",
   "figs": [],
   "intro": [
    "A digital skills and autonomy project that continues our work against the digital divide."
@@ -96,8 +96,8 @@ window.LOGOS_PROJECTES = [
   "title": "Mirada Endavant",
   "sub": "Support to move forward with more autonomy",
   "summary": "Personalised support for people and families in or at risk of social exclusion, with a particular focus on Tarragona's Barri del Port.",
-  "img": "",
-  "alt": "",
+  "img": "mirada",
+  "alt": "Interactive Kahoot activity in class",
   "figs": [],
   "intro": [
    "A personalised support project for people and families in or at risk of social exclusion, with a particular focus on Tarragona's Barri del Port.",
@@ -143,8 +143,8 @@ window.LOGOS_PROJECTES = [
   "title": "Arrels / Raíces: Family Reconnection",
   "sub": "An Associació Tamaide initiative · Logos collaborates",
   "summary": "Comprehensive support for vulnerable families with children and teenagers, combining psychological, educational and social support.",
-  "img": "",
-  "alt": "",
+  "img": "arrels",
+  "alt": "One-to-one support in the Raíces project",
   "figs": [],
   "intro": [
    "Comprehensive support for vulnerable families with children and teenagers, combining psychological, educational and social support to strengthen family life and autonomy.",
@@ -200,8 +200,8 @@ window.LOGOS_PROJECTES = [
   "title": "Temps, cures i equitat",
   "sub": "Department of Equality and Feminisms",
   "summary": "Awareness-raising on how care is organised in society and on shared responsibility.",
-  "img": "",
-  "alt": "",
+  "img": "entrada-interior",
+  "alt": "Entrance and welcome area at Logos",
   "figs": [],
   "intro": [
    "We reflect on how care tasks are shared and how this affects social participation, training and employment, especially for women."
@@ -222,8 +222,8 @@ window.LOGOS_PROJECTES = [
   "title": "Cuidem en igualtat",
   "sub": "Department of Equality and Feminisms",
   "summary": "Promoting fairer care practices and moving beyond gender roles.",
-  "img": "",
-  "alt": "",
+  "img": "orientacio",
+  "alt": "Support session in the guidance area",
   "figs": [],
   "intro": [
    "Awareness and shared-responsibility actions to make visible the inequalities in how housework and care are shared, and to broaden personal and professional opportunities."
@@ -244,8 +244,8 @@ window.LOGOS_PROJECTES = [
   "title": "Yo Emprendo, Ruralízate and Impulsa't",
   "sub": "Programmes within the Red Araña network",
   "summary": "Initiatives on entrepreneurship, opportunities in rural areas and boosting career paths.",
-  "img": "",
-  "alt": "",
+  "img": "red-arana",
+  "alt": "Front-desk support with Red Araña",
   "figs": [],
   "intro": [
    "We take part in Red Araña programmes that widen employment options: self-employment as a way to build a professional project, opportunities in rural settings and support for career paths."
@@ -275,8 +275,8 @@ window.LOGOS_PROJECTES = [
   "title": "Futur en Xarxa",
   "sub": "Fundació \"la Caixa\"",
   "summary": "Employment pathways with individual assessment, guidance, hands-on training and access to local opportunities.",
-  "img": "",
-  "alt": "",
+  "img": "futur",
+  "alt": "Hands-on Canva exercise in class",
   "figs": [],
   "intro": [
    "The pathways address social, employment and digital needs together to strengthen autonomy and active job seeking, aiming for a lasting improvement in employability and, where possible, a job."
@@ -297,8 +297,8 @@ window.LOGOS_PROJECTES = [
   "title": "Oportunidad y Cambio",
   "sub": "Digital empowerment prevents exclusion",
   "summary": "A preventive project that uses ICT to help people avoid social and labour exclusion.",
-  "img": "",
-  "alt": "",
+  "img": "oportunidad",
+  "alt": "Computer practice in the ICT room",
   "figs": [],
   "intro": [
    "We see the digital divide not just as a technology gap but as a social barrier that can limit access to rights, opportunities and personal development.",
@@ -336,8 +336,8 @@ window.LOGOS_PROJECTES = [
   "title": "MAIS Programme",
   "sub": "Department of Business and Labour · Government of Catalonia",
   "summary": "Personalised employment pathways for people receiving the guaranteed income and at risk of exclusion.",
-  "img": "",
-  "alt": "",
+  "img": "mais",
+  "alt": "Writing CVs in class",
   "figs": [
    [
     "60",
@@ -367,8 +367,8 @@ window.LOGOS_PROJECTES = [
   "title": "Food recovery",
   "sub": "With the XAMA network",
   "summary": "We reduce food waste and bring fresh produce to people in vulnerable situations.",
-  "img": "",
-  "alt": "",
+  "img": "recepcio",
+  "alt": "Logos reception, where people are welcomed",
   "figs": [
    [
     "+400",

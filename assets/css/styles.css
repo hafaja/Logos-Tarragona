@@ -620,3 +620,11 @@ html, body { overflow-x: clip; }
 .detail--full { grid-template-columns: 1fr; max-width: 900px; }
 /* Franja superior sense telèfon ni correu */
 .topbar .wrap { justify-content: flex-end; }
+/* Horari d'atenció al públic */
+.hours--public { margin-top: 14px; padding: 14px 16px; border-radius: var(--r-sm); background: var(--tint); border-left: 4px solid var(--gold); }
+[dir="rtl"] .hours--public { border-left: 0; border-right: 4px solid var(--gold); }
+.footer__pub { margin-top: 8px; font-size: 14px; opacity: .9; }
+.net-card__go { text-align: center; }
+[dir="rtl"] .net-card__go { direction: rtl; }
+.hours--public > div { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: start; }
+.hours--public > div span { text-align: start; }

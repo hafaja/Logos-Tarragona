@@ -1,46 +1,31 @@
 window.LOGOS_PROJECTES = [
  {
-  "id": "construim",
-  "amb": "Employment",
+  "id": "bretxa",
+  "amb": "Digital divide",
   "year": "2026",
-  "title": "Construïm Futur",
-  "sub": "Your path to employment",
-  "summary": "Career guidance and job placement to improve employability and reach new professional opportunities, with support adapted to each situation.",
-  "img": "construim",
-  "alt": "“Let's work on our CV” workshop in the training room",
+  "title": "Digital divide service",
+  "sub": "Diputació de Tarragona",
+  "summary": "Drop-in digital support service on Tuesday and Thursday afternoons.",
+  "img": "aula-digital",
+  "alt": "Digital skills session in the Logos classroom",
   "figs": [],
   "intro": [
-   "A career guidance and job placement project for people who want to improve their employability and reach new professional opportunities, with support adapted to each situation. More opportunities, more jobs, more future.",
-   "Pathways adapted to each person: not everyone starts from the same point or needs the same kind of support. That is why Construïm Futur works with personalised pathways, tailored to each participant's needs and career goals. This makes it easier to plan the next steps, identify skills to strengthen and organise the job search and career progression.",
-   "Skills for today's job market: reaching new job opportunities also means reviewing and strengthening the skills needed in today's labour market. Construïm Futur helps each participant identify strengths, areas for improvement and resources that can support their entry or return to work.",
-   "Job placement is not seen just as getting a single job, but as a process in which people gain more tools to make decisions, face change and build their own career path.",
-   "Construïm Futur has been developed with the support of Fundació \"la Caixa\" through its Social Projects Call. This support makes it possible to carry out actions that improve employability, strengthen people's autonomy and foster social inclusion in the local area."
+   "A drop-in digital divide service that we run on Tuesday and Thursday afternoons, with the support of the Diputació de Tarragona.",
+   "We help people with specific questions about their phone, computer and online procedures, so they can manage them more confidently and independently."
   ],
   "secs": [
    {
-    "h": "Guidance, training and support",
+    "h": "Opening times",
     "items": [
-     "Career guidance: setting goals and concrete steps in the job search or career progression",
-     "Hands-on training: learning focused on skills useful in today's job market",
-     "Individual support: follow-up adapted to each participant's situation, needs and goals",
-     "Skills building: identifying strengths and areas to improve in order to progress",
-     "Links with companies: getting closer to local opportunities and workplaces",
-     "Local resources: access to services and resources that can support job placement"
-    ]
-   },
-   {
-    "h": "Autonomy, equal opportunities and inclusion",
-    "items": [
-     "Autonomy: strengthening each person's ability to make decisions and progress with more tools on their career path",
-     "Equal opportunities: fostering access to employment that takes into account each participant's needs and starting point",
-     "Social inclusion: connecting employability, support and resources so that job placement fits each reality"
+     "Tuesday afternoons",
+     "Thursday afternoons"
     ]
    }
   ],
   "sup": [
    {
-    "src": "assets/img/logos/fundacio-la-caixa.webp",
-    "alt": "Fundació \"la Caixa\""
+    "src": "assets/img/logos/diputacio.webp",
+    "alt": "Diputació de Tarragona"
    }
   ],
   "link": null
@@ -51,7 +36,7 @@ window.LOGOS_PROJECTES = [
   "year": "2026",
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
-  "summary": "Guidance and advice for women who want to find a job or improve their professional situation.",
+  "summary": "Women carry out an active job search and receive training through a pathway designed around their needs.",
   "img": "jobclub",
   "alt": "Group session to prepare CVs",
   "figs": [],
@@ -63,6 +48,28 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/diputacio.webp",
     "alt": "Diputació de Tarragona"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "futur",
+  "amb": "Employment",
+  "year": "2026",
+  "title": "Futur en Xarxa",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Employment pathways with individual assessment, guidance, hands-on training and access to local opportunities.",
+  "img": "futur",
+  "alt": "Hands-on Canva exercise in class",
+  "figs": [],
+  "intro": [
+   "The pathways address social, employment and digital needs together to strengthen autonomy and active job seeking, aiming for a lasting improvement in employability and, where possible, a job."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
    }
   ],
   "link": null
@@ -90,10 +97,75 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "red-arana",
+  "amb": "Employment",
+  "year": "2026",
+  "title": "Ruraliza-T, YoEmprendo 3.0 and Impulsa-T",
+  "sub": "Red Araña programmes · Logos collaborates",
+  "summary": "Three remote Red Araña programmes for rural women, young entrepreneurs and migrants.",
+  "img": "red-arana",
+  "alt": "Front-desk support with Red Araña",
+  "figs": [
+   [
+    "3",
+    "programmes"
+   ],
+   [
+    "14–35",
+    "years old · YoEmprendo 3.0"
+   ]
+  ],
+  "intro": [
+   "Ruraliza-T, YoEmprendo 3.0 and Impulsa-T are programmes run by Red Araña, the network of organisations for employment. They take place remotely, by phone and online, so participants can make progress without having to travel.",
+   "Logos handles outreach and provides one-to-one support for participants. The online courses are taught by Red Araña on its own platform."
+  ],
+  "secs": [
+   {
+    "h": "Ruraliza-T · Rural women",
+    "items": [
+     "Remote programme (phone and online) for women living in rural areas",
+     "Guidance, training and resources to overcome the rural and gender digital divide and build a career without leaving home",
+     "Programme outreach",
+     "Personalised employment pathway for every participant",
+     "3 advice sessions on digital accessibility and employment resources",
+     "Online basic digital literacy course, taught by Red Araña on its platform"
+    ]
+   },
+   {
+    "h": "YoEmprendo 3.0 · Young entrepreneurs",
+    "items": [
+     "Online programme to guide and encourage entrepreneurship among young people aged 14 to 35",
+     "Programme outreach",
+     "Entrepreneurship advice: individual, personalised pathways (at least three sessions per person)",
+     "20-hour online courses, taught by Red Araña on its platform: setting up social economy organisations, business management, digital marketing and eco-entrepreneurship"
+    ]
+   },
+   {
+    "h": "Impulsa-T · Migrants",
+    "items": [
+     "Remote programme (online and by phone) to guide and encourage the work, entrepreneurial and professional activity of migrants from outside the European Union",
+     "Programme outreach",
+     "Assessment and definition of career goals",
+     "Entrepreneurship advice",
+     "Online digital marketing course (20 hours), taught by Red Araña on its platform",
+     "Two online workshops on microcredits and grants (2 hours each)"
+    ]
+   }
+  ],
+  "sup": [
+   {
+    "src": "assets/img/logos/red-arana.webp",
+    "alt": "Red Araña",
+    "h": "Programmes by"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "mirada",
   "amb": "Inclusion",
   "year": "2025 – 2026",
-  "title": "Mirada Endavant",
+  "title": "Mirada Endavant (CONVO)",
   "sub": "Support to move forward with more autonomy",
   "summary": "Personalised support for people and families in or at risk of social exclusion, with a particular focus on Tarragona's Barri del Port.",
   "img": "mirada",
@@ -137,11 +209,55 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "cuidem",
+  "amb": "Equality",
+  "year": "2025 – 2026",
+  "title": "Cuidem en igualtat",
+  "sub": "Department of Equality and Feminisms",
+  "summary": "Promoting fairer care practices and moving beyond gender roles.",
+  "img": "orientacio",
+  "alt": "Support session in the guidance area",
+  "figs": [],
+  "intro": [
+   "Awareness and shared-responsibility actions to make visible the inequalities in how housework and care are shared, and to broaden personal and professional opportunities."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "temps",
+  "amb": "Equality",
+  "year": "2025 – 2026",
+  "title": "Temps, cures i equitat",
+  "sub": "Department of Equality and Feminisms",
+  "summary": "Awareness-raising on how care is organised in society and on shared responsibility.",
+  "img": "entrada-interior",
+  "alt": "Entrance and welcome area at Logos",
+  "figs": [],
+  "intro": [
+   "We reflect on how care tasks are shared and how this affects social participation, training and employment, especially for women."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "arrels",
   "amb": "Inclusion",
   "year": "2025 – 2026",
   "title": "Arrels / Raíces: Family Reconnection",
-  "sub": "An Associació Tamaide initiative · Logos collaborates",
+  "sub": "A project by Associació Tamaide · Logos collaborates",
   "summary": "Comprehensive support for vulnerable families with children and teenagers, combining psychological, educational and social support.",
   "img": "arrels",
   "alt": "One-to-one support in the Raíces project",
@@ -184,104 +300,55 @@ window.LOGOS_PROJECTES = [
   "sup": [
    {
     "src": "assets/img/logos/tamaide.webp",
-    "alt": "Associació Tamaide"
+    "alt": "Associació Tamaide",
+    "h": "A project by"
    },
    {
     "src": "assets/img/logos/ue-cofinancat.webp",
-    "alt": "Co-funded by the European Union"
+    "alt": "Co-funded by the European Union",
+    "h": "Funding"
    }
   ],
   "link": null
  },
  {
-  "id": "temps",
-  "amb": "Equality",
-  "year": "2025 – 2026",
-  "title": "Temps, cures i equitat",
-  "sub": "Department of Equality and Feminisms",
-  "summary": "Awareness-raising on how care is organised in society and on shared responsibility.",
-  "img": "entrada-interior",
-  "alt": "Entrance and welcome area at Logos",
-  "figs": [],
-  "intro": [
-   "We reflect on how care tasks are shared and how this affects social participation, training and employment, especially for women."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-igualtat.webp",
-    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "cuidem",
-  "amb": "Equality",
-  "year": "2025 – 2026",
-  "title": "Cuidem en igualtat",
-  "sub": "Department of Equality and Feminisms",
-  "summary": "Promoting fairer care practices and moving beyond gender roles.",
-  "img": "orientacio",
-  "alt": "Support session in the guidance area",
-  "figs": [],
-  "intro": [
-   "Awareness and shared-responsibility actions to make visible the inequalities in how housework and care are shared, and to broaden personal and professional opportunities."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-igualtat.webp",
-    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "red-arana",
+  "id": "construim",
   "amb": "Employment",
-  "year": "2025 – 2026",
-  "title": "Yo Emprendo, Ruralízate and Impulsa't",
-  "sub": "Programmes within the Red Araña network",
-  "summary": "Initiatives on entrepreneurship, opportunities in rural areas and boosting career paths.",
-  "img": "red-arana",
-  "alt": "Front-desk support with Red Araña",
+  "year": "2026",
+  "title": "Construïm Futur",
+  "sub": "Your path to employment",
+  "summary": "Career guidance and job placement to improve employability and reach new professional opportunities, with support adapted to each situation.",
+  "img": "construim",
+  "alt": "“Let's work on our CV” workshop in the training room",
   "figs": [],
   "intro": [
-   "We take part in Red Araña programmes that widen employment options: self-employment as a way to build a professional project, opportunities in rural settings and support for career paths."
+   "A career guidance and job placement project for people who want to improve their employability and reach new professional opportunities, with support adapted to each situation. More opportunities, more jobs, more future.",
+   "Pathways adapted to each person: not everyone starts from the same point or needs the same kind of support. That is why Construïm Futur works with personalised pathways, tailored to each participant's needs and career goals. This makes it easier to plan the next steps, identify skills to strengthen and organise the job search and career progression.",
+   "Skills for today's job market: reaching new job opportunities also means reviewing and strengthening the skills needed in today's labour market. Construïm Futur helps each participant identify strengths, areas for improvement and resources that can support their entry or return to work.",
+   "Job placement is not seen just as getting a single job, but as a process in which people gain more tools to make decisions, face change and build their own career path.",
+   "Construïm Futur has been developed with the support of Fundació \"la Caixa\" through its Social Projects Call. This support makes it possible to carry out actions that improve employability, strengthen people's autonomy and foster social inclusion in the local area."
   ],
   "secs": [
    {
-    "h": "Programmes",
+    "h": "Guidance, training and support",
     "items": [
-     "Yo Emprendo: entrepreneurship and self-employment",
-     "Ruralízate: job opportunities in rural areas",
-     "Impulsa't: boosting career paths"
+     "Career guidance: setting goals and concrete steps in the job search or career progression",
+     "Hands-on training: learning focused on skills useful in today's job market",
+     "Individual support: follow-up adapted to each participant's situation, needs and goals",
+     "Skills building: identifying strengths and areas to improve in order to progress",
+     "Links with companies: getting closer to local opportunities and workplaces",
+     "Local resources: access to services and resources that can support job placement"
+    ]
+   },
+   {
+    "h": "Autonomy, equal opportunities and inclusion",
+    "items": [
+     "Autonomy: strengthening each person's ability to make decisions and progress with more tools on their career path",
+     "Equal opportunities: fostering access to employment that takes into account each participant's needs and starting point",
+     "Social inclusion: connecting employability, support and resources so that job placement fits each reality"
     ]
    }
   ],
-  "sup": [
-   {
-    "src": "assets/img/logos/red-arana.webp",
-    "alt": "Red Araña"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "futur",
-  "amb": "Employment",
-  "year": "2025",
-  "title": "Futur en Xarxa",
-  "sub": "Fundació \"la Caixa\"",
-  "summary": "Employment pathways with individual assessment, guidance, hands-on training and access to local opportunities.",
-  "img": "futur",
-  "alt": "Hands-on Canva exercise in class",
-  "figs": [],
-  "intro": [
-   "The pathways address social, employment and digital needs together to strengthen autonomy and active job seeking, aiming for a lasting improvement in employability and, where possible, a job."
-  ],
-  "secs": [],
   "sup": [
    {
     "src": "assets/img/logos/fundacio-la-caixa.webp",
@@ -358,32 +425,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Generalitat de Catalunya"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusion",
-  "year": "Ongoing",
-  "title": "Food recovery",
-  "sub": "With the XAMA network",
-  "summary": "We reduce food waste and bring fresh produce to people in vulnerable situations.",
-  "img": "recepcio",
-  "alt": "Logos reception, where people are welcomed",
-  "figs": [
-   [
-    "+400",
-    "families in Tarragona"
-   ],
-   [
-    "+1.250",
-    "people every month across the province"
-   ]
-  ],
-  "intro": [
-   "Zero-waste project providing fresh produce (vegetables, fruit, cold meats…) to people at risk of exclusion, in partnership with XAMA, the food mutual-aid network, in Tarragona, Reus, Cambrils and Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {
@@ -729,32 +770,6 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/gen-cultura.webp",
     "alt": "Generalitat de Catalunya, Departament de Cultura"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "aillament",
-  "amb": "Inclusion",
-  "year": "Ongoing",
-  "title": "Comunitats contra l'Aïllament",
-  "sub": "Social volunteering",
-  "summary": "Volunteering programme to combat isolation among the most vulnerable people.",
-  "img": "joves-detall",
-  "alt": "Young person doing homework at a Logos space",
-  "figs": [],
-  "intro": [
-   "Social volunteering programme run in partnership with Joves en Acció and the Directorate-General for Civic Action of the Catalan Department of Social Rights."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-drets-socials.webp",
-    "alt": "Generalitat de Catalunya, Departament de Drets Socials"
-   },
-   {
-    "src": "assets/img/logos/joves-accio.webp",
-    "alt": "Joves en Acció"
    }
   ],
   "link": null

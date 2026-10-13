@@ -1,46 +1,31 @@
 window.LOGOS_PROJECTES = [
  {
-  "id": "construim",
-  "amb": "Inserció",
+  "id": "bretxa",
+  "amb": "Bretxa digital",
   "year": "2026",
-  "title": "Construïm Futur",
-  "sub": "El teu camí cap a l'ocupació",
-  "summary": "Orientació i inserció laboral per millorar l'ocupabilitat i accedir a noves oportunitats professionals, amb un acompanyament adaptat a cada realitat.",
-  "img": "construim",
-  "alt": "Taller «Treballem el nostre CV» a l'aula de formació",
+  "title": "Servei de bretxa digital",
+  "sub": "Diputació de Tarragona",
+  "summary": "Servei puntual de suport digital que oferim les tardes de dimarts i dijous.",
+  "img": "aula-digital",
+  "alt": "Sessió de competències digitals a l'aula de Logos",
   "figs": [],
   "intro": [
-   "Projecte d'orientació i inserció laboral adreçat a persones que volen millorar la seva ocupabilitat i accedir a noves oportunitats professionals, amb un acompanyament adaptat a cada realitat. Més oportunitats, més ocupació, més futur.",
-   "Itineraris adaptats a cada persona: no totes les persones parteixen del mateix punt ni necessiten el mateix tipus d'acompanyament. Per això, Construïm Futur treballa mitjançant itineraris personalitzats, adaptats a les necessitats i als objectius professionals de cada participant. Aquest enfocament permet orientar millor els passos a seguir, identificar competències a reforçar i treballar de manera més ordenada el procés de recerca i millora de l'ocupació.",
-   "Competències per al mercat laboral actual: accedir a noves oportunitats laborals també implica revisar i reforçar les competències necessàries per moure's en el mercat de treball actual. Construïm Futur acompanya cada participant a identificar fortaleses, necessitats de millora i recursos que poden facilitar la seva incorporació o retorn al món laboral.",
-   "La inserció laboral no es planteja només com l'accés puntual a una feina, sinó com un procés en què la persona ha de disposar de més eines per prendre decisions, afrontar canvis i construir el seu propi recorregut professional.",
-   "Construïm Futur s'ha desenvolupat amb el suport de la Fundació \"la Caixa\", en el marc de la seva Convocatòria de Projectes Socials. Aquest suport permet impulsar actuacions orientades a millorar l'ocupabilitat, reforçar l'autonomia de les persones i afavorir processos d'inclusió social vinculats al territori."
+   "Servei puntual de bretxa digital que realitzem les tardes de dimarts i dijous, amb el suport de la Diputació de Tarragona.",
+   "Ajudem les persones a resoldre dubtes concrets amb el mòbil, l'ordinador i els tràmits en línia, perquè puguin fer-los amb més seguretat i autonomia."
   ],
   "secs": [
    {
-    "h": "Orientació, formació i acompanyament",
+    "h": "Horari",
     "items": [
-     "Orientació laboral: definició d'objectius i passos concrets dins del procés de recerca o millora d'ocupació",
-     "Formació pràctica: aprenentatges orientats a reforçar competències útils per al mercat laboral actual",
-     "Acompanyament individualitzat: seguiment adaptat a la situació, les necessitats i els objectius de cada participant",
-     "Reforç de competències: identificació de fortaleses i necessitats de millora per avançar professionalment",
-     "Connexió amb empreses: aproximació a oportunitats i entorns professionals vinculats al territori",
-     "Recursos del territori: accés a serveis i recursos que poden reforçar el procés d'inserció laboral"
-    ]
-   },
-   {
-    "h": "Autonomia, igualtat d'oportunitats i inclusió",
-    "items": [
-     "Autonomia: reforçar la capacitat de cada persona per prendre decisions i avançar amb més eines en el seu itinerari professional",
-     "Igualtat d'oportunitats: afavorir processos d'accés a l'ocupació que tinguin en compte les necessitats i el punt de partida de cada participant",
-     "Inclusió social: connectar ocupabilitat, acompanyament i recursos per facilitar processos d'inserció més ajustats a cada realitat"
+     "Dimarts a la tarda",
+     "Dijous a la tarda"
     ]
    }
   ],
   "sup": [
    {
-    "src": "assets/img/logos/fundacio-la-caixa.webp",
-    "alt": "Fundació \"la Caixa\""
+    "src": "assets/img/logos/diputacio.webp",
+    "alt": "Diputació de Tarragona"
    }
   ],
   "link": null
@@ -51,7 +36,7 @@ window.LOGOS_PROJECTES = [
   "year": "2026",
   "title": "JOB CLUB A3",
   "sub": "Diputació de Tarragona",
-  "summary": "Espai d'orientació i assessorament per a dones que volen accedir a una feina o millorar la seva situació professional.",
+  "summary": "Les dones fan la recerca activa de feina i es formen seguint un itinerari establert segons les seves necessitats.",
   "img": "jobclub",
   "alt": "Sessió de grup per preparar el currículum",
   "figs": [],
@@ -63,6 +48,28 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/diputacio.webp",
     "alt": "Diputació de Tarragona"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "futur",
+  "amb": "Inserció",
+  "year": "2026",
+  "title": "Futur en Xarxa",
+  "sub": "Fundació \"la Caixa\"",
+  "summary": "Itineraris sociolaborals amb diagnosi individual, orientació, formació pràctica i accés a oportunitats del territori.",
+  "img": "futur",
+  "alt": "Exercici pràctic amb Canva a l'aula",
+  "figs": [],
+  "intro": [
+   "Els itineraris treballen de manera conjunta necessitats socials, laborals i digitals per reforçar l'autonomia i la recerca activa de feina, amb l'objectiu d'una millora sostenible de l'ocupabilitat i, quan és possible, la inserció laboral."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/fundacio-la-caixa.webp",
+    "alt": "Fundació \"la Caixa\""
    }
   ],
   "link": null
@@ -90,10 +97,75 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "red-arana",
+  "amb": "Inserció",
+  "year": "2026",
+  "title": "Ruraliza-T, YoEmprendo 3.0 i Impulsa-T",
+  "sub": "Programes de Red Araña · Logos hi col·labora",
+  "summary": "Tres programes a distància de Red Araña per a dones de l'entorn rural, joves emprenedors i persones migrants.",
+  "img": "red-arana",
+  "alt": "Atenció a secretaria amb la Red Araña",
+  "figs": [
+   [
+    "3",
+    "programes"
+   ],
+   [
+    "14–35",
+    "anys · YoEmprendo 3.0"
+   ]
+  ],
+  "intro": [
+   "Ruraliza-T, YoEmprendo 3.0 i Impulsa-T són programes de Red Araña, la xarxa d'entitats per l'ocupació. Es fan a distància, per telèfon i Internet, perquè les persones participants puguin avançar sense haver de desplaçar-se.",
+   "Logos s'encarrega de la difusió i de l'acompanyament personalitzat de les persones participants. Les formacions en línia les imparteix Red Araña a través de la seva plataforma."
+  ],
+  "secs": [
+   {
+    "h": "Ruraliza-T · Dones de l'entorn rural",
+    "items": [
+     "Programa a distància (telèfon i Internet) per a dones que viuen en entorns rurals",
+     "Orientació, formació i recursos per superar la bretxa digital rural i de gènere i desenvolupar-se laboralment sense deixar el seu entorn",
+     "Difusió del programa",
+     "Itinerari personalitzat d'inserció sociolaboral per a totes les participants",
+     "3 sessions d'assessorament sobre accessibilitat digital i recursos per a la inserció sociolaboral",
+     "Curs d'alfabetització digital bàsica en línia, impartit per Red Araña a la seva plataforma"
+    ]
+   },
+   {
+    "h": "YoEmprendo 3.0 · Joves emprenedors",
+    "items": [
+     "Programa en línia per orientar i fomentar l'activitat emprenedora de joves d'entre 14 i 35 anys",
+     "Difusió del programa",
+     "Assessorament per a l'emprenedoria: itineraris individuals i personalitzats (mínim tres sessions per persona)",
+     "Cursos en línia de 20 hores, impartits per Red Araña a la seva plataforma: com crear entitats d'economia social, gestió empresarial, màrqueting digital i ecoemprenedoria"
+    ]
+   },
+   {
+    "h": "Impulsa-T · Persones migrants",
+    "items": [
+     "Programa a distància (mitjans telemàtics i telefònics) per orientar i fomentar l'activitat laboral, emprenedora i professional de persones migrants de fora de la Unió Europea",
+     "Difusió del programa",
+     "Diagnòstic i definició d'objectius professionals",
+     "Assessorament per a l'emprenedoria",
+     "Curs en línia de màrqueting digital (20 hores), impartit per Red Araña a la seva plataforma",
+     "Dos tallers en línia de microcrèdits i subvencions (2 hores cadascun)"
+    ]
+   }
+  ],
+  "sup": [
+   {
+    "src": "assets/img/logos/red-arana.webp",
+    "alt": "Red Araña",
+    "h": "Programes de"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "mirada",
   "amb": "Inclusió",
   "year": "2025 – 2026",
-  "title": "Mirada Endavant",
+  "title": "Mirada Endavant (CONVO)",
   "sub": "Acompanyament per avançar amb més autonomia",
   "summary": "Acompanyament personalitzat a persones i famílies en situació o risc d'exclusió social, amb especial incidència al Barri del Port de Tarragona.",
   "img": "mirada",
@@ -137,11 +209,55 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
+  "id": "cuidem",
+  "amb": "Igualtat",
+  "year": "2025 – 2026",
+  "title": "Cuidem en igualtat",
+  "sub": "Departament d'Igualtat i Feminismes",
+  "summary": "Foment de pràctiques de cura més igualitàries i superació dels rols de gènere.",
+  "img": "orientacio",
+  "alt": "Sessió d'acompanyament a l'espai d'orientació",
+  "figs": [],
+  "intro": [
+   "Accions de sensibilització i corresponsabilitat per visibilitzar les desigualtats en el repartiment de les tasques domèstiques i de cura, i ampliar les oportunitats personals i professionals."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
+  "id": "temps",
+  "amb": "Igualtat",
+  "year": "2025 – 2026",
+  "title": "Temps, cures i equitat",
+  "sub": "Departament d'Igualtat i Feminismes",
+  "summary": "Sensibilització sobre l'organització social de les cures i la corresponsabilitat.",
+  "img": "entrada-interior",
+  "alt": "Entrada i espai d'acollida de Logos",
+  "figs": [],
+  "intro": [
+   "Reflexionem sobre com es reparteixen les tasques de cura i com aquest repartiment condiciona la participació social, la formació i l'ocupació, especialment de les dones."
+  ],
+  "secs": [],
+  "sup": [
+   {
+    "src": "assets/img/logos/gen-igualtat.webp",
+    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
+   }
+  ],
+  "link": null
+ },
+ {
   "id": "arrels",
   "amb": "Inclusió",
   "year": "2025 – 2026",
   "title": "Arrels / Raíces: Reconnexió Familiar",
-  "sub": "Iniciativa de l'Associació Tamaide · Logos hi col·labora",
+  "sub": "Projecte de l'Associació Tamaide · Logos hi col·labora",
   "summary": "Acompanyament integral a famílies amb infants i adolescents en situació de vulnerabilitat, amb suport psicològic, educatiu i social.",
   "img": "arrels",
   "alt": "Atenció personalitzada del projecte Arrels",
@@ -184,104 +300,55 @@ window.LOGOS_PROJECTES = [
   "sup": [
    {
     "src": "assets/img/logos/tamaide.webp",
-    "alt": "Associació Tamaide"
+    "alt": "Associació Tamaide",
+    "h": "Un projecte de"
    },
    {
     "src": "assets/img/logos/ue-cofinancat.webp",
-    "alt": "Cofinançat per la Unió Europea"
+    "alt": "Cofinançat per la Unió Europea",
+    "h": "Finançament"
    }
   ],
   "link": null
  },
  {
-  "id": "temps",
-  "amb": "Igualtat",
-  "year": "2025 – 2026",
-  "title": "Temps, cures i equitat",
-  "sub": "Departament d'Igualtat i Feminismes",
-  "summary": "Sensibilització sobre l'organització social de les cures i la corresponsabilitat.",
-  "img": "entrada-interior",
-  "alt": "Entrada i espai d'acollida de Logos",
-  "figs": [],
-  "intro": [
-   "Reflexionem sobre com es reparteixen les tasques de cura i com aquest repartiment condiciona la participació social, la formació i l'ocupació, especialment de les dones."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-igualtat.webp",
-    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "cuidem",
-  "amb": "Igualtat",
-  "year": "2025 – 2026",
-  "title": "Cuidem en igualtat",
-  "sub": "Departament d'Igualtat i Feminismes",
-  "summary": "Foment de pràctiques de cura més igualitàries i superació dels rols de gènere.",
-  "img": "orientacio",
-  "alt": "Sessió d'acompanyament a l'espai d'orientació",
-  "figs": [],
-  "intro": [
-   "Accions de sensibilització i corresponsabilitat per visibilitzar les desigualtats en el repartiment de les tasques domèstiques i de cura, i ampliar les oportunitats personals i professionals."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-igualtat.webp",
-    "alt": "Generalitat de Catalunya – Departament d'Igualtat i Feminismes"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "red-arana",
+  "id": "construim",
   "amb": "Inserció",
-  "year": "2025 – 2026",
-  "title": "Yo Emprendo, Ruralízate i Impulsa't",
-  "sub": "Programes en el marc de Red Araña",
-  "summary": "Iniciatives d'emprenedoria, oportunitats en l'entorn rural i impuls de trajectòries professionals.",
-  "img": "red-arana",
-  "alt": "Atenció a secretaria amb la Red Araña",
+  "year": "2026",
+  "title": "Construïm Futur",
+  "sub": "El teu camí cap a l'ocupació",
+  "summary": "Orientació i inserció laboral per millorar l'ocupabilitat i accedir a noves oportunitats professionals, amb un acompanyament adaptat a cada realitat.",
+  "img": "construim",
+  "alt": "Taller «Treballem el nostre CV» a l'aula de formació",
   "figs": [],
   "intro": [
-   "Participem en programes de la xarxa Red Araña que amplien les opcions d'ocupació: l'autoocupació com a via per construir un projecte professional, les oportunitats en contextos rurals i l'impuls de trajectòries sociolaborals."
+   "Projecte d'orientació i inserció laboral adreçat a persones que volen millorar la seva ocupabilitat i accedir a noves oportunitats professionals, amb un acompanyament adaptat a cada realitat. Més oportunitats, més ocupació, més futur.",
+   "Itineraris adaptats a cada persona: no totes les persones parteixen del mateix punt ni necessiten el mateix tipus d'acompanyament. Per això, Construïm Futur treballa mitjançant itineraris personalitzats, adaptats a les necessitats i als objectius professionals de cada participant. Aquest enfocament permet orientar millor els passos a seguir, identificar competències a reforçar i treballar de manera més ordenada el procés de recerca i millora de l'ocupació.",
+   "Competències per al mercat laboral actual: accedir a noves oportunitats laborals també implica revisar i reforçar les competències necessàries per moure's en el mercat de treball actual. Construïm Futur acompanya cada participant a identificar fortaleses, necessitats de millora i recursos que poden facilitar la seva incorporació o retorn al món laboral.",
+   "La inserció laboral no es planteja només com l'accés puntual a una feina, sinó com un procés en què la persona ha de disposar de més eines per prendre decisions, afrontar canvis i construir el seu propi recorregut professional.",
+   "Construïm Futur s'ha desenvolupat amb el suport de la Fundació \"la Caixa\", en el marc de la seva Convocatòria de Projectes Socials. Aquest suport permet impulsar actuacions orientades a millorar l'ocupabilitat, reforçar l'autonomia de les persones i afavorir processos d'inclusió social vinculats al territori."
   ],
   "secs": [
    {
-    "h": "Programes",
+    "h": "Orientació, formació i acompanyament",
     "items": [
-     "Yo Emprendo: emprenedoria i autoocupació",
-     "Ruralízate: oportunitats sociolaborals en l'entorn rural",
-     "Impulsa't: impuls de trajectòries professionals"
+     "Orientació laboral: definició d'objectius i passos concrets dins del procés de recerca o millora d'ocupació",
+     "Formació pràctica: aprenentatges orientats a reforçar competències útils per al mercat laboral actual",
+     "Acompanyament individualitzat: seguiment adaptat a la situació, les necessitats i els objectius de cada participant",
+     "Reforç de competències: identificació de fortaleses i necessitats de millora per avançar professionalment",
+     "Connexió amb empreses: aproximació a oportunitats i entorns professionals vinculats al territori",
+     "Recursos del territori: accés a serveis i recursos que poden reforçar el procés d'inserció laboral"
+    ]
+   },
+   {
+    "h": "Autonomia, igualtat d'oportunitats i inclusió",
+    "items": [
+     "Autonomia: reforçar la capacitat de cada persona per prendre decisions i avançar amb més eines en el seu itinerari professional",
+     "Igualtat d'oportunitats: afavorir processos d'accés a l'ocupació que tinguin en compte les necessitats i el punt de partida de cada participant",
+     "Inclusió social: connectar ocupabilitat, acompanyament i recursos per facilitar processos d'inserció més ajustats a cada realitat"
     ]
    }
   ],
-  "sup": [
-   {
-    "src": "assets/img/logos/red-arana.webp",
-    "alt": "Red Araña"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "futur",
-  "amb": "Inserció",
-  "year": "2025",
-  "title": "Futur en Xarxa",
-  "sub": "Fundació \"la Caixa\"",
-  "summary": "Itineraris sociolaborals amb diagnosi individual, orientació, formació pràctica i accés a oportunitats del territori.",
-  "img": "futur",
-  "alt": "Exercici pràctic amb Canva a l'aula",
-  "figs": [],
-  "intro": [
-   "Els itineraris treballen de manera conjunta necessitats socials, laborals i digitals per reforçar l'autonomia i la recerca activa de feina, amb l'objectiu d'una millora sostenible de l'ocupabilitat i, quan és possible, la inserció laboral."
-  ],
-  "secs": [],
   "sup": [
    {
     "src": "assets/img/logos/fundacio-la-caixa.webp",
@@ -358,32 +425,6 @@ window.LOGOS_PROJECTES = [
     "alt": "Generalitat de Catalunya"
    }
   ],
-  "link": null
- },
- {
-  "id": "menjar",
-  "amb": "Inclusió",
-  "year": "Actiu",
-  "title": "Reaprofitament de menjar",
-  "sub": "Amb la xarxa XAMA",
-  "summary": "Reduïm el malbaratament alimentari i fem arribar productes frescos a persones en situació vulnerable.",
-  "img": "recepcio",
-  "alt": "Recepció de Logos, punt d'atenció a les persones",
-  "figs": [
-   [
-    "+400",
-    "famílies a Tarragona"
-   ],
-   [
-    "+1.250",
-    "persones cada mes a la província"
-   ]
-  ],
-  "intro": [
-   "Projecte de malbaratament zero que proporciona productes frescos (verdura, fruita, embotits…) a persones en risc d'exclusió, en col·laboració amb la XAMA, Xarxa d'Ajuda Mútua Alimentària, a Tarragona, Reus, Cambrils i Vila-seca."
-  ],
-  "secs": [],
-  "sup": [],
   "link": null
  },
  {
@@ -729,32 +770,6 @@ window.LOGOS_PROJECTES = [
    {
     "src": "assets/img/logos/gen-cultura.webp",
     "alt": "Generalitat de Catalunya, Departament de Cultura"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "aillament",
-  "amb": "Inclusió",
-  "year": "Actiu",
-  "title": "Comunitats contra l'Aïllament",
-  "sub": "Voluntariat social",
-  "summary": "Programa de voluntariat per combatre l'aïllament de les persones més vulnerables.",
-  "img": "joves-detall",
-  "alt": "Jove fent deures en un espai de Logos",
-  "figs": [],
-  "intro": [
-   "Programa de voluntariat social que impulsem en col·laboració amb Joves en Acció i la Direcció General d'Acció Cívica del Departament de Drets Socials."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/gen-drets-socials.webp",
-    "alt": "Generalitat de Catalunya, Departament de Drets Socials"
-   },
-   {
-    "src": "assets/img/logos/joves-accio.webp",
-    "alt": "Joves en Acció"
    }
   ],
   "link": null

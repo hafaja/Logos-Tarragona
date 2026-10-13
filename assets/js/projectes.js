@@ -42,7 +42,9 @@
     var figs = p.figs.length ? '<div class="figs">' + p.figs.map(function (f) { return '<div class="fig"><b>' + esc(f[0]) + "</b><span>" + esc(f[1]) + "</span></div>"; }).join("") + "</div>" : "";
     var secs = p.secs.map(function (s) { return '<div class="box"><h3>' + esc(s.h) + '</h3><ul class="ticks">' + s.items.map(function (it) { return "<li>" + esc(it) + "</li>"; }).join("") + "</ul></div>"; }).join("");
     var link = p.link ? '<p style="margin-top:18px"><a href="' + p.link[1] + '"' + (/^https?:/.test(p.link[1]) ? ' target="_blank" rel="noopener"' : '') + ' style="font-weight:700">' + esc(p.link[0]) + "</a></p>" : "";
-    var sup = p.sup.length ? '<div class="support"><h3>' + T.sup + '</h3><div class="logo-grid" style="grid-template-columns:1fr 1fr">' + p.sup.map(function (s) { return '<div class="logo-tile"><img src="' + BASE + s.src + '" alt="' + esc(s.alt) + '" loading="lazy"></div>'; }).join("") + "</div></div>" : "";
+    var groups = [];
+    p.sup.forEach(function (x) { var h = x.h || T.sup, g = groups[groups.length - 1]; if (!g || g.h !== h) groups.push(g = { h: h, items: [] }); g.items.push(x); });
+    var sup = groups.length ? '<div class="support">' + groups.map(function (g) { return '<h3>' + esc(g.h) + '</h3><div class="logo-grid" style="grid-template-columns:' + (g.items.length > 1 ? '1fr 1fr' : 'minmax(0,260px)') + '">' + g.items.map(function (s) { return '<div class="logo-tile"><img src="' + BASE + s.src + '" alt="' + esc(s.alt) + '" loading="lazy"></div>'; }).join("") + "</div>"; }).join("") + "</div>" : "";
     var photo = p.img ? pic(p, "(max-width: 900px) 100vw, 40vw") : "";
     detail.innerHTML =
       '<div class="detail__nav"><a class="btn btn--line btn--sm" href="#">' + T.all + '</a><div style="display:flex;gap:10px"><a class="btn btn--line btn--sm" href="#' + prev.id + '" aria-label="' + T.prevL + esc(prev.title) + '">' + T.prev + '</a><a class="btn btn--line btn--sm" href="#' + next.id + '" aria-label="' + T.nextL + esc(next.title) + '">' + T.next + '</a></div></div>' +

@@ -697,3 +697,10 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 @media (min-width: 1180px) { .stats__grid.has-historia { grid-template-columns: repeat(5, 1fr); } }
 @media (min-width: 901px) and (max-width: 1179px) { .stats__grid.has-historia { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 900px) { .stats__grid.has-historia .stat--historia { grid-column: 1 / -1; } }
+
+/* Avís obert/tancat (assets/js/horario.js) */
+.horario-aviso { display: inline-block; border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 600; line-height: 1.3; }
+.horario-aviso--on { background: #E3F5E8; color: #17663A; }
+.horario-aviso--off { background: #FBE4E4; color: #9B1C1C; }
+.topbar .wrap > .horario-aviso { flex: 0 1 auto; }
+@media (max-width: 700px) { .topbar .wrap { flex-wrap: wrap; justify-content: center; padding-top: 6px; padding-bottom: 6px; } }

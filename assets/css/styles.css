@@ -717,3 +717,13 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 @media (max-width: 760px) { .topbar a.topbar__cat { padding: 4px 10px; font-size: 12px; } .topbar__radios { flex-wrap: wrap; justify-content: center; } }
 @media (min-width: 1101px) { .stats__grid { grid-template-columns: repeat(5, 1fr); gap: 24px; } }
 @media (min-width: 901px) and (max-width: 1100px) { .stats__grid { grid-template-columns: repeat(3, 1fr); } }
+/* Desplegable per anys (persones ateses) */
+.stat__years { margin-top: 10px; font-size: 14px; }
+.stat__years summary { cursor: pointer; font-weight: 700; color: var(--gold-ink); list-style: none; }
+.stat__years summary::-webkit-details-marker { display: none; }
+.stat__years summary::after { content: " ▾"; }
+.stat__years[open] summary::after { content: " ▴"; }
+.stat__years .yr { display: grid; grid-template-columns: 42px 1fr auto; gap: 8px; align-items: center; margin-top: 6px; }
+.stat__years .yr i { display: block; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.stat__years .yr i b { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
+.stat__years .yr strong { color: var(--ink); font-size: 13px; }

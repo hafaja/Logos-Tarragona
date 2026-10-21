@@ -688,19 +688,18 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 .now__item { width: 196px; height: 196px; padding: 22px; }
 .now__item strong { font-size: 18px; }
 @media (max-width: 700px) { .now__row { gap: 18px; } .now__item { width: 156px; height: 156px; padding: 16px; } .now__item strong { font-size: 15px; } .now__ico svg { width: 30px; height: 30px; } }
-
-/* Contador «Persones ateses» (connectat a Logos Intranet) */
-.stat[hidden], .stat__more[hidden], .stat__anys[hidden] { display: none; }
-.stat__more { display: block; background: none; border: 0; padding: 0; margin-top: 10px; font: inherit; font-size: 14px; color: var(--ink); text-decoration: underline; cursor: pointer; }
-.stat__anys { list-style: none; padding: 0; margin: 8px 0 0; font-size: 14px; }
-.stat__anys li { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; border-bottom: 1px solid rgba(30, 63, 102, .15); }
-@media (min-width: 1180px) { .stats__grid.has-historia { grid-template-columns: repeat(5, 1fr); } }
-@media (min-width: 901px) and (max-width: 1179px) { .stats__grid.has-historia { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 900px) { .stats__grid.has-historia .stat--historia { grid-column: 1 / -1; } }
-
-/* Avís obert/tancat (assets/js/horario.js) */
-.horario-aviso { display: inline-block; border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 600; line-height: 1.3; }
-.horario-aviso--on { background: #E3F5E8; color: #17663A; }
-.horario-aviso--off { background: #FBE4E4; color: #9B1C1C; }
-.topbar .wrap > .horario-aviso { flex: 0 1 auto; }
-@media (max-width: 700px) { .topbar .wrap { flex-wrap: wrap; justify-content: center; padding-top: 6px; padding-bottom: 6px; } }
+/* Ràdio a la barra superior */
+.topbar .wrap { justify-content: space-between; }
+.topbar a.topbar__radio { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 10px; border-radius: 999px; background: rgba(255,255,255,.08); color: #fff; font-size: 14px; line-height: 1; margin-inline-end: auto; transition: background .2s, color .2s; }
+.topbar a.topbar__radio:hover, .topbar a.topbar__radio:focus-visible { background: var(--gold); color: var(--ink); }
+.topbar__radio strong { color: var(--gold); font-weight: 800; letter-spacing: .02em; }
+.topbar a.topbar__radio:hover strong { color: var(--ink); }
+.radio__live { width: 9px; height: 9px; border-radius: 50%; background: #E5484D; box-shadow: 0 0 0 0 rgba(229,72,77,.6); animation: radioPulse 1.8s infinite; flex-shrink: 0; }
+@keyframes radioPulse { 0% { box-shadow: 0 0 0 0 rgba(229,72,77,.6); } 70% { box-shadow: 0 0 0 7px rgba(229,72,77,0); } 100% { box-shadow: 0 0 0 0 rgba(229,72,77,0); } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 760px) { .topbar .wrap { justify-content: center; } .topbar a.topbar__radio { margin-inline-end: 0; } .radio__txt { font-size: 13px; } }
+.topbar__radios { display: inline-flex; align-items: center; gap: 8px; margin-inline-end: auto; flex-wrap: wrap; }
+.topbar__radios a.topbar__radio { margin-inline-end: 0; }
+.topbar a.topbar__radio--cat { padding-inline-start: 14px; }
+@media (max-width: 760px) { .topbar__radios { margin-inline-end: 0; justify-content: center; } }
+@media (max-width: 760px) { .topbar__radios { flex-wrap: nowrap; gap: 6px; } .topbar a.topbar__radio { padding: 4px 10px 4px 8px; font-size: 12px; gap: 6px; } .topbar__radio .radio__txt { font-size: 12px; } }

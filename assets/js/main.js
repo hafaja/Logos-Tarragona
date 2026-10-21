@@ -46,7 +46,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   /* ---------- Cercador ---------- */
   var INDEX_ALL = {
     ca: [
-      ["Tràmits", "Fer un tràmit amb Logos Acompanya", "https://logos-acompana-digitalmente.netlify.app", "tramit ajuda cita acompanya prestacio"],
+      ["Tràmits", "Fer un tràmit amb Logos Acompanya", "https://acompanya.logostgn.cat", "tramit ajuda cita acompanya prestacio"],
       ["Formació", "Cursos i formació", "projectes.html", "curs cursos formacio taller digital actic catala"],
       ["Bretxa digital", "Logos Social Up Digital", "projectes.html#social-up", "bretxa digital idcat tramits internet ordinador"],
       ["Treball", "Orientació i inserció laboral", "que-fem.html", "feina treball ocupacio insercio orientacio cv"],
@@ -61,7 +61,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       ["Galetes", "Política de galetes", "politica-galetes.html", "galetes cookies privacitat"]
     ],
     es: [
-      ["Trámites", "Hacer un trámite con Logos Acompanya", "https://logos-acompana-digitalmente.netlify.app", "tramite ayuda cita acompanya prestacion"],
+      ["Trámites", "Hacer un trámite con Logos Acompanya", "https://acompanya.logostgn.cat", "tramite ayuda cita acompanya prestacion"],
       ["Formación", "Cursos y formación", "projectes.html", "curso cursos formacion taller digital actic catalan"],
       ["Brecha digital", "Logos Social Up Digital", "projectes.html#social-up", "brecha digital idcat tramites internet ordenador"],
       ["Empleo", "Orientación e inserción laboral", "que-fem.html", "empleo trabajo insercion orientacion cv"],
@@ -76,7 +76,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       ["Cookies", "Política de cookies", "politica-galetes.html", "cookies privacidad"]
     ],
     en: [
-      ["Paperwork", "Do your paperwork with Logos Acompanya", "https://logos-acompana-digitalmente.netlify.app", "paperwork procedure help appointment acompanya benefit"],
+      ["Paperwork", "Do your paperwork with Logos Acompanya", "https://acompanya.logostgn.cat", "paperwork procedure help appointment acompanya benefit"],
       ["Training", "Courses and training", "projectes.html", "course courses training workshop digital actic catalan"],
       ["Digital divide", "Logos Social Up Digital", "projectes.html#social-up", "digital divide idcat online internet computer"],
       ["Employment", "Career guidance and job placement", "que-fem.html", "job work employment guidance cv"],
@@ -91,7 +91,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       ["Cookies", "Cookie policy", "politica-galetes.html", "cookies privacy"]
     ],
     fr: [
-      ["Démarches", "Faire une démarche avec Logos Acompanya", "https://logos-acompana-digitalmente.netlify.app", "demarche aide rendez-vous acompanya prestation"],
+      ["Démarches", "Faire une démarche avec Logos Acompanya", "https://acompanya.logostgn.cat", "demarche aide rendez-vous acompanya prestation"],
       ["Formation", "Cours et formations", "projectes.html", "cours formation atelier numerique actic catalan"],
       ["Fracture numérique", "Logos Social Up Digital", "projectes.html#social-up", "fracture numerique idcat internet ordinateur"],
       ["Emploi", "Orientation et insertion professionnelle", "que-fem.html", "emploi travail insertion orientation cv"],
@@ -106,7 +106,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       ["Cookies", "Politique de cookies", "politica-galetes.html", "cookies confidentialite"]
     ],
     ar: [
-      ["الإجراءات", "أنجز إجراءاتك مع Logos Acompanya", "https://logos-acompana-digitalmente.netlify.app", "اجراء اجراءات مساعدة موعد منحة acompanya"],
+      ["الإجراءات", "أنجز إجراءاتك مع Logos Acompanya", "https://acompanya.logostgn.cat", "اجراء اجراءات مساعدة موعد منحة acompanya"],
       ["التدريب", "الدورات والتدريب", "projectes.html", "دورة دورات تدريب ورشة رقمي actic كتالونية"],
       ["الفجوة الرقمية", "Logos Social Up Digital", "projectes.html#social-up", "الفجوة الرقمية idcat انترنت حاسوب"],
       ["التشغيل", "التوجيه والإدماج المهني", "que-fem.html", "عمل شغل وظيفة توجيه سيرة"],

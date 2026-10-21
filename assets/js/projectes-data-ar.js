@@ -772,7 +772,42 @@ window.LOGOS_PROJECTES = [
     "alt": "Generalitat de Catalunya, Departament de Cultura"
    }
   ],
-  "link": null
+  "link": null,
+  "res": {
+   "h": "تعلّم الكتالانية: موارد مجانية",
+   "items": [
+    {
+     "t": "Català fàcil · 3Cat",
+     "d": "فيديوهات قصيرة من التلفزيون العمومي للبدء في التحدث بالكتالانية (المستويان A1-A2).",
+     "u": "https://www.3cat.cat/3cat/catala-facil/"
+    },
+    {
+     "t": "Parla.cat",
+     "d": "دروس الكتالانية عبر الإنترنت من حكومة كتالونيا، مع مؤطر أو بشكل حر.",
+     "u": "https://www.parla.cat/"
+    },
+    {
+     "t": "Consorci per a la Normalització Lingüística",
+     "d": "دروس حضورية في الكتالانية في طراغونة وفي كل كتالونيا.",
+     "u": "https://www.cpnl.cat/"
+    },
+    {
+     "t": "TAC12 مباشرة",
+     "d": "التلفزيون العمومي لمنطقة Camp de Tarragona: أخبار المنطقة بالكتالانية.",
+     "u": "https://tac12.tv/directe/"
+    },
+    {
+     "t": "Tarragona Ràdio مباشرة",
+     "d": "الإذاعة البلدية لطراغونة، ببرامج الجمعيات والمواضيع الاجتماعية.",
+     "u": "https://media.tarragonaradio.cat/#tgnradioendirecte"
+    },
+    {
+     "t": "Catalunya Ràdio مباشرة · 3Cat",
+     "d": "الإذاعة العمومية لكتالونيا، لتعويد الأذن على الكتالانية.",
+     "u": "https://www.3cat.cat/3cat/directes/catalunya-radio/"
+    }
+   ]
+  }
  },
  {
   "id": "gitanes",

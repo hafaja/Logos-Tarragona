@@ -41,6 +41,7 @@
     var i = P.indexOf(p), prev = P[(i - 1 + P.length) % P.length], next = P[(i + 1) % P.length];
     var figs = p.figs.length ? '<div class="figs">' + p.figs.map(function (f) { return '<div class="fig"><b>' + esc(f[0]) + "</b><span>" + esc(f[1]) + "</span></div>"; }).join("") + "</div>" : "";
     var secs = p.secs.map(function (s) { return '<div class="box"><h3>' + esc(s.h) + '</h3><ul class="ticks">' + s.items.map(function (it) { return "<li>" + esc(it) + "</li>"; }).join("") + "</ul></div>"; }).join("");
+    var res = p.res ? '<div class="box res"><h3>' + esc(p.res.h) + '</h3><div class="res__grid">' + p.res.items.map(function (r) { return '<a class="res__item" href="' + r.u + '" target="_blank" rel="noopener"><strong>' + esc(r.t) + '</strong><span>' + esc(r.d) + '</span></a>'; }).join("") + "</div></div>" : "";
     var link = p.link ? '<p style="margin-top:18px"><a href="' + p.link[1] + '"' + (/^https?:/.test(p.link[1]) ? ' target="_blank" rel="noopener"' : '') + ' style="font-weight:700">' + esc(p.link[0]) + "</a></p>" : "";
     var groups = [];
     p.sup.forEach(function (x) { var h = x.h || T.sup, g = groups[groups.length - 1]; if (!g || g.h !== h) groups.push(g = { h: h, items: [] }); g.items.push(x); });
@@ -50,7 +51,7 @@
       '<div class="detail__nav"><a class="btn btn--line btn--sm" href="#">' + T.all + '</a><div style="display:flex;gap:10px"><a class="btn btn--line btn--sm" href="#' + prev.id + '" aria-label="' + T.prevL + esc(prev.title) + '">' + T.prev + '</a><a class="btn btn--line btn--sm" href="#' + next.id + '" aria-label="' + T.nextL + esc(next.title) + '">' + T.next + '</a></div></div>' +
       '<div class="detail' + (photo || sup ? '' : ' detail--full') + '"><article><div class="tags"><span class="tag">' + esc(p.amb) + '</span><span class="tag tag--grey">' + esc(p.year) + "</span></div>" +
       '<h2 id="fitxa-titol" tabindex="-1">' + esc(p.title) + '</h2><p class="detail__sub">' + esc(p.sub) + "</p>" +
-      p.intro.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + figs + secs + link + "</article>" +
+      p.intro.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("") + figs + secs + res + link + "</article>" +
       (photo || sup ? "<aside>" + photo + sup + "</aside>" : "") + '</div>';
   }
   function route() {

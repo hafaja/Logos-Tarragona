@@ -772,7 +772,42 @@ window.LOGOS_PROJECTES = [
     "alt": "Generalitat de Catalunya, Departament de Cultura"
    }
   ],
-  "link": null
+  "link": null,
+  "res": {
+   "h": "Aprende catalán: recursos gratuitos",
+   "items": [
+    {
+     "t": "Català fàcil · 3Cat",
+     "d": "Vídeos cortos de la televisión pública para empezar a hablar catalán (niveles A1-A2).",
+     "u": "https://www.3cat.cat/3cat/catala-facil/"
+    },
+    {
+     "t": "Parla.cat",
+     "d": "Cursos de catalán en línea de la Generalitat, con tutor o por libre.",
+     "u": "https://www.parla.cat/"
+    },
+    {
+     "t": "Consorci per a la Normalització Lingüística",
+     "d": "Cursos presenciales de catalán en Tarragona y en toda Cataluña.",
+     "u": "https://www.cpnl.cat/"
+    },
+    {
+     "t": "TAC12 en directo",
+     "d": "La televisión pública del Camp de Tarragona: actualidad del territorio en catalán.",
+     "u": "https://tac12.tv/directe/"
+    },
+    {
+     "t": "Tarragona Ràdio en directo",
+     "d": "La radio municipal de Tarragona, con programas de entidades y temas sociales.",
+     "u": "https://media.tarragonaradio.cat/#tgnradioendirecte"
+    },
+    {
+     "t": "Catalunya Ràdio en directo · 3Cat",
+     "d": "La radio pública de Cataluña, para acostumbrar el oído al catalán.",
+     "u": "https://www.3cat.cat/3cat/directes/catalunya-radio/"
+    }
+   ]
+  }
  },
  {
   "id": "gitanes",

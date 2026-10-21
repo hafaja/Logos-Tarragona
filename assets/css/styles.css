@@ -715,3 +715,5 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 .topbar a.topbar__cat { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; background: var(--gold); color: var(--ink); font-size: 14px; font-weight: 800; line-height: 1; }
 .topbar a.topbar__cat:hover, .topbar a.topbar__cat:focus-visible { background: #fff; color: var(--ink); }
 @media (max-width: 760px) { .topbar a.topbar__cat { padding: 4px 10px; font-size: 12px; } .topbar__radios { flex-wrap: wrap; justify-content: center; } }
+@media (min-width: 1101px) { .stats__grid { grid-template-columns: repeat(5, 1fr); gap: 24px; } }
+@media (min-width: 901px) and (max-width: 1100px) { .stats__grid { grid-template-columns: repeat(3, 1fr); } }

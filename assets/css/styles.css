@@ -703,3 +703,15 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 .topbar a.topbar__radio--cat { padding-inline-start: 14px; }
 @media (max-width: 760px) { .topbar__radios { margin-inline-end: 0; justify-content: center; } }
 @media (max-width: 760px) { .topbar__radios { flex-wrap: nowrap; gap: 6px; } .topbar a.topbar__radio { padding: 4px 10px 4px 8px; font-size: 12px; gap: 6px; } .topbar__radio .radio__txt { font-size: 12px; } }
+/* Recursos (Aprèn català) */
+.res { scroll-margin-top: 120px; }
+.res__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin-top: 6px; }
+.res__item { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1.5px solid var(--line); border-radius: 14px; background: var(--paper); text-decoration: none; color: var(--body); transition: border-color .2s, transform .2s; }
+.res__item:hover, .res__item:focus-visible { border-color: var(--gold); transform: translateY(-2px); }
+.res__item strong { color: var(--ink); font-size: 16px; }
+.res__item strong::after { content: " ↗"; color: var(--gold-ink); }
+.res__item span { font-size: 14px; color: var(--muted); line-height: 1.45; }
+/* Botó Català per a Tots a la barra superior */
+.topbar a.topbar__cat { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; background: var(--gold); color: var(--ink); font-size: 14px; font-weight: 800; line-height: 1; }
+.topbar a.topbar__cat:hover, .topbar a.topbar__cat:focus-visible { background: #fff; color: var(--ink); }
+@media (max-width: 760px) { .topbar a.topbar__cat { padding: 4px 10px; font-size: 12px; } .topbar__radios { flex-wrap: wrap; justify-content: center; } }

@@ -377,3 +377,29 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   st.addEventListener("touchend", function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(cur + ((dx < 0) !== rtl ? 1 : -1)); x0 = null; start(); });
   render(); start();
 })();
+
+/* Anys d'experiència: es calcula sol cada any */
+(function () {
+  Array.prototype.forEach.call(document.querySelectorAll("[data-since]"), function (el) {
+    var y = new Date().getFullYear() - parseInt(el.getAttribute("data-since"), 10);
+    if (y > 0) el.textContent = "+" + y;
+  });
+})();
+
+
+/* Persones ateses: xifra en directe des de la Intranet (Història pública) */
+(function () {
+  var box = document.querySelector("[data-historia]"); if (!box || !window.fetch) return;
+  var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
+  var lang = (document.documentElement.lang || "ca").slice(0, 2);
+  var loc = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR", ar: "ar" }[lang] || "ca-ES";
+  var S = { ca: "Persones acompanyades per Logos des del %s.", es: "Personas acompañadas por Logos desde %s.", en: "People supported by Logos since %s.", fr: "Personnes accompagnées par Logos depuis %s.", ar: "أشخاص رافقتهم لوغوس منذ %s." };
+  fetch(U + "/rest/v1/rpc/historia_publica", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: "{}" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      if (!d || !d.total) return;
+      box.querySelector("b").textContent = Number(d.total).toLocaleString(loc === "ar" ? "ca-ES" : loc);
+      if (d.desde) box.querySelector("span").textContent = (S[lang] || S.ca).replace("%s", d.desde);
+    })
+    .catch(function () {});
+})();

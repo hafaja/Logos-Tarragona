@@ -400,6 +400,17 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       if (!d || !d.total) return;
       box.querySelector("b").textContent = Number(d.total).toLocaleString(loc === "ar" ? "ca-ES" : loc);
       if (d.desde) box.querySelector("span").textContent = (S[lang] || S.ca).replace("%s", d.desde);
+      var anys = (d.por_anio || []).filter(function (x) { return x && x.personas; });
+      if (anys.length) {
+        var L = { ca: "Veure per anys", es: "Ver por años", en: "See by year", fr: "Voir par année", ar: "عرض حسب السنة" }[lang] || "Veure per anys";
+        var m = Math.max.apply(null, anys.map(function (x) { return x.personas; }));
+        var fmt = function (n) { return Number(n).toLocaleString(loc === "ar" ? "ca-ES" : loc); };
+        var det = document.createElement("details"); det.className = "stat__years";
+        det.innerHTML = "<summary>" + L + "</summary>" + anys.map(function (x) {
+          return '<div class="yr"><span>' + x.anio + '</span><i><b style="width:' + Math.max(3, Math.round(x.personas / m * 100)) + '%"></b></i><strong>' + fmt(x.personas) + "</strong></div>";
+        }).join("");
+        box.appendChild(det);
+      }
     })
     .catch(function () {});
 })();

@@ -727,3 +727,33 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
 .stat__years .yr i { display: block; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
 .stat__years .yr i b { display: block; height: 100%; background: var(--gold); border-radius: 99px; }
 .stat__years .yr strong { color: var(--ink); font-size: 13px; }
+/* Transparència: subvencions, convenis i contractació */
+.fx-legal { max-width: 900px; color: var(--body); font-size: 16px; margin: -6px 0 22px; }
+.fx-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.fx-tab { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--white); color: var(--ink); font: inherit; font-weight: 700; font-size: 16px; cursor: pointer; }
+.fx-tab b { font-family: var(--serif); color: var(--gold-ink); font-size: 18px; }
+.fx-tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.fx-tab[aria-selected="true"] b { color: var(--gold); }
+.fx-desc { color: var(--muted); margin-bottom: 14px; }
+.fx-year { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; margin-bottom: 18px; }
+.fx-year__head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px 22px; background: var(--ink); color: #fff; }
+.fx-year__head h4 { font-family: var(--serif); font-size: 22px; color: #fff; }
+.fx-year__head span { color: #E8E4D8; } .fx-year__head strong { color: var(--gold); }
+.fx-table { overflow-x: auto; }
+.fx-table table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.fx-table th { text-align: start; padding: 12px 16px; background: var(--tint); color: var(--ink); font-size: 14px; }
+.fx-table td { padding: 12px 16px; border-top: 1px solid var(--line); vertical-align: top; color: var(--body); }
+.fx-table td:first-child { color: var(--ink); font-weight: 600; }
+.fx-num { white-space: nowrap; font-weight: 700; color: var(--ink) !important; text-align: end; }
+.fx-empty { padding: 22px; border: 1.5px dashed var(--line); border-radius: var(--r-md); color: var(--muted); background: var(--white); }
+.fx-foot { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 8px; padding: 16px 20px; border-radius: var(--r-md); background: var(--tint); }
+.fx-foot small { display: block; color: var(--muted); font-size: 13px; } .fx-foot strong { color: var(--ink); } .fx-foot a { color: var(--ink); }
+@media (max-width: 760px) {
+  .fx-table thead { display: none; }
+  .fx-table tr { display: block; padding: 10px 16px; border-top: 1px solid var(--line); }
+  .fx-table td { display: block; border: 0; padding: 4px 0; text-align: start; }
+  .fx-table td::before { content: attr(data-l); display: block; font-size: 12px; font-weight: 700; color: var(--muted); }
+  .fx-num { text-align: start; }
+  .fx-foot { grid-template-columns: 1fr; }
+}
+.fx-year__head h4 { margin: 0; line-height: 1.2; } .fx-year__head { min-height: 0; }

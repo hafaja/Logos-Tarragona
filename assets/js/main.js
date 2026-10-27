@@ -414,3 +414,23 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     })
     .catch(function () {});
 })();
+
+/* Transparència: pestanyes */
+(function () {
+  var tabs = document.querySelectorAll(".fx-tab"); if (!tabs.length) return;
+  function show(t) {
+    Array.prototype.forEach.call(tabs, function (b) {
+      var on = b === t; b.setAttribute("aria-selected", on ? "true" : "false"); b.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(b.getAttribute("aria-controls")); if (p) p.hidden = !on;
+    });
+  }
+  Array.prototype.forEach.call(tabs, function (b, i) {
+    b.addEventListener("click", function () { show(b); });
+    b.addEventListener("keydown", function (e) {
+      var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0; if (!d) return;
+      if (document.documentElement.dir === "rtl") d = -d;
+      var n = tabs[(i + d + tabs.length) % tabs.length]; show(n); n.focus(); e.preventDefault();
+    });
+  });
+  show(tabs[0]);
+})();

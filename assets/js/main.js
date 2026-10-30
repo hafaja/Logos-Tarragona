@@ -378,6 +378,30 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   render(); start();
 })();
 
+/* Xifres que pugen: «El nostre impacte» com una diapositiva. Cada número puja de 0 (o de l'anterior) fins al seu valor. */
+(function () {
+  var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var lang = (document.documentElement.lang || "ca").slice(0, 2);
+  var loc = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR" }[lang] || "ca-ES";
+  window.LogosCompta = function (el) {
+    if (!el) return;
+    var txt = el.textContent.trim(), m = txt.match(/^([^0-9]*)([0-9][0-9.,\s]*)(.*)$/); if (!m) return;
+    var fi = parseInt(m[2].replace(/[^0-9]/g, ""), 10); if (!fi) return;
+    var ini = Number(el.getAttribute("data-shown") || 0); el.setAttribute("data-shown", fi);
+    var put = function (v) { el.textContent = m[1] + String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, lang === "en" ? "," : (lang === "fr" ? "\u202f" : ".")) + m[3]; };
+    if (quiet) { put(fi); return; }
+    var dur = 1200 + Math.min(1000, Math.log(fi + 1) * 120), t0 = null;
+    var pas = function (t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / dur); put(ini + (fi - ini) * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(pas); };
+    requestAnimationFrame(pas);
+  };
+  var sec = document.querySelector(".stats"); if (!sec) return;
+  var go = function () {
+    sec.classList.add("is-in"); window.__logosStatsIn = true;
+    Array.prototype.forEach.call(sec.querySelectorAll(".stat > b"), function (b) { if (!b.hasAttribute("data-live")) window.LogosCompta(b); });
+  };
+  if ("IntersectionObserver" in window && !quiet) { sec.classList.add("anim"); var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); go(); } }, { threshold: 0.25 }); io.observe(sec); } else go();
+})();
+
 /* Anys d'experiència: es calcula sol cada any */
 (function () {
   Array.prototype.forEach.call(document.querySelectorAll("[data-since]"), function (el) {
@@ -399,6 +423,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     .then(function (d) {
       if (!d || !d.total) return;
       box.querySelector("b").textContent = Number(d.total).toLocaleString(loc === "ar" ? "ca-ES" : loc);
+      if (window.__logosStatsIn && window.LogosCompta) window.LogosCompta(box.querySelector("b"));
       var anys = (d.por_anio || []).filter(function (x) { return x && x.personas && Number(x.anio) >= 2000; });   // < 2000 = data mal escrita
       var desde = Number(d.desde) >= 2000 ? d.desde : (anys.length ? Math.min.apply(null, anys.map(function (x) { return Number(x.anio); })) : null);
       if (desde) box.querySelector("span").textContent = (S[lang] || S.ca).replace("%s", desde);
@@ -460,7 +485,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
       var anys = (d.por_anio || []).filter(function (x) { return x && x.veces && Number(x.anio) >= 2000; });
       var desde = Number(d.desde) >= 2000 ? d.desde : (anys.length ? anys[0].anio : "");
       var box = document.createElement("div"); box.className = "stat"; box.setAttribute("data-vegades", "");
-      box.innerHTML = "<b>0</b><strong>" + T[0] + "</strong><span>" + T[1].replace("%s", desde) + "</span>";
+      box.innerHTML = "<b data-live>0</b><strong>" + T[0] + "</strong><span>" + T[1].replace("%s", desde) + "</span>";
       ref.parentNode.insertBefore(box, ref.nextSibling);
       if (anys.length) {
         var m = Math.max.apply(null, anys.map(function (x) { return x.veces; }));
@@ -471,14 +496,187 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
         box.appendChild(det);
       }
       // la xifra puja de 0 fins al total quan es veu
-      var el = box.querySelector("b"), fi = Number(d.intervenciones);
-      var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-      var go = function () {
-        if (quiet) { el.textContent = fmt(fi); return; }
-        var t0 = null; var pas = function (t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1600); el.textContent = fmt(Math.round(fi * (1 - Math.pow(1 - k, 3)))); if (k < 1) requestAnimationFrame(pas); };
-        requestAnimationFrame(pas);
+      var el = box.querySelector("b"); el.textContent = fmt(Number(d.intervenciones));
+      var go = function () { if (window.LogosCompta) window.LogosCompta(el); };
+      if (window.__logosStatsIn || !("IntersectionObserver" in window)) go();
+      else { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); go(); } }, { threshold: 0.3 }); io.observe(box); }
+    })
+    .catch(function () {});
+})();
+
+
+/* Vídeos del canal (YouTube, Vimeo o MP4): es carreguen només quan es prem ▶ (sense galetes de YouTube abans) */
+function canalVid(u){
+  u = String(u || '').trim(); let m;
+  if((m = u.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/))([\w-]{11})/i))) return { t: 'yt', src: 'https://www.youtube-nocookie.com/embed/' + m[1] + '?autoplay=1&rel=0', thumb: 'https://i.ytimg.com/vi/' + m[1] + '/hqdefault.jpg' };
+  if((m = u.match(/vimeo\.com\/(?:video\/)?(\d+)/i))) return { t: 'vimeo', src: 'https://player.vimeo.com/video/' + m[1] + '?autoplay=1&dnt=1' };
+  if(/^https:\/\/[^\s"'<>]+\.(mp4|webm|mov|m4v)(\?[^\s"'<>]*)?$/i.test(u)) return { t: 'mp4', src: u };
+  return null;
+}
+function canalVidHtml(url, poster, nombre, etiqueta, esc){
+  const v = canalVid(url); if(!v) return '';
+  const p = poster || v.thumb || '';
+  return '<div class="vid" data-src="' + esc(v.src) + '" data-t="' + v.t + '"><button type="button" class="vid-play" aria-label="' + esc(etiqueta + ': ' + nombre) + '"' + (p ? ' style="background-image:url(\'' + esc(p) + '\')"' : '') + '><span aria-hidden="true">▶</span></button></div>';
+}
+if(!window.__vidClick){ window.__vidClick = true;
+  document.addEventListener('click', function(e){
+    const b = e.target.closest && e.target.closest('.vid-play'); if(!b) return;
+    e.preventDefault(); e.stopPropagation();
+    const w = b.parentNode, src = w.getAttribute('data-src'), t = w.getAttribute('data-t'); let el;
+    if(t === 'mp4'){ el = document.createElement('video'); el.controls = true; el.autoplay = true; el.setAttribute('playsinline', ''); el.src = src; }
+    else { el = document.createElement('iframe'); el.src = src; el.title = 'Vídeo'; el.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen'); el.setAttribute('allowfullscreen', ''); }
+    w.innerHTML = ''; w.appendChild(w.ownerDocument.createTextNode('')); w.appendChild(el); w.classList.add('on');
+    try { window.dispatchEvent(new Event('logos-video')); } catch(_){}
+    setTimeout(function(){ try { el.focus(); } catch(_){} }, 50);
+  }, true);
+}
+
+/* Canal de Logos: notícies, agenda i calendari en directe des de la Intranet (canal_publico). Només el que l'equip ha publicat. */
+(function () {
+  var sec = document.getElementById("actualitat"); if (!sec || !window.fetch) return;
+  var wrap = sec.querySelector(".wrap") || sec;
+  var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
+  var lang = (document.documentElement.lang || "ca").slice(0, 2);
+  var loc = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR", ar: "ar" }[lang] || "ca-ES";
+  var T = {
+    ca: { eb: "Actualitat i agenda", h: "Què passa a Logos", nov: "Notícies i anuncis", ag: "Agenda", cal: "Afegir al calendari", mes: "Llegir més", menys: "Llegir menys", buit: "Aviat publicarem les properes activitats.", tipus: { noticia: "Notícia", evento: "Activitat", anuncio: "Anunci", convocatoria: "Convocatòria" }, ant: "Mes anterior", seg: "Mes següent", dies: ["dl", "dt", "dc", "dj", "dv", "ds", "dg"], tots: "Veure totes les activitats" },
+    es: { eb: "Actualidad y agenda", h: "Qué pasa en Logos", nov: "Noticias y anuncios", ag: "Agenda", cal: "Añadir al calendario", mes: "Leer más", menys: "Leer menos", buit: "Pronto publicaremos las próximas actividades.", tipus: { noticia: "Noticia", evento: "Actividad", anuncio: "Anuncio", convocatoria: "Convocatoria" }, ant: "Mes anterior", seg: "Mes siguiente", dies: ["lu", "ma", "mi", "ju", "vi", "sá", "do"], tots: "Ver todas las actividades" },
+    en: { eb: "News and events", h: "What's on at Logos", nov: "News and notices", ag: "Events", cal: "Add to calendar", mes: "Read more", menys: "Read less", buit: "Upcoming activities will be published soon.", tipus: { noticia: "News", evento: "Event", anuncio: "Notice", convocatoria: "Call" }, ant: "Previous month", seg: "Next month", dies: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"], tots: "See all events" },
+    fr: { eb: "Actualités et agenda", h: "Ce qui se passe à Logos", nov: "Actualités et annonces", ag: "Agenda", cal: "Ajouter au calendrier", mes: "Lire la suite", menys: "Réduire", buit: "Les prochaines activités seront bientôt publiées.", tipus: { noticia: "Actualité", evento: "Activité", anuncio: "Annonce", convocatoria: "Appel" }, ant: "Mois précédent", seg: "Mois suivant", dies: ["lu", "ma", "me", "je", "ve", "sa", "di"], tots: "Voir toutes les activités" },
+    ar: { eb: "المستجدات والأجندة", h: "ماذا يحدث في لوغوس", nov: "أخبار وإعلانات", ag: "الأجندة", cal: "أضف إلى التقويم", mes: "اقرأ المزيد", menys: "أقل", buit: "سننشر الأنشطة القادمة قريبًا.", tipus: { noticia: "خبر", evento: "نشاط", anuncio: "إعلان", convocatoria: "دعوة" }, ant: "الشهر السابق", seg: "الشهر التالي", dies: ["ن", "ث", "ر", "خ", "ج", "س", "ح"], tots: "عرض كل الأنشطة" }
+  }[lang] || null; if (!T) return;
+  var esc = function (t) { return String(t == null ? "" : t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var tit = function (x) { return lang === "ca" && x.titulo_ca ? x.titulo_ca : x.titulo; };
+  var txt = function (x) { return lang === "ca" && x.texto_ca ? x.texto_ca : (x.texto || ""); };
+  var dia = function (d, o) { return new Date(d + "T00:00:00").toLocaleDateString(loc, o); };
+  var hora = function (x) { return x.hora_inicio ? String(x.hora_inicio).slice(0, 5) + (x.hora_fin ? "–" + String(x.hora_fin).slice(0, 5) : "") : ""; };
+  var iso = function (d) { return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
+  window.LogosICS = function (x, titol, text) {
+    var f = String(x.fecha_evento).replace(/-/g, ""), ff = String(x.fecha_fin || x.fecha_evento).replace(/-/g, "");
+    var lin = function (v) { return String(v || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/([,;])/g, "\\$1"); };
+    var fiDia = new Date(String(x.fecha_fin || x.fecha_evento) + "T00:00:00"); fiDia.setDate(fiDia.getDate() + 1);
+    var ini = x.hora_inicio ? "DTSTART:" + f + "T" + String(x.hora_inicio).slice(0, 5).replace(":", "") + "00" : "DTSTART;VALUE=DATE:" + f;
+    var fi = x.hora_inicio ? "DTEND:" + ff + "T" + String(x.hora_fin || x.hora_inicio).slice(0, 5).replace(":", "") + "00" : "DTEND;VALUE=DATE:" + iso(fiDia).replace(/-/g, "");
+    var ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Associacio Logos//Canal//CA", "BEGIN:VEVENT", "UID:" + x.id + "@logostgn.cat", "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z", ini, fi, "SUMMARY:" + lin(titol), x.lugar ? "LOCATION:" + lin(x.lugar) : "", "DESCRIPTION:" + lin(text + (x.enlace ? "\n" + x.enlace : "")), "END:VEVENT", "END:VCALENDAR"].filter(Boolean).join("\r\n");
+    var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" })); a.download = "logos-" + f + ".ics"; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  };
+  fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: JSON.stringify({ p_donde: "web" }) })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (L) {
+      if (!Array.isArray(L)) return; L = L.filter(function (x) { return x.tipo !== "publicidad"; }); if (!L.length) return;
+      var hoy = iso(new Date());
+      var ev = L.filter(function (x) { return x.tipo !== "publicidad" && x.fecha_evento && (x.fecha_fin || x.fecha_evento) >= hoy; }).sort(function (a, b) { return a.fecha_evento < b.fecha_evento ? -1 : 1; });
+      var nov = L.filter(function (x) { return x.tipo !== "publicidad" && (!x.fecha_evento || x.tipo !== "evento"); }).slice(0, 6);
+      window.__logosCanal = { L: L, ev: ev };
+      var card = function (x) {
+        var t = txt(x), llarg = t.length > 220;
+        var vh = x.video_url ? canalVidHtml(x.video_url, x.imagen_url, tit(x), ({ ca: "Veure el vídeo", es: "Ver el vídeo", en: "Watch the video", fr: "Voir la vidéo", ar: "شاهد الفيديو" })[lang] || "Vídeo", esc) : "";
+        return '<article class="canal-card' + (x.destacado ? " is-dest" : "") + '">' + (vh || (x.imagen_url ? '<img src="' + esc(x.imagen_url) + '" alt="" loading="lazy">' : "")) +
+          '<div class="canal-card__b"><span class="canal-tag t-' + esc(x.tipo) + '">' + esc(T.tipus[x.tipo] || "") + "</span>" +
+          '<time datetime="' + esc((x.fecha_evento || x.publicar_desde || "").slice(0, 10)) + '">' + esc(dia((x.fecha_evento || x.publicar_desde).slice(0, 10), { day: "numeric", month: "long", year: "numeric" })) + "</time>" +
+          "<h3>" + esc(tit(x)) + "</h3>" +
+          (t ? (llarg ? '<details class="canal-mes"><summary><p>' + esc(t.slice(0, 220)) + '…</p><span>' + T.mes + "</span></summary><p>" + esc(t).replace(/\n/g, "<br>") + "</p></details>" : "<p>" + esc(t).replace(/\n/g, "<br>") + "</p>") : "") +
+          (x.enlace ? '<a class="btn btn--gold btn--sm" href="' + esc(x.enlace) + '" target="_blank" rel="noopener">' + esc(x.enlace_texto || T.mes) + " →</a>" : "") + "</div></article>";
       };
-      if ("IntersectionObserver" in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); go(); } }, { threshold: 0.3 }); io.observe(box); } else go();
+      var agenda = function (llista) {
+        return llista.length ? llista.slice(0, 8).map(function (x) {
+          return '<li class="ag-it"><div class="ag-d"><b>' + esc(dia(x.fecha_evento, { day: "numeric" })) + "</b><span>" + esc(dia(x.fecha_evento, { month: "short" })) + "</span></div>" +
+            '<div class="ag-x"><strong>' + esc(tit(x)) + "</strong><small>" + esc([dia(x.fecha_evento, { weekday: "long" }), hora(x), x.lugar].filter(Boolean).join(" · ")) + "</small>" +
+            '<button type="button" class="ag-ics" data-id="' + esc(x.id) + '">📅 ' + T.cal + "</button></div></li>";
+        }).join("") : '<li class="ag-buit">' + T.buit + "</li>";
+      };
+      var box = document.createElement("div"); box.className = "canal"; box.id = "canal-logos";
+      box.innerHTML = '<div class="head head--single" style="margin-bottom:22px"><div><span class="eyebrow">' + T.eb + "</span><h2>" + T.h + "</h2></div></div>" +
+        '<div class="canal__grid"><div class="canal__nov">' + (nov.length ? "<h3 class=\"canal__h\">" + T.nov + '</h3><div class="canal__cards">' + nov.map(card).join("") + "</div>" : "") + "</div>" +
+        '<aside class="canal__ag"><h3 class="canal__h">' + T.ag + '</h3><div class="canal-cal" id="canal-cal"></div><ul class="ag-llista" id="ag-llista">' + agenda(ev) + "</ul></aside></div>";
+      wrap.insertBefore(box, wrap.firstChild);
+      var mes = new Date(); mes.setDate(1); if (ev.length) { var p = new Date(ev[0].fecha_evento + "T00:00:00"); mes = new Date(p.getFullYear(), p.getMonth(), 1); }
+      var sel = null;
+      var pinta = function () {
+        var y = mes.getFullYear(), m = mes.getMonth(), n = new Date(y, m + 1, 0).getDate(), ini = (new Date(y, m, 1).getDay() + 6) % 7, h = "";
+        for (var i = 0; i < ini; i++) h += "<span></span>";
+        for (var d = 1; d <= n; d++) {
+          var f = iso(new Date(y, m, d)), hi = ev.filter(function (x) { return x.fecha_evento <= f && (x.fecha_fin || x.fecha_evento) >= f; });
+          h += hi.length ? '<button type="button" data-f="' + f + '" class="' + (f === hoy ? "hoy " : "") + (sel === f ? "sel" : "") + '" aria-label="' + esc(d + ": " + hi.map(tit).join(", ")) + '">' + d + "<i></i></button>" : '<span class="' + (f === hoy ? "hoy" : "") + '">' + d + "</span>";
+        }
+        var nom = mes.toLocaleDateString(loc, { month: "long", year: "numeric" });
+        document.getElementById("canal-cal").innerHTML = '<div class="cc-h"><button type="button" data-m="-1" aria-label="' + T.ant + '">‹</button><strong>' + esc(nom.charAt(0).toUpperCase() + nom.slice(1)) + '</strong><button type="button" data-m="1" aria-label="' + T.seg + '">›</button></div><div class="cc-g">' + T.dies.map(function (x) { return "<b>" + x + "</b>"; }).join("") + h + "</div>";
+      };
+      pinta();
+      box.addEventListener("click", function (e) {
+        var b = e.target.closest("button"); if (!b) return;
+        if (b.dataset.m) { mes = new Date(mes.getFullYear(), mes.getMonth() + Number(b.dataset.m), 1); pinta(); }
+        else if (b.dataset.f) { sel = sel === b.dataset.f ? null : b.dataset.f; pinta(); document.getElementById("ag-llista").innerHTML = agenda(sel ? ev.filter(function (x) { return x.fecha_evento <= sel && (x.fecha_fin || x.fecha_evento) >= sel; }) : ev); }
+        else if (b.classList.contains("ag-ics")) { var x = L.filter(function (q) { return q.id === b.dataset.id; })[0]; if (x) window.LogosICS(x, tit(x), txt(x)); }
+      });
+    })
+    .catch(function () {});
+})();
+
+
+/* Publicitat d'entitats amb contracte: carrusel amb etiqueta «Publicitat», pausa i comptador de vistes i clics (canal_publico + canal_contar) */
+(function () {
+  var after = document.getElementById("actualitat"); if (!after || !window.fetch) return;
+  var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
+  var H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
+  var lang = (document.documentElement.lang || "ca").slice(0, 2), ca = lang === "ca";
+  var T = { ca: ["Entitats que ens acompanyen", "Espai patrocinat", "Publicitat", "Més informació", "Pausa", "Reprendre", "Anunci anterior", "Anunci següent", "Anunci"],
+    es: ["Entidades que nos acompañan", "Espacio patrocinado", "Publicidad", "Más información", "Pausa", "Reanudar", "Anuncio anterior", "Anuncio siguiente", "Anuncio"],
+    en: ["Organisations that support us", "Sponsored space", "Advertising", "More information", "Pause", "Resume", "Previous ad", "Next ad", "Ad"],
+    fr: ["Les entités qui nous accompagnent", "Espace sponsorisé", "Publicité", "En savoir plus", "Pause", "Reprendre", "Annonce précédente", "Annonce suivante", "Annonce"],
+    ar: ["الجهات التي ترافقنا", "مساحة مموّلة", "إعلان", "مزيد من المعلومات", "إيقاف", "استئناف", "الإعلان السابق", "الإعلان التالي", "إعلان"] }[lang]; if (!T) return;
+  var E = { azul: ["#16325A", "#1F66C1", "#FFFFFF", "#F2BC2C"], oro: ["#F2BC2C", "#FFE08A", "#16325A", "#16325A"], verde: ["#14532D", "#2E8B57", "#FFFFFF", "#FDE68A"], coral: ["#9A3412", "#EA580C", "#FFFFFF", "#FFF4D6"], violeta: ["#3B0764", "#7C3AED", "#FFFFFF", "#FDE68A"], noche: ["#0F172A", "#334155", "#FFFFFF", "#F2BC2C"] };
+  var esc = function (t) { return String(t == null ? "" : t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var cont = function (ids, que) { try { fetch(U + "/rest/v1/rpc/canal_contar", { method: "POST", headers: H, body: JSON.stringify({ p_ids: ids, p_que: que }), keepalive: true }); } catch (e) {} };
+  fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: H, body: JSON.stringify({ p_donde: "web" }) })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (L) {
+      var A = (L || []).filter(function (x) { return x.tipo === "publicidad"; }); if (!A.length) return;
+      var slide = function (x, i) {
+        var e = E[x.estilo] || E.azul, tit = ca && x.titulo_ca ? x.titulo_ca : x.titulo, tx = ca && x.texto_ca ? x.texto_ca : (x.texto || "");
+        var et = '<span class="anu-et">' + T[2] + " · " + esc(x.entidad) + "</span>";
+        if (x.video_url && canalVid(x.video_url)) {
+          return '<div class="anu-sl" role="group" aria-roledescription="' + T[8] + '" aria-label="' + (i + 1) + " / " + A.length + '"' + (i ? " hidden" : "") + '><div class="anu anu-vid" style="background:linear-gradient(135deg,' + e[0] + "," + e[1] + ");color:" + e[2] + '">' + et +
+            canalVidHtml(x.video_url, x.imagen_url, tit, ({ ca: "Veure el vídeo", es: "Ver el vídeo", en: "Watch the video", fr: "Voir la vidéo", ar: "شاهد الفيديو" })[lang] || "Vídeo", esc) +
+            '<div class="anu-t"><strong>' + esc(tit) + "</strong>" + (tx ? "<p>" + esc(tx.slice(0, 200)) + "</p>" : "") + (x.enlace ? '<a class="anu-cta" href="' + esc(x.enlace) + '" target="_blank" rel="noopener sponsored" data-id="' + esc(x.id) + '" style="background:' + e[3] + ";color:" + e[0] + '">' + esc(x.enlace_texto || T[3]) + " →</a>" : "") + "</div></div></div>";
+        }
+        var inner = x.imagen_url && x.formato !== "cuadrado" ? et + '<img src="' + esc(x.imagen_url) + '" alt="' + esc(tit) + '" loading="lazy">'
+          : et + (x.imagen_url ? '<img class="anu-foto" src="' + esc(x.imagen_url) + '" alt="" loading="lazy">' : '<i class="anu-deco" aria-hidden="true"></i>') +
+            '<div class="anu-t"><strong>' + esc(tit) + "</strong>" + (tx ? "<p>" + esc(tx.slice(0, 200)) + "</p>" : "") + (x.enlace ? '<span class="anu-cta" style="background:' + e[3] + ";color:" + e[0] + '">' + esc(x.enlace_texto || T[3]) + " →</span>" : "") + "</div>";
+        var cls = "anu " + (x.imagen_url && x.formato !== "cuadrado" ? "anu-img" : "anu-" + (x.formato === "cuadrado" ? "cua" : "hor"));
+        var st = x.imagen_url && x.formato !== "cuadrado" ? "" : ' style="background:linear-gradient(135deg,' + e[0] + "," + e[1] + ");color:" + e[2] + '"';
+        var tag = x.enlace ? 'a href="' + esc(x.enlace) + '" target="_blank" rel="noopener sponsored" data-id="' + esc(x.id) + '"' : "div";
+        return '<div class="anu-sl" role="group" aria-roledescription="' + T[8] + '" aria-label="' + (i + 1) + " / " + A.length + '"' + (i ? " hidden" : "") + "><" + tag + ' class="' + cls + '"' + st + ">" + inner + "</" + tag.split(" ")[0] + "></div>";
+      };
+      var sec = document.createElement("section"); sec.className = "section--tight anuncis"; sec.setAttribute("aria-label", T[1]);
+      sec.innerHTML = '<div class="wrap"><div class="anuncis__h"><div><span class="eyebrow">' + T[1] + "</span><h2>" + T[0] + "</h2></div>" +
+        (A.length > 1 ? '<div class="anuncis__ctl"><button type="button" data-a="-1" aria-label="' + T[6] + '">‹</button><button type="button" data-a="p" aria-label="' + T[4] + '">❚❚</button><button type="button" data-a="1" aria-label="' + T[7] + '">›</button></div>' : "") +
+        '</div><div class="anuncis__vp">' + A.map(slide).join("") + "</div>" +
+        (A.length > 1 ? '<div class="anuncis__dots">' + A.map(function (x, i) { return '<button type="button" data-i="' + i + '" aria-label="' + (i + 1) + '"' + (i ? "" : ' aria-current="true"') + "></button>"; }).join("") + "</div>" : "") + "</div>";
+      after.parentNode.insertBefore(sec, after.nextSibling);
+      var sl = sec.querySelectorAll(".anu-sl"), dots = sec.querySelectorAll(".anuncis__dots button"), cur = 0, vistos = {}, timer = null;
+      var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches, pausat = quiet;
+      var vist = function (i) { var id = A[i].id; if (!vistos[id]) { vistos[id] = 1; cont([id], "vista"); } };
+      var mostra = function (i) {
+        cur = (i + A.length) % A.length;
+        Array.prototype.forEach.call(sl, function (s, k) { s.hidden = k !== cur; if (k === cur) { s.classList.remove("in"); void s.offsetWidth; s.classList.add("in"); } });
+        Array.prototype.forEach.call(dots, function (d, k) { if (k === cur) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
+        if (window.__anuVisible) vist(cur);
+      };
+      var play = function () { clearInterval(timer); if (!pausat && A.length > 1) timer = setInterval(function () { mostra(cur + 1); }, 6500); var b = sec.querySelector('[data-a="p"]'); if (b) { b.textContent = pausat ? "▶" : "❚❚"; b.setAttribute("aria-label", pausat ? T[5] : T[4]); } };
+      sec.addEventListener("click", function (e) {
+        var b = e.target.closest("button"), a = e.target.closest("a[data-id]");
+        if (a) cont([a.getAttribute("data-id")], "clic");
+        if (!b) return;
+        if (b.dataset.a === "p") { pausat = !pausat; play(); return; }
+        if (b.dataset.a) { mostra(cur + Number(b.dataset.a)); play(); }
+        if (b.dataset.i) { mostra(Number(b.dataset.i)); play(); }
+      });
+      window.addEventListener("logos-video", function () { if (sec.querySelector(".vid.on")) { pausat = true; play(); } });
+      sec.addEventListener("mouseenter", function () { clearInterval(timer); }); sec.addEventListener("mouseleave", play);
+      sec.addEventListener("focusin", function () { clearInterval(timer); }); sec.addEventListener("focusout", play);
+      if ("IntersectionObserver" in window) { var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { window.__anuVisible = true; io.disconnect(); vist(cur); } }, { threshold: 0.5 }); io.observe(sec); } else { window.__anuVisible = true; vist(0); }
+      mostra(0); play();
     })
     .catch(function () {});
 })();

@@ -399,8 +399,9 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     .then(function (d) {
       if (!d || !d.total) return;
       box.querySelector("b").textContent = Number(d.total).toLocaleString(loc === "ar" ? "ca-ES" : loc);
-      if (d.desde) box.querySelector("span").textContent = (S[lang] || S.ca).replace("%s", d.desde);
-      var anys = (d.por_anio || []).filter(function (x) { return x && x.personas; });
+      var anys = (d.por_anio || []).filter(function (x) { return x && x.personas && Number(x.anio) >= 2000; });   // < 2000 = data mal escrita
+      var desde = Number(d.desde) >= 2000 ? d.desde : (anys.length ? Math.min.apply(null, anys.map(function (x) { return Number(x.anio); })) : null);
+      if (desde) box.querySelector("span").textContent = (S[lang] || S.ca).replace("%s", desde);
       if (anys.length) {
         var L = { ca: "Veure per anys", es: "Ver por años", en: "See by year", fr: "Voir par année", ar: "عرض حسب السنة" }[lang] || "Veure per anys";
         var m = Math.max.apply(null, anys.map(function (x) { return x.personas; }));
@@ -433,4 +434,51 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     });
   });
   show(tabs[0]);
+})();
+
+
+/* Vegades que hem atès: cada atenció i actuació compta (també l'històric). Xifra en directe des de la Intranet (cifras_publicas).
+   Només totals, mai dades personals. Si no es pot carregar, no es mostra res. */
+(function () {
+  var ref = document.querySelector("[data-historia]"); if (!ref || !window.fetch) return;
+  var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
+  var lang = (document.documentElement.lang || "ca").slice(0, 2);
+  var loc = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR", ar: "ca-ES" }[lang] || "ca-ES";
+  var T = {
+    ca: ["vegades que hem atès", "Cada atenció i cada actuació compta, també quan la persona torna. Des del %s.", "Veure per anys"],
+    es: ["veces que hemos atendido", "Cada atención y cada actuación cuenta, también cuando la persona vuelve. Desde %s.", "Ver por años"],
+    en: ["times we have supported people", "Every consultation and every action counts, including return visits. Since %s.", "See by year"],
+    fr: ["fois où nous avons accompagné", "Chaque accueil et chaque démarche compte, y compris quand la personne revient. Depuis %s.", "Voir par année"],
+    ar: ["مرة قدّمنا فيها المرافقة", "كل استقبال وكل إجراء يُحتسب، حتى عند عودة الشخص. منذ %s.", "عرض حسب السنة"]
+  }[lang] || null;
+  if (!T) return;
+  var fmt = function (n) { return Number(n).toLocaleString(loc); };
+  fetch(U + "/rest/v1/rpc/cifras_publicas", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: "{}" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      if (!d || !d.intervenciones) return;
+      var anys = (d.por_anio || []).filter(function (x) { return x && x.veces && Number(x.anio) >= 2000; });
+      var desde = Number(d.desde) >= 2000 ? d.desde : (anys.length ? anys[0].anio : "");
+      var box = document.createElement("div"); box.className = "stat"; box.setAttribute("data-vegades", "");
+      box.innerHTML = "<b>0</b><strong>" + T[0] + "</strong><span>" + T[1].replace("%s", desde) + "</span>";
+      ref.parentNode.insertBefore(box, ref.nextSibling);
+      if (anys.length) {
+        var m = Math.max.apply(null, anys.map(function (x) { return x.veces; }));
+        var det = document.createElement("details"); det.className = "stat__years";
+        det.innerHTML = "<summary>" + T[2] + "</summary>" + anys.map(function (x) {
+          return '<div class="yr"><span>' + x.anio + '</span><i><b style="width:' + Math.max(3, Math.round(x.veces / m * 100)) + '%"></b></i><strong>' + fmt(x.veces) + "</strong></div>";
+        }).join("");
+        box.appendChild(det);
+      }
+      // la xifra puja de 0 fins al total quan es veu
+      var el = box.querySelector("b"), fi = Number(d.intervenciones);
+      var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var go = function () {
+        if (quiet) { el.textContent = fmt(fi); return; }
+        var t0 = null; var pas = function (t) { if (!t0) t0 = t; var k = Math.min(1, (t - t0) / 1600); el.textContent = fmt(Math.round(fi * (1 - Math.pow(1 - k, 3)))); if (k < 1) requestAnimationFrame(pas); };
+        requestAnimationFrame(pas);
+      };
+      if ("IntersectionObserver" in window) { var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); go(); } }, { threshold: 0.3 }); io.observe(box); } else go();
+    })
+    .catch(function () {});
 })();

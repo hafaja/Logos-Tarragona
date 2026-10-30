@@ -757,3 +757,6 @@ a.member__logo { text-decoration: none; border: 2px solid transparent; transitio
   .fx-foot { grid-template-columns: 1fr; }
 }
 .fx-year__head h4 { margin: 0; line-height: 1.2; } .fx-year__head { min-height: 0; }
+
+/* 6 xifres a l'impacte (amb «vegades que hem atès»): 3 + 3 en pantalla gran */
+@media (min-width: 1101px) { .stats__grid:has(> .stat:nth-child(6)) { grid-template-columns: repeat(3, 1fr); } }

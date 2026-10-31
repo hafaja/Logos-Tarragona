@@ -202,7 +202,7 @@ window.LOGOS_PROJECTES = [
   ],
   "sup": [
    {
-    "src": "assets/img/logos/gen-drets-socials.webp",
+    "src": "assets/img/logos/gen-drets-socials-inclusio.webp",
     "alt": "Generalitat de Catalunya – Drets Socials i Inclusió"
    }
   ],

@@ -8,6 +8,17 @@ var LOGOS_LANG = (document.documentElement.lang || "ca").slice(0, 2);
 var LOGOS_BASE = "";
 var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
 
+/* Ajudes «Aa» (veure i llegir millor): s'apliquen abans de pintar res; el botó i l'assistent són a ajuda.js */
+window.logosQuiet = function () { return document.documentElement.classList.contains("lg-quiet") || !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches); };
+(function () {
+  try {
+    var o = JSON.parse(localStorage.getItem("logos_web_ajudes") || "{}") || {}, h = document.documentElement;
+    if (o.tam === 1) h.classList.add("lg-t1"); if (o.tam === 2) h.classList.add("lg-t2");
+    if (o.contrast) h.classList.add("lg-contrast"); if (o.espai) h.classList.add("lg-espai"); if (o.quiet) h.classList.add("lg-quiet");
+  } catch (e) {}
+  var sc = document.createElement("script"); sc.src = "assets/js/ajuda.js?v=20261101"; sc.defer = true; document.head.appendChild(sc);
+})();
+
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -284,7 +295,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   }[LOGOS_LANG] || null;
   L = L || ["Anterior", "Següent", "Pausa", "Reprendre", "Xarxes"];
   var rtl = document.documentElement.dir === "rtl";
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reduce = logosQuiet();
   track.classList.add("members--carousel");
   track.setAttribute("tabindex", "0");
   track.setAttribute("aria-label", L[4]);
@@ -318,7 +329,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     playBtn.setAttribute("aria-label", userPaused ? L[3] : L[2]);
     playBtn.setAttribute("aria-pressed", String(userPaused));
   }
-  function tick() { if (!userPaused && !hover && !document.hidden) go(1); }
+  function tick() { if (!userPaused && !hover && !document.hidden && !logosQuiet()) go(1); }
   function start() { clearInterval(timer); timer = setInterval(tick, 3500); }
   bar.addEventListener("click", function (e) {
     var b = e.target.closest("button"); if (!b) return;
@@ -338,9 +349,9 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
 (function () {
   var box = document.querySelector(".hero__slides"); if (!box) return;
   var s = box.querySelectorAll(".hero__slide"), d = box.querySelectorAll(".hero__dots span"), i = 0;
-  if (s.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (s.length < 2 || logosQuiet()) return;
   setInterval(function () {
-    if (document.hidden) return;
+    if (document.hidden || logosQuiet()) return;
     s[i].classList.remove("is-on"); d[i] && d[i].classList.remove("is-on");
     i = (i + 1) % s.length;
     s[i].loading = "eager"; s[i].classList.add("is-on"); d[i] && d[i].classList.add("is-on");
@@ -352,7 +363,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
   var g = document.getElementById("galeria"); if (!g) return;
   var sl = g.querySelectorAll(".gal__slide"), dots = g.querySelectorAll(".gal__dots button"), n = sl.length, cur = 1, timer;
   var rtl = document.documentElement.dir === "rtl";
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var reduce = logosQuiet();
   function render() {
     for (var k = 0; k < n; k++) {
       var off = (k - cur + n) % n; if (off > n / 2) off -= n;
@@ -364,7 +375,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
     }
   }
   function go(i) { cur = (i + n) % n; render(); }
-  function start() { if (reduce) return; stop(); timer = setInterval(function () { if (!document.hidden) go(cur + 1); }, 4500); }
+  function start() { if (reduce) return; stop(); timer = setInterval(function () { if (!document.hidden && !logosQuiet()) go(cur + 1); }, 4500); }
   function stop() { clearInterval(timer); }
   g.querySelector(".gal__nav--prev").addEventListener("click", function () { go(cur - 1); start(); });
   g.querySelector(".gal__nav--next").addEventListener("click", function () { go(cur + 1); start(); });
@@ -380,7 +391,7 @@ var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
 
 /* Xifres que pugen: «El nostre impacte» com una diapositiva. Cada número puja de 0 (o de l'anterior) fins al seu valor. */
 (function () {
-  var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var quiet = logosQuiet();
   var lang = (document.documentElement.lang || "ca").slice(0, 2);
   var loc = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR" }[lang] || "ca-ES";
   window.LogosCompta = function (el) {
@@ -655,7 +666,7 @@ if(!window.__vidClick){ window.__vidClick = true;
         (A.length > 1 ? '<div class="anuncis__dots">' + A.map(function (x, i) { return '<button type="button" data-i="' + i + '" aria-label="' + (i + 1) + '"' + (i ? "" : ' aria-current="true"') + "></button>"; }).join("") + "</div>" : "") + "</div>";
       after.parentNode.insertBefore(sec, after.nextSibling);
       var sl = sec.querySelectorAll(".anu-sl"), dots = sec.querySelectorAll(".anuncis__dots button"), cur = 0, vistos = {}, timer = null;
-      var quiet = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches, pausat = quiet;
+      var quiet = logosQuiet(), pausat = quiet;
       var vist = function (i) { var id = A[i].id; if (!vistos[id]) { vistos[id] = 1; cont([id], "vista"); } };
       var mostra = function (i) {
         cur = (i + A.length) % A.length;
@@ -663,7 +674,7 @@ if(!window.__vidClick){ window.__vidClick = true;
         Array.prototype.forEach.call(dots, function (d, k) { if (k === cur) d.setAttribute("aria-current", "true"); else d.removeAttribute("aria-current"); });
         if (window.__anuVisible) vist(cur);
       };
-      var play = function () { clearInterval(timer); if (!pausat && A.length > 1) timer = setInterval(function () { mostra(cur + 1); }, 6500); var b = sec.querySelector('[data-a="p"]'); if (b) { b.textContent = pausat ? "▶" : "❚❚"; b.setAttribute("aria-label", pausat ? T[5] : T[4]); } };
+      var play = function () { clearInterval(timer); if (!pausat && A.length > 1) timer = setInterval(function () { if (!logosQuiet()) mostra(cur + 1); }, 6500); var b = sec.querySelector('[data-a="p"]'); if (b) { b.textContent = pausat ? "▶" : "❚❚"; b.setAttribute("aria-label", pausat ? T[5] : T[4]); } };
       sec.addEventListener("click", function (e) {
         var b = e.target.closest("button"), a = e.target.closest("a[data-id]");
         if (a) cont([a.getAttribute("data-id")], "clic");

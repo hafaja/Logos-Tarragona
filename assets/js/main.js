@@ -7,6 +7,8 @@ var LOGOS_INSTAGRAM_FEED = "";
 var LOGOS_LANG = (document.documentElement.lang || "ca").slice(0, 2);
 var LOGOS_BASE = "";
 var LOGOS_PFX = LOGOS_LANG === "ca" ? "" : LOGOS_LANG + "-";
+/* Anti-clickjacking: si otra web mete logostgn.cat dentro de un marco, la página se abre sola fuera */
+try { if (window.top !== window.self) window.top.location = window.location.href; } catch (e) { document.documentElement.style.display = "none"; }
 
 /* Ajudes «Aa» (veure i llegir millor): s'apliquen abans de pintar res; el botó i l'assistent són a ajuda.js */
 window.logosQuiet = function () { return document.documentElement.classList.contains("lg-quiet") || !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches); };

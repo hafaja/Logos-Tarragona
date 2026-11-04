@@ -579,7 +579,7 @@ if(!window.__vidClick){ window.__vidClick = true;
       if (!Array.isArray(L)) return; L = L.filter(function (x) { return x.tipo !== "publicidad"; }); if (!L.length) return;
       var hoy = iso(new Date());
       var ev = L.filter(function (x) { return x.tipo !== "publicidad" && x.fecha_evento && (x.fecha_fin || x.fecha_evento) >= hoy; }).sort(function (a, b) { return a.fecha_evento < b.fecha_evento ? -1 : 1; });
-      var nov = L.filter(function (x) { return x.tipo !== "publicidad" && (!x.fecha_evento || x.tipo !== "evento"); }).slice(0, 6);
+      var nov = L.filter(function (x) { return x.tipo !== "publicidad" && x.tipo !== "articulo" && (!x.fecha_evento || x.tipo !== "evento"); }).slice(0, 6);   // los artículos del blog van en su franja (blog.js)
       window.__logosCanal = { L: L, ev: ev };
       var card = function (x) {
         var t = txt(x), llarg = t.length > 220;

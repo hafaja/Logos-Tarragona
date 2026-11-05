@@ -231,6 +231,9 @@ button { font-family: inherit; }
 .logo-tile img { max-height: 64px; width: auto; max-width: 100%; }
 .logo-tile--big { min-height: 140px; }
 .logo-tile--big img { max-height: 92px; }
+.logo-tile--link { text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.logo-tile--link:hover, .logo-tile--link:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.12); }
+.logo-tile--dark { background: #0B1626; border-color: #0B1626; }
 .logo-tile b { font-family: var(--serif); font-size: 15px; line-height: 1.25; color: var(--body); }
 .logo-tile--big b { font-size: 22px; color: var(--ink); }
 .logo-grid [hidden] { display: none; }

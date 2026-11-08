@@ -576,6 +576,12 @@ if(!window.__vidClick){ window.__vidClick = true;
   fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: JSON.stringify({ p_donde: "web" }) })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (L) {
+      return fetch(U + "/rest/v1/rpc/canal_idiomas", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: JSON.stringify({ p_donde: "web" }) }).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (I) {
+        if (!Array.isArray(L) || !Array.isArray(I)) return L; var m = {}; I.forEach(function (r) { m[r.id] = r; });
+        return L.map(function (x) { var o = m[x.id]; if (!o) return x; var y = Object.assign({}, x); if (lang === "fr" || lang === "en") ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); if (o.portadas && o.portadas[lang]) y.imagen_url = o.portadas[lang]; return y; });
+      });
+    })
+    .then(function (L) {
       if (!Array.isArray(L)) return; L = L.filter(function (x) { return x.tipo !== "publicidad"; }); if (!L.length) return;
       var hoy = iso(new Date());
       var ev = L.filter(function (x) { return x.tipo !== "publicidad" && x.fecha_evento && (x.fecha_fin || x.fecha_evento) >= hoy; }).sort(function (a, b) { return a.fecha_evento < b.fecha_evento ? -1 : 1; });
@@ -629,7 +635,7 @@ if(!window.__vidClick){ window.__vidClick = true;
 
 /* Publicitat d'entitats amb contracte: carrusel amb etiqueta «Publicitat», pausa i comptador de vistes i clics (canal_publico + canal_contar) */
 (function () {
-  var after = document.getElementById("actualitat"); if (!after || !window.fetch) return;
+  var esBlog = !!document.getElementById("blog-app"), after = document.getElementById("actualitat") || (esBlog && document.querySelector("main")); if (!after || !window.fetch) return;
   var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
   var H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
   var lang = (document.documentElement.lang || "ca").slice(0, 2), ca = lang === "ca";
@@ -644,7 +650,13 @@ if(!window.__vidClick){ window.__vidClick = true;
   fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: H, body: JSON.stringify({ p_donde: "web" }) })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (L) {
-      var A = (L || []).filter(function (x) { return x.tipo === "publicidad"; }); if (!A.length) return;
+      return fetch(U + "/rest/v1/rpc/canal_idiomas", { method: "POST", headers: H, body: JSON.stringify({ p_donde: "web" }) }).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (I) {
+        var m = {}; (Array.isArray(I) ? I : []).forEach(function (r) { m[r.id] = r; });
+        return (L || []).filter(function (x) { return x.tipo === "publicidad" && (!esBlog || (m[x.id] && m[x.id].en_blog)); }).map(function (x) { var o = m[x.id]; if (!o || (lang !== "fr" && lang !== "en")) return x; var y = Object.assign({}, x); ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); return y; });
+      });
+    })
+    .then(function (A) {
+      if (!A.length) return;
       var slide = function (x, i) {
         var e = E[x.estilo] || E.azul, tit = ca && x.titulo_ca ? x.titulo_ca : x.titulo, tx = ca && x.texto_ca ? x.texto_ca : (x.texto || "");
         var et = '<span class="anu-et">' + T[2] + " · " + esc(x.entidad) + "</span>";

@@ -84,25 +84,34 @@ function blogTarjetaHtml(x, ca, href, op){
     '<strong>' + blogEsc(tit) + '</strong>' + (sub ? '<span class="blog-tarjeta__s">' + blogEsc(String(sub).slice(0, 160)) + (String(sub).length > 160 ? '…' : '') + '</span>' : '') +
     '<small>' + blogEsc(f) + (op.leer ? ' · ' + blogEsc(op.leer) + ' →' : '') + '</small></span></a>';
 }
+/* Logo de Logos sobre la imagen de cada artículo */
+(function () { var st = document.createElement("style"); st.textContent = '.blog-tarjeta__img{position:relative;}.blog-portada{position:relative;}.blog-tarjeta__img::after,.blog-portada:not(.blog-portada--video)::after{content:"";position:absolute;right:10px;bottom:10px;width:72px;height:42px;box-sizing:border-box;padding:4px 7px;background:#fff url("assets/img/logo-logos.png") center/contain no-repeat;background-origin:content-box;border-radius:9px;box-shadow:0 2px 8px rgba(15,23,42,.25);pointer-events:none;}'; document.head.appendChild(st); })();
+/* Idiomas: francés, inglés y portada propia de cada idioma (canal_idiomas). Si falla, se ve como antes. */
+function lgIdiomas(U, H, donde) { return fetch(U + "/rest/v1/rpc/canal_idiomas", { method: "POST", headers: H, body: JSON.stringify({ p_donde: donde }) }).then(function (r) { return r.ok ? r.json() : []; }).then(function (L) { var m = {}; (Array.isArray(L) ? L : []).forEach(function (r) { m[r.id] = r; }); return m; }).catch(function () { return {}; }); }
+function lgLoc(x, l, m) { var o = m && m[x.id]; if (!o) return x; var y = Object.assign({}, x); if (l === "fr" || l === "en") ["titulo", "subtitulo", "texto", "cuerpo"].forEach(function (k) { if (o[k + "_" + l]) y[k] = o[k + "_" + l]; }); if (o.portadas && o.portadas[l]) y.imagen_url = o.portadas[l]; if (o.categorias && o.categorias[l]) y.categoria = o.categorias[l]; return y; }
+var LG_PAG = { ca: "blog.html", es: "es-blog.html", en: "en-blog.html", fr: "fr-blog.html" }, LG_LOC = { ca: "ca-ES", es: "es-ES", en: "en-GB", fr: "fr-FR", ar: "ar" };
 (function () {
   var app = document.getElementById("blog-app"); if (!app || !window.fetch) return;
   var U = "https://foxtlpyfedwsvttzorql.supabase.co", K = "sb_publishable_Ght82ml0pvg0_nQvunlXVA_u0WjRscq";
   var H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
-  var ca = (document.documentElement.lang || "ca").slice(0, 2) === "ca";
-  var pag = ca ? "blog.html" : "es-blog.html";
+  var lang = (document.documentElement.lang || "ca").slice(0, 2), ca = lang === "ca";
+  var pag = LG_PAG[lang] || "es-blog.html";
   var T = ca ? { eb: "Blog de Logos", h: "Històries, projectes i novetats", p: "El que fem, explicat per l'equip i per les persones que acompanyem.", buit: "Aviat hi publicarem els primers articles.", llegir: "Llegir", tornar: "← Tornar al blog", comp: "Comparteix", copiar: "Copiar l'enllaç", copiat: "Enllaç copiat", noTrobat: "Aquest article ja no està publicat.", vid: "Veure el vídeo", lect: "de lectura" }
                : { eb: "Blog de Logos", h: "Historias, proyectos y novedades", p: "Lo que hacemos, contado por el equipo y por las personas que acompañamos.", buit: "Pronto publicaremos los primeros artículos.", llegir: "Leer", tornar: "← Volver al blog", comp: "Comparte", copiar: "Copiar el enlace", copiat: "Enlace copiado", noTrobat: "Este artículo ya no está publicado.", vid: "Ver el vídeo", lect: "de lectura" };
+  if (lang === "en") T = { eb: "Logos blog", h: "Stories, projects and news", p: "What we do, told by the team and the people we support.", buit: "We will publish the first articles soon.", llegir: "Read", tornar: "← Back to the blog", comp: "Share", copiar: "Copy link", copiat: "Link copied", noTrobat: "This article is no longer published.", vid: "Watch the video", lect: "read" };
+  if (lang === "fr") T = { eb: "Blog de Logos", h: "Histoires, projets et nouvelles", p: "Ce que nous faisons, raconté par l'équipe et par les personnes que nous accompagnons.", buit: "Nous publierons bientôt les premiers articles.", llegir: "Lire", tornar: "← Retour au blog", comp: "Partager", copiar: "Copier le lien", copiat: "Lien copié", noTrobat: "Cet article n'est plus publié.", vid: "Voir la vidéo", lect: "de lecture" };
   var vid = typeof canalVidHtml === "function" ? canalVidHtml : null;
   var rpc = function (f, b) { return fetch(U + "/rest/v1/rpc/" + f, { method: "POST", headers: H, body: JSON.stringify(b) }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); };
   var id = new URLSearchParams(location.search).get("a");
   if (id && /^[0-9a-f-]{36}$/i.test(id)) {
     app.innerHTML = '<p class="blog-carga">…</p>';
-    rpc("canal_articulo", { p_id: id, p_donde: "web" }).then(function (x) {
+    Promise.all([rpc("canal_articulo", { p_id: id, p_donde: "web" }), lgIdiomas(U, H, "web")]).then(function (res) {
+      var x = res[0]; if (x && x.id) x = lgLoc(x, lang, res[1]);
       if (!x || !x.id) { app.innerHTML = '<div class="blog-buit"><p>' + T.noTrobat + '</p><a class="btn btn--dark" href="' + pag + '">' + T.tornar + "</a></div>"; return; }
       var tit = (ca && x.titulo_ca) || x.titulo;
       document.title = tit + " · Blog de Logos";
       var url = location.href.split("#")[0];
-      app.innerHTML = '<p class="blog-volver"><a href="' + pag + '">' + T.tornar + "</a></p>" + blogArticuloHtml(x, ca, { video: vid, etiquetaVideo: T.vid, lectura: T.lect }) +
+      app.innerHTML = '<p class="blog-volver"><a href="' + pag + '">' + T.tornar + "</a></p>" + blogArticuloHtml(x, ca, { video: vid, etiquetaVideo: T.vid, lectura: T.lect, locale: LG_LOC[lang] }) +
         '<div class="blog-comparte"><span>' + T.comp + ':</span><a class="btn btn--sm btn--line" href="https://wa.me/?text=' + encodeURIComponent(tit + " " + url) + '" target="_blank" rel="noopener">WhatsApp</a><button type="button" class="btn btn--sm btn--line" id="blog-copiar">' + T.copiar + "</button></div>" +
         '<p class="blog-volver blog-volver--fi"><a href="' + pag + '">' + T.tornar + "</a></p>";
       var bc = document.getElementById("blog-copiar");
@@ -112,10 +121,11 @@ function blogTarjetaHtml(x, ca, href, op){
     return;
   }
   app.innerHTML = '<div class="head head--single" style="margin-bottom:22px"><div><span class="eyebrow">' + T.eb + "</span><h1 class=\"blog-h\">" + T.h + "</h1><p>" + T.p + '</p></div></div><div class="blog-lista" id="blog-lista"><p class="blog-carga">…</p></div>';
-  rpc("canal_publico", { p_donde: "web" }).then(function (L) {
+  Promise.all([rpc("canal_publico", { p_donde: "web" }), lgIdiomas(U, H, "web")]).then(function (res) {
+    var L = res[0], idm = res[1];
     L = (Array.isArray(L) ? L : []).filter(function (x) { return x.tipo === "articulo"; }).sort(function (a, b) { return String(b.publicar_desde).localeCompare(String(a.publicar_desde)); });
     var box = document.getElementById("blog-lista");
-    box.innerHTML = L.length ? L.map(function (x) { return blogTarjetaHtml(x, ca, pag + "?a=" + encodeURIComponent(x.id), { leer: T.llegir }); }).join("") : '<div class="blog-buit"><p>' + T.buit + "</p></div>";
+    box.innerHTML = L.length ? L.map(function (x) { return blogTarjetaHtml(lgLoc(x, lang, idm), ca, pag + "?a=" + encodeURIComponent(x.id), { leer: T.llegir, locale: LG_LOC[lang] }); }).join("") : '<div class="blog-buit"><p>' + T.buit + "</p></div>";
   }).catch(function () { document.getElementById("blog-lista").innerHTML = '<div class="blog-buit"><p>' + T.buit + "</p></div>"; });
 })();
 
@@ -128,15 +138,15 @@ function blogTarjetaHtml(x, ca, href, op){
   var T = { ca: ["Blog", "Històries i novetats de Logos", "Veure tot el blog", "Llegir"], es: ["Blog", "Historias y novedades de Logos", "Ver todo el blog", "Leer"],
             en: ["Blog", "Stories and news from Logos", "See the whole blog", "Read"], fr: ["Blog", "Histoires et nouvelles de Logos", "Voir tout le blog", "Lire"],
             ar: ["المدونة", "قصص وأخبار لوغوس", "عرض المدونة كاملة", "اقرأ"] }[lang] || null; if (!T) return;
-  var pag = ca ? "blog.html" : "es-blog.html";
-  fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: JSON.stringify({ p_donde: "web" }) })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (L) {
+  var pag = LG_PAG[lang] || "es-blog.html", HH = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
+  Promise.all([fetch(U + "/rest/v1/rpc/canal_publico", { method: "POST", headers: HH, body: JSON.stringify({ p_donde: "web" }) }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }), lgIdiomas(U, HH, "web")])
+    .then(function (res) {
+      var L = res[0], idm = res[1];
       L = (Array.isArray(L) ? L : []).filter(function (x) { return x.tipo === "articulo"; }).sort(function (a, b) { return String(b.publicar_desde).localeCompare(String(a.publicar_desde)); });
       if (!L.length) return;
       var box = document.createElement("div"); box.className = "blog-home"; box.id = "blog-logos";
       box.innerHTML = '<div class="head head--single" style="margin-bottom:18px"><div><span class="eyebrow">' + T[0] + "</span><h2>" + T[1] + '</h2></div></div><div class="blog-lista">' +
-        L.slice(0, 3).map(function (x) { return blogTarjetaHtml(x, ca, pag + "?a=" + encodeURIComponent(x.id), { leer: T[3] }); }).join("") +
+        L.slice(0, 3).map(function (x) { return blogTarjetaHtml(lgLoc(x, lang, idm), ca, pag + "?a=" + encodeURIComponent(x.id), { leer: T[3], locale: LG_LOC[lang] }); }).join("") +
         '</div><p class="blog-home__mes"><a class="btn btn--dark" href="' + pag + '">' + T[2] + " →</a></p>";
       var canal = document.getElementById("canal-logos");
       if (canal && canal.nextSibling) wrap.insertBefore(box, canal.nextSibling); else wrap.appendChild(box);

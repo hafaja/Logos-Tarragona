@@ -578,7 +578,7 @@ if(!window.__vidClick){ window.__vidClick = true;
     .then(function (L) {
       return fetch(U + "/rest/v1/rpc/canal_idiomas", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: JSON.stringify({ p_donde: "web" }) }).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (I) {
         if (!Array.isArray(L) || !Array.isArray(I)) return L; var m = {}; I.forEach(function (r) { m[r.id] = r; });
-        return L.map(function (x) { var o = m[x.id]; if (!o) return x; var y = Object.assign({}, x); if (lang === "fr" || lang === "en") ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); if (o.portadas && o.portadas[lang]) y.imagen_url = o.portadas[lang]; return y; });
+        return L.map(function (x) { var o = m[x.id]; if (!o) return x; var y = Object.assign({}, x); if (lang === "fr" || lang === "en" || lang === "ar") ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); if (o.portadas && o.portadas[lang]) y.imagen_url = o.portadas[lang]; return y; });
       });
     })
     .then(function (L) {
@@ -652,7 +652,7 @@ if(!window.__vidClick){ window.__vidClick = true;
     .then(function (L) {
       return fetch(U + "/rest/v1/rpc/canal_idiomas", { method: "POST", headers: H, body: JSON.stringify({ p_donde: "web" }) }).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }).then(function (I) {
         var m = {}; (Array.isArray(I) ? I : []).forEach(function (r) { m[r.id] = r; });
-        return (L || []).filter(function (x) { return x.tipo === "publicidad" && (!esBlog || (m[x.id] && m[x.id].en_blog)); }).map(function (x) { var o = m[x.id]; if (!o || (lang !== "fr" && lang !== "en")) return x; var y = Object.assign({}, x); ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); return y; });
+        return (L || []).filter(function (x) { return x.tipo === "publicidad" && (!esBlog || (m[x.id] && m[x.id].en_blog)); }).map(function (x) { var o = m[x.id]; if (!o || (lang !== "fr" && lang !== "en" && lang !== "ar")) return x; var y = Object.assign({}, x); ["titulo", "texto"].forEach(function (k) { if (o[k + "_" + lang]) y[k] = o[k + "_" + lang]; }); return y; });
       });
     })
     .then(function (A) {

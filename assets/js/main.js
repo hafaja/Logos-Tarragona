@@ -494,6 +494,13 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
   fetch(U + "/rest/v1/rpc/cifras_publicas", { method: "POST", headers: { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" }, body: "{}" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (d) {
+      // Persones derivades i insercions laborals: també en directe des de la Intranet (mai baixen de la xifra escrita a la pàgina)
+      Array.prototype.forEach.call(document.querySelectorAll("[data-cifra]"), function (st) {
+        var v = d && Number(d[st.getAttribute("data-cifra")]), b = st.querySelector("b"); if (!b || !v) return;
+        var ara = parseInt(b.textContent.replace(/[^0-9]/g, ""), 10) || 0; if (v <= ara) return;
+        b.textContent = fmt(v);
+        if (window.__logosStatsIn && window.LogosCompta) window.LogosCompta(b);
+      });
       if (!d || !d.intervenciones) return;
       var anys = (d.por_anio || []).filter(function (x) { return x && x.veces && Number(x.anio) >= 2000; });
       var desde = Number(d.desde) >= 2000 ? d.desde : (anys.length ? anys[0].anio : "");

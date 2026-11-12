@@ -61,7 +61,7 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
     ca: [
       ["Tràmits", "Fer un tràmit amb Logos Acompanya", "https://acompanya.logostgn.cat", "tramit ajuda cita acompanya prestacio"],
       ["Formació", "Cursos i formació", "projectes.html", "curs cursos formacio taller digital actic catala"],
-      ["Bretxa digital", "Logos Social Up Digital", "projectes.html#social-up", "bretxa digital idcat tramits internet ordinador"],
+      ["Bretxa digital", "Servei de bretxa digital", "projectes.html#bretxa", "bretxa digital idcat tramits internet ordinador"],
       ["Treball", "Orientació i inserció laboral", "que-fem.html", "feina treball ocupacio insercio orientacio cv"],
       ["Qualitat", "Certificat ISO 9001:2015", "index.html#qualitat-inici", "iso 9001 qualitat certificat bmc"],
       ["Administracions", "Sol·licitar una reunió", "contacte.html?motiu=reunio#formulari", "reunio administracio entitat projecte tecnic"],
@@ -76,7 +76,7 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
     es: [
       ["Trámites", "Hacer un trámite con Logos Acompanya", "https://acompanya.logostgn.cat", "tramite ayuda cita acompanya prestacion"],
       ["Formación", "Cursos y formación", "projectes.html", "curso cursos formacion taller digital actic catalan"],
-      ["Brecha digital", "Logos Social Up Digital", "projectes.html#social-up", "brecha digital idcat tramites internet ordenador"],
+      ["Brecha digital", "Servicio de brecha digital", "projectes.html#bretxa", "brecha digital idcat tramites internet ordenador"],
       ["Empleo", "Orientación e inserción laboral", "que-fem.html", "empleo trabajo insercion orientacion cv"],
       ["Calidad", "Certificado ISO 9001:2015", "index.html#qualitat-inici", "iso 9001 calidad certificado bmc"],
       ["Administraciones", "Solicitar una reunión", "contacte.html?motiu=reunio#formulari", "reunion administracion entidad proyecto tecnico"],
@@ -91,7 +91,7 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
     en: [
       ["Paperwork", "Do your paperwork with Logos Acompanya", "https://acompanya.logostgn.cat", "paperwork procedure help appointment acompanya benefit"],
       ["Training", "Courses and training", "projectes.html", "course courses training workshop digital actic catalan"],
-      ["Digital divide", "Logos Social Up Digital", "projectes.html#social-up", "digital divide idcat online internet computer"],
+      ["Digital divide", "Digital divide service", "projectes.html#bretxa", "digital divide idcat online internet computer"],
       ["Employment", "Career guidance and job placement", "que-fem.html", "job work employment guidance cv"],
       ["Quality", "ISO 9001:2015 certificate", "index.html#qualitat-inici", "iso 9001 quality certificate bmc"],
       ["Public bodies", "Request a meeting", "contacte.html?motiu=reunio#formulari", "meeting administration organisation project technical"],
@@ -106,7 +106,7 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
     fr: [
       ["Démarches", "Faire une démarche avec Logos Acompanya", "https://acompanya.logostgn.cat", "demarche aide rendez-vous acompanya prestation"],
       ["Formation", "Cours et formations", "projectes.html", "cours formation atelier numerique actic catalan"],
-      ["Fracture numérique", "Logos Social Up Digital", "projectes.html#social-up", "fracture numerique idcat internet ordinateur"],
+      ["Fracture numérique", "Service de fracture numérique", "projectes.html#bretxa", "fracture numerique idcat internet ordinateur"],
       ["Emploi", "Orientation et insertion professionnelle", "que-fem.html", "emploi travail insertion orientation cv"],
       ["Qualité", "Certificat ISO 9001:2015", "index.html#qualitat-inici", "iso 9001 qualite certificat bmc"],
       ["Administrations", "Demander un rendez-vous", "contacte.html?motiu=reunio#formulari", "reunion rendez-vous administration organisme projet"],
@@ -121,7 +121,7 @@ window.logosQuiet = function () { return document.documentElement.classList.cont
     ar: [
       ["الإجراءات", "أنجز إجراءاتك مع Logos Acompanya", "https://acompanya.logostgn.cat", "اجراء اجراءات مساعدة موعد منحة acompanya"],
       ["التدريب", "الدورات والتدريب", "projectes.html", "دورة دورات تدريب ورشة رقمي actic كتالونية"],
-      ["الفجوة الرقمية", "Logos Social Up Digital", "projectes.html#social-up", "الفجوة الرقمية idcat انترنت حاسوب"],
+      ["الفجوة الرقمية", "خدمة الفجوة الرقمية", "projectes.html#bretxa", "الفجوة الرقمية idcat انترنت حاسوب"],
       ["التشغيل", "التوجيه والإدماج المهني", "que-fem.html", "عمل شغل وظيفة توجيه سيرة"],
       ["الجودة", "شهادة ISO 9001:2015", "index.html#qualitat-inici", "iso 9001 جودة شهادة"],
       ["الإدارات", "اطلب موعدًا", "contacte.html?motiu=reunio#formulari", "موعد اجتماع ادارة جهة مشروع"],

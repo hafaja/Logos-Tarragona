@@ -397,37 +397,6 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
-  "id": "mais",
-  "amb": "Inserción",
-  "year": "2024 – 2025",
-  "title": "Programa MAIS",
-  "sub": "Departamento de Empresa y Trabajo · Generalitat de Catalunya",
-  "summary": "Itinerarios personalizados de inserción para personas perceptoras de la renta garantizada y en riesgo de exclusión.",
-  "img": "mais",
-  "alt": "Elaboración del currículum en el aula",
-  "figs": [
-   [
-    "60",
-    "plazas gestionadas"
-   ],
-   [
-    "24",
-    "inserciones laborales"
-   ]
-  ],
-  "intro": [
-   "El Programa de Medidas Activas de Inserción combina diagnóstico sociolaboral, orientación individual, mejora competencial y seguimiento continuado. Trabaja tanto las habilidades para encontrar empleo como las dificultades sociales o personales que pueden condicionar la inserción."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/generalitat.webp",
-    "alt": "Generalitat de Catalunya"
-   }
-  ],
-  "link": null
- },
- {
   "id": "social-up",
   "amb": "Brecha digital",
   "year": "2019 – 2024",
@@ -556,68 +525,6 @@ window.LOGOS_PROJECTES = [
   ]
  },
  {
-  "id": "dones",
-  "amb": "Inserción",
-  "year": "Convocatoria 2023",
-  "title": "Programa de apoyo a las mujeres en los ámbitos rural y urbano",
-  "sub": "Con el apoyo del Servei d'Ocupació de Catalunya",
-  "summary": "Itinerarios individualizados de orientación laboral para mejorar la capacitación de las mujeres y su participación en la economía del territorio.",
-  "img": "aula-dones",
-  "alt": "Mujeres en una sesión de competencias digitales en Logos",
-  "figs": [
-   [
-    "59",
-    "mujeres atendidas"
-   ],
-   [
-    "13",
-    "inserciones laborales"
-   ],
-   [
-    "8",
-    "certificados ACTIC"
-   ]
-  ],
-  "intro": [
-   "El programa ofrece itinerarios individualizados de atención y orientación laboral para mejorar la capacitación de las mujeres de los ámbitos rural y urbano y aumentar su participación en la actividad económica del territorio.",
-   "Todas las participantes han mejorado sus competencias digitales, y 8 lo han acreditado con el certificado ACTIC."
-  ],
-  "secs": [
-   {
-    "h": "Formación y asesoramiento",
-    "items": [
-     "Competencias digitales y tecnológicas",
-     "Emprendimiento y economía social",
-     "Productos locales y economía verde, uso forestal y agrícola",
-     "Comercio en línea y atención a la dependencia"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/ue-nextgen.webp",
-    "alt": "Financiado por la Unión Europea – NextGenerationEU"
-   },
-   {
-    "src": "assets/img/logos/gob-prtr-sepe.webp",
-    "alt": "Gobierno de España – Plan de Recuperación, Transformación y Resiliencia – SEPE"
-   },
-   {
-    "src": "assets/img/logos/soc.webp",
-    "alt": "Servicio de Empleo de Cataluña"
-   },
-   {
-    "src": "assets/img/logos/nextgen-cat.webp",
-    "alt": "Next Generation Catalunya"
-   },
-   {
-    "src": "assets/img/logos/generalitat.webp",
-    "alt": "Generalitat de Catalunya"
-   }
-  ],
-  "link": null
- },
- {
   "id": "inclusio",
   "amb": "Inclusión",
   "year": "Activo",
@@ -649,82 +556,6 @@ window.LOGOS_PROJECTES = [
    }
   ],
   "sup": [],
-  "link": null
- },
- {
-  "id": "xaldiga",
-  "amb": "Igualdad",
-  "year": "Activo",
-  "title": "Xàldiga",
-  "sub": "Proyectos de igualdad",
-  "summary": "Perspectiva de género, lenguaje inclusivo y prevención de la violencia machista, con una metodología vivencial.",
-  "img": "igualtat",
-  "alt": "Actividad «Fem visible lo invisible» sobre igualdad y corresponsabilidad",
-  "figs": [],
-  "intro": [
-   "Intervenimos en todos los ámbitos para promover la igualdad laboral, social, económica y personal, dando herramientas y recursos para alcanzar la igualdad real. Trabajamos a partir de las necesidades y las experiencias de cada grupo, y producimos nuestros propios materiales y audiovisuales."
-  ],
-  "secs": [
-   {
-    "h": "Qué hacemos",
-    "items": [
-     "Píldoras formativas adaptadas a empresas, escuelas y grupos",
-     "Dosieres de lenguaje inclusivo no sexista",
-     "Desarrollo comunitario",
-     "Participación de las mujeres como eje de los proyectos",
-     "Intervención socioeducativa para la igualdad"
-    ]
-   },
-   {
-    "h": "Para empresas",
-    "items": [
-     "Planes de igualdad y su registro",
-     "Formaciones",
-     "Búsqueda de ayudas",
-     "Obtención de reconocimientos"
-    ]
-   }
-  ],
-  "sup": [],
-  "link": null
- },
- {
-  "id": "trenta",
-  "amb": "Formación",
-  "year": "2023 – 2024",
-  "title": "Formación TIC del Programa 30+",
-  "sub": "Ayuntamiento de Tarragona",
-  "summary": "Cuatro cursos de 25 horas de competencias digitales para personas trabajadoras del Programa 30 Plus.",
-  "img": "aula-digital",
-  "alt": "Sesión formativa en el aula de Logos",
-  "figs": [
-   [
-    "4",
-    "cursos"
-   ],
-   [
-    "25 h",
-    "por curso"
-   ]
-  ],
-  "intro": [
-   "Formación vinculada al contrato de trabajo y a las necesidades de los participantes del Programa 30 Plus 2023, en colaboración con Tarragona Impulsa."
-  ],
-  "secs": [
-   {
-    "h": "Acciones formativas",
-    "items": [
-     "Google y sus aplicaciones (25 h): herramientas y configuración",
-     "Ofimática avanzada y ciberseguridad (25 h): Word, Excel y protección de equipos"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/tgn-impulsa.webp",
-    "alt": "Tarragona Impulsa"
-   }
-  ],
   "link": null
  },
  {
@@ -808,65 +639,5 @@ window.LOGOS_PROJECTES = [
     }
    ]
   }
- },
- {
-  "id": "gitanes",
-  "amb": "Formación",
-  "year": "2020 – 2021",
-  "title": "Formación TIC en el Consell de les Comunitats Gitanes",
-  "sub": "Voluntariado y personas usuarias",
-  "summary": "Formaciones y seminarios digitales para el voluntariado y las personas usuarias de los programas del Consell.",
-  "img": "navegadors",
-  "alt": "Formación digital en el aula",
-  "figs": [],
-  "intro": [
-   "Formaciones dentro del Programa Gitanos.cat (convocatoria COSPE) y del Servicio de inserción e inclusión social (convocatoria IRPF), financiados por el Departament de Treball, Afers Socials i Famílies."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/consell-gitanes.webp",
-    "alt": "Consell de les Comunitats Gitanes de Tarragona"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "empreses",
-  "amb": "Inserción",
-  "year": "Activo",
-  "title": "Empresas de inserción",
-  "sub": "Intress Creix i Aptos",
-  "summary": "Creamos puestos de trabajo para personas en situación o riesgo de exclusión social a través de empresas de inserción.",
-  "img": "facana-nova",
-  "alt": "Entrada de la sede de Logos en Tarragona",
-  "figs": [],
-  "intro": [
-   "Una empresa de inserción desarrolla una actividad económica (producción de bienes o prestación de servicios) con una finalidad principal: la integración sociolaboral de personas en situación o grave riesgo de exclusión social.",
-   "En nuestro territorio, muchos recursos se dirigen, con razón, a personas con discapacidad. En cambio, otros colectivos en riesgo de exclusión a menudo se quedan sin suficientes oportunidades laborales. Por eso queremos generar puestos de trabajo dirigidos a estas personas."
-  ],
-  "secs": [
-   {
-    "h": "Empresas que hemos impulsado",
-    "items": [
-     "Intress Creix Empresa d'Inserció Laboral, S.L.: creada por Logos junto con la Fundació Intress",
-     "Aptos Empresa d'Inserció, S.L.: Logos ha colaborado en su creación"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/intress.webp",
-    "alt": "Fundació Intress"
-   },
-   {
-    "src": "assets/img/logos/aptos.webp",
-    "alt": "Aptos Inserció i Servei"
-   }
-  ],
-  "link": [
-   "Por qué ser socialmente responsable →",
-   "es-que-fem.html#rsc"
-  ]
  }
 ];

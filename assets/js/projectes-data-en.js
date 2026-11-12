@@ -397,37 +397,6 @@ window.LOGOS_PROJECTES = [
   "link": null
  },
  {
-  "id": "mais",
-  "amb": "Employment",
-  "year": "2024 – 2025",
-  "title": "MAIS Programme",
-  "sub": "Department of Business and Labour · Government of Catalonia",
-  "summary": "Personalised employment pathways for people receiving the guaranteed income and at risk of exclusion.",
-  "img": "mais",
-  "alt": "Writing CVs in class",
-  "figs": [
-   [
-    "60",
-    "places managed"
-   ],
-   [
-    "24",
-    "people into work"
-   ]
-  ],
-  "intro": [
-   "The Active Integration Measures Programme combines socio-occupational assessment, individual guidance, skills development and ongoing follow-up. It works on job-seeking skills as well as on the social or personal difficulties that can affect finding work."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/generalitat.webp",
-    "alt": "Generalitat de Catalunya"
-   }
-  ],
-  "link": null
- },
- {
   "id": "social-up",
   "amb": "Digital divide",
   "year": "2019 – 2024",
@@ -556,68 +525,6 @@ window.LOGOS_PROJECTES = [
   ]
  },
  {
-  "id": "dones",
-  "amb": "Employment",
-  "year": "2023 call",
-  "title": "Support programme for women in rural and urban areas",
-  "sub": "Supported by the Catalan Employment Service (SOC)",
-  "summary": "Individual career guidance pathways to build women's skills and increase their participation in the local economy.",
-  "img": "aula-dones",
-  "alt": "Women in a digital skills session at Logos",
-  "figs": [
-   [
-    "59",
-    "women supported"
-   ],
-   [
-    "13",
-    "job placements"
-   ],
-   [
-    "8",
-    "ACTIC certificates"
-   ]
-  ],
-  "intro": [
-   "The programme offers individual support and career guidance pathways to build the skills of women in rural and urban areas and increase their participation in the local economy.",
-   "All participants improved their digital skills, and 8 had this certified with the ACTIC certificate."
-  ],
-  "secs": [
-   {
-    "h": "Training and advice",
-    "items": [
-     "Digital and technology skills",
-     "Entrepreneurship and social economy",
-     "Local products and green economy, forestry and agriculture",
-     "Online commerce and care for dependent people"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/ue-nextgen.webp",
-    "alt": "Funded by the European Union – NextGenerationEU"
-   },
-   {
-    "src": "assets/img/logos/gob-prtr-sepe.webp",
-    "alt": "Government of Spain – Recovery, Transformation and Resilience Plan – SEPE"
-   },
-   {
-    "src": "assets/img/logos/soc.webp",
-    "alt": "Catalan Public Employment Service"
-   },
-   {
-    "src": "assets/img/logos/nextgen-cat.webp",
-    "alt": "Next Generation Catalunya"
-   },
-   {
-    "src": "assets/img/logos/generalitat.webp",
-    "alt": "Generalitat de Catalunya"
-   }
-  ],
-  "link": null
- },
- {
   "id": "inclusio",
   "amb": "Inclusion",
   "year": "Ongoing",
@@ -649,82 +556,6 @@ window.LOGOS_PROJECTES = [
    }
   ],
   "sup": [],
-  "link": null
- },
- {
-  "id": "xaldiga",
-  "amb": "Equality",
-  "year": "Ongoing",
-  "title": "Xàldiga",
-  "sub": "Equality projects",
-  "summary": "Gender perspective, inclusive language and prevention of gender-based violence, with an experiential approach.",
-  "img": "igualtat",
-  "alt": "“Making the invisible visible” activity on equality and shared responsibility",
-  "figs": [],
-  "intro": [
-   "We work in every area to promote equality at work, in society, in the economy and in personal life, providing tools and resources to achieve real equality. We start from each group's needs and experiences, and produce our own materials and audiovisual content."
-  ],
-  "secs": [
-   {
-    "h": "What we do",
-    "items": [
-     "Short training sessions tailored to companies, schools and groups",
-     "Non-sexist inclusive language guides",
-     "Community development",
-     "Women's participation at the heart of our projects",
-     "Socio-educational intervention for equality"
-    ]
-   },
-   {
-    "h": "For companies",
-    "items": [
-     "Equality plans and their registration",
-     "Training",
-     "Finding funding",
-     "Gaining recognition"
-    ]
-   }
-  ],
-  "sup": [],
-  "link": null
- },
- {
-  "id": "trenta",
-  "amb": "Training",
-  "year": "2023 – 2024",
-  "title": "ICT training for the 30+ Programme",
-  "sub": "Tarragona City Council",
-  "summary": "Four 25-hour digital skills courses for workers on the 30 Plus Programme.",
-  "img": "aula-digital",
-  "alt": "Training session in the Logos classroom",
-  "figs": [
-   [
-    "4",
-    "courses"
-   ],
-   [
-    "25 h",
-    "per course"
-   ]
-  ],
-  "intro": [
-   "Training linked to participants' employment contracts and needs within the 2023 30 Plus Programme, in partnership with Tarragona Impulsa."
-  ],
-  "secs": [
-   {
-    "h": "Courses",
-    "items": [
-     "Google and its apps (25 h): tools and settings",
-     "Advanced office software and cybersecurity (25 h): Word, Excel and device protection"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/tgn-impulsa.webp",
-    "alt": "Tarragona Impulsa"
-   }
-  ],
   "link": null
  },
  {
@@ -808,65 +639,5 @@ window.LOGOS_PROJECTES = [
     }
    ]
   }
- },
- {
-  "id": "gitanes",
-  "amb": "Training",
-  "year": "2020 – 2021",
-  "title": "ICT training at the Council of Roma Communities",
-  "sub": "Volunteers and service users",
-  "summary": "Digital training and seminars for volunteers and users of the Council's programmes.",
-  "img": "navegadors",
-  "alt": "Digital training in the classroom",
-  "figs": [],
-  "intro": [
-   "Training within the Gitanos.cat programme (COSPE call) and the social inclusion service (IRPF call), funded by the Catalan Department of Labour, Social Affairs and Families."
-  ],
-  "secs": [],
-  "sup": [
-   {
-    "src": "assets/img/logos/consell-gitanes.webp",
-    "alt": "Council of Roma Communities of Tarragona"
-   }
-  ],
-  "link": null
- },
- {
-  "id": "empreses",
-  "amb": "Employment",
-  "year": "Ongoing",
-  "title": "Social enterprises",
-  "sub": "Intress Creix i Aptos",
-  "summary": "We create jobs for people in or at risk of social exclusion through work integration social enterprises.",
-  "img": "facana-nova",
-  "alt": "Entrance to the Logos office in Tarragona",
-  "figs": [],
-  "intro": [
-   "A work integration social enterprise carries out an economic activity (producing goods or providing services) with one main purpose: the social and labour integration of people in or at serious risk of social exclusion.",
-   "In our area, many resources rightly focus on people with disabilities. Other groups at risk of exclusion, however, often lack enough job opportunities. That is why we want to create jobs for them."
-  ],
-  "secs": [
-   {
-    "h": "Enterprises we have promoted",
-    "items": [
-     "Intress Creix Empresa d'Inserció Laboral, S.L.: set up by Logos together with Fundació Intress",
-     "Aptos Empresa d'Inserció, S.L.: Logos collaborated in setting it up"
-    ]
-   }
-  ],
-  "sup": [
-   {
-    "src": "assets/img/logos/intress.webp",
-    "alt": "Fundació Intress"
-   },
-   {
-    "src": "assets/img/logos/aptos.webp",
-    "alt": "Aptos Inserció i Servei"
-   }
-  ],
-  "link": [
-   "Why be socially responsible →",
-   "en-que-fem.html#rsc"
-  ]
  }
 ];

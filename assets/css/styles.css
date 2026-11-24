@@ -953,3 +953,11 @@ a.anu:hover { transform: translateY(-3px); }
 .forma__btn { display: inline-flex; align-items: center; gap: 8px; }
 .forma__cta small { color: var(--ink-soft, #555); font-size: 13.5px; }
 @media (max-width: 900px) { .forma { grid-template-columns: 1fr; padding: 28px 20px; gap: 24px; } }
+
+/* 2026-11-24 · placa de reconeixement Ajuntament de Tarragona / IMSST */
+.quality__list--acc > .q-recon { grid-column: 1 / -1; display: flex; gap: 18px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid #E4DDCC; }
+.q-recon > a { flex-shrink: 0; }
+.q-recon img { width: 160px; height: auto; border-radius: 8px; box-shadow: 0 6px 16px rgba(0,0,0,.15); display: block; }
+.q-recon .q-recon__ver { display: inline-block; margin-top: 4px; font-weight: 700; font-size: 15px; color: var(--gold-ink); }
+.quality__list--acc > .q-recon ~ div:last-child:nth-child(even) { grid-column: 1 / -1; }
+@media (max-width: 560px) { .quality__list--acc > .q-recon { flex-direction: column; align-items: flex-start; } .q-recon img { width: 100%; max-width: 320px; } }
